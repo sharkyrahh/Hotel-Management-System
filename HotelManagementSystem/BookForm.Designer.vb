@@ -50,7 +50,7 @@ Partial Class BookForm
         Panel1 = New Panel()
         Label7 = New Label()
         CheckBox1 = New CheckBox()
-        Button2 = New Button()
+        Button_Back = New Button()
         Button3 = New Button()
         Button4 = New Button()
         GroupBox5 = New GroupBox()
@@ -63,6 +63,7 @@ Partial Class BookForm
         Label15 = New Label()
         Label16 = New Label()
         GroupBox6 = New GroupBox()
+        Button5 = New Button()
         ComboBox6 = New ComboBox()
         ComboBox5 = New ComboBox()
         ComboBox4 = New ComboBox()
@@ -71,7 +72,6 @@ Partial Class BookForm
         ComboBox1 = New ComboBox()
         Label9 = New Label()
         Label20 = New Label()
-        Button5 = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
@@ -365,17 +365,17 @@ Partial Class BookForm
         CheckBox1.TabIndex = 0
         CheckBox1.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' Button_Back
         ' 
-        Button2.BackColor = SystemColors.GradientInactiveCaption
-        Button2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button2.ForeColor = SystemColors.HotTrack
-        Button2.Location = New Point(585, 693)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(250, 55)
-        Button2.TabIndex = 6
-        Button2.Text = "BACK"
-        Button2.UseVisualStyleBackColor = False
+        Button_Back.BackColor = SystemColors.GradientInactiveCaption
+        Button_Back.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button_Back.ForeColor = SystemColors.HotTrack
+        Button_Back.Location = New Point(585, 693)
+        Button_Back.Name = "Button_Back"
+        Button_Back.Size = New Size(250, 55)
+        Button_Back.TabIndex = 6
+        Button_Back.Text = "BACK"
+        Button_Back.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
@@ -506,6 +506,18 @@ Partial Class BookForm
         GroupBox6.TabStop = False
         GroupBox6.Text = "Date"
         ' 
+        ' Button5
+        ' 
+        Button5.BackColor = SystemColors.GradientInactiveCaption
+        Button5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button5.ForeColor = SystemColors.HotTrack
+        Button5.Location = New Point(226, 109)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(99, 32)
+        Button5.TabIndex = 9
+        Button5.Text = "Find Room"
+        Button5.UseVisualStyleBackColor = False
+        ' 
         ' ComboBox6
         ' 
         ComboBox6.FormattingEnabled = True
@@ -578,18 +590,6 @@ Partial Class BookForm
         Label20.TabIndex = 0
         Label20.Text = "From"
         ' 
-        ' Button5
-        ' 
-        Button5.BackColor = SystemColors.GradientInactiveCaption
-        Button5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button5.ForeColor = SystemColors.HotTrack
-        Button5.Location = New Point(226, 109)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(99, 32)
-        Button5.TabIndex = 9
-        Button5.Text = "Find Room"
-        Button5.UseVisualStyleBackColor = False
-        ' 
         ' BookForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -599,7 +599,7 @@ Partial Class BookForm
         Controls.Add(GroupBox5)
         Controls.Add(Button4)
         Controls.Add(Button3)
-        Controls.Add(Button2)
+        Controls.Add(Button_Back)
         Controls.Add(GroupBox4)
         Controls.Add(Button1)
         Controls.Add(GroupBox3)
@@ -650,7 +650,7 @@ Partial Class BookForm
     Friend WithEvents Label8 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Button_Back As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Panel2 As Panel

@@ -9,6 +9,7 @@
     End Sub
 
     Private Sub Button_Login_Click(sender As Object, e As EventArgs) Handles Button_Login.Click
-
+        StaffLoginForm.Show()
+        Me.Hide()
     End Sub
 End Class
