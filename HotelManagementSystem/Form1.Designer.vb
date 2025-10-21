@@ -37,7 +37,7 @@ Partial Class Form1
         Label1.BorderStyle = BorderStyle.Fixed3D
         Label1.Font = New Font("Times New Roman", 40.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.ButtonHighlight
-        Label1.Location = New Point(152, 57)
+        Label1.Location = New Point(148, 79)
         Label1.Name = "Label1"
         Label1.Size = New Size(803, 78)
         Label1.TabIndex = 0
@@ -49,7 +49,7 @@ Partial Class Form1
         GroupBox1.Controls.Add(Button_Exit)
         GroupBox1.Controls.Add(Button_Login)
         GroupBox1.Controls.Add(Button_Book)
-        GroupBox1.Location = New Point(152, 160)
+        GroupBox1.Location = New Point(148, 176)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(803, 393)
         GroupBox1.TabIndex = 1
@@ -99,10 +99,11 @@ Partial Class Form1
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.CornflowerBlue
-        ClientSize = New Size(1134, 547)
+        ClientSize = New Size(1134, 648)
         Controls.Add(Label1)
         Controls.Add(GroupBox1)
         Name = "Form1"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Hotel Management System"
         GroupBox1.ResumeLayout(False)
         ResumeLayout(False)
