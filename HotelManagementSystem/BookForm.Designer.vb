@@ -235,7 +235,7 @@ Partial Class BookForm
         Button1.Name = "Button1"
         Button1.Size = New Size(250, 55)
         Button1.TabIndex = 5
-        Button1.Text = "CONFIRM BOOK"
+        Button1.Text = "BOOK"
         Button1.UseVisualStyleBackColor = False
         ' 
         ' GroupBox4
@@ -419,7 +419,7 @@ Partial Class BookForm
         GroupBox5.Size = New Size(282, 206)
         GroupBox5.TabIndex = 8
         GroupBox5.TabStop = False
-        GroupBox5.Text = "Customer Details"
+        GroupBox5.Text = "Number of Rooms"
         ' 
         ' TextBox5
         ' 
