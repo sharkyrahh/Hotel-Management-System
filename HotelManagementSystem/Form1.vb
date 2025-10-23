@@ -1,23 +1,11 @@
 ﻿Public Class Form1
-    Private Sub Button_Book_Click(sender As Object, e As EventArgs)
+    Private Sub Button_Book_Click(sender As Object, e As EventArgs) Handles Button_Book.Click
         BookForm.Show()
-        Hide()
+        Me.Hide()
     End Sub
 
-    Private Sub Button_Login_Click(sender As Object, e As EventArgs)
+    Private Sub Button_Login_Click(sender As Object, e As EventArgs) Handles Button_Login.Click
         StaffLoginForm.Show()
-        Hide()
-    End Sub
-
-    Private Sub Button_View_Click(sender As Object, e As EventArgs) Handles Button_View.Click
-
-    End Sub
-
-    Private Sub Button_CheckIn_Click(sender As Object, e As EventArgs) Handles Button_CheckIn.Click
-
-    End Sub
-
-    Private Sub Button_About_Click(sender As Object, e As EventArgs) Handles Button_About.Click
-
+        Me.Hide()
     End Sub
 End Class

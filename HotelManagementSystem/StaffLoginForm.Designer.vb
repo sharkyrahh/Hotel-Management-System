@@ -1,26 +1,26 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class StaffLoginForm
     Inherits System.Windows.Forms.Form
 
-    'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
-    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-        Try
-            If disposing AndAlso components IsNot Nothing Then
-                components.Dispose()
-            End If
-        Finally
-            MyBase.Dispose(disposing)
-        End Try
-    End Sub
+'Form overrides dispose to clean up the component list.
+<System.Diagnostics.DebuggerNonUserCode()>
+Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+    Try
+        If disposing AndAlso components IsNot Nothing Then
+            components.Dispose()
+        End If
+    Finally
+        MyBase.Dispose(disposing)
+    End Try
+End Sub
 
-    'Required by the Windows Form Designer
-    Private components As System.ComponentModel.IContainer
+'Required by the Windows Form Designer
+Private components As System.ComponentModel.IContainer
 
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim GroupBox1 As GroupBox
         TextBox2 = New TextBox()
@@ -120,7 +120,7 @@ Partial Class StaffLoginForm
         Label7.AutoSize = True
         Label7.BackColor = Color.White
         Label7.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(25, 770)
+        Label7.Location = New Point(24, 770)
         Label7.Name = "Label7"
         Label7.Size = New Size(99, 20)
         Label7.TabIndex = 25
@@ -131,7 +131,7 @@ Partial Class StaffLoginForm
         Label6.AutoSize = True
         Label6.BackColor = Color.White
         Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(48, 642)
+        Label6.Location = New Point(48, 646)
         Label6.Name = "Label6"
         Label6.Size = New Size(53, 20)
         Label6.TabIndex = 24
@@ -142,7 +142,7 @@ Partial Class StaffLoginForm
         Label4.AutoSize = True
         Label4.BackColor = Color.White
         Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(33, 100)
+        Label4.Location = New Point(32, 100)
         Label4.Name = "Label4"
         Label4.Size = New Size(85, 20)
         Label4.TabIndex = 23
@@ -153,7 +153,7 @@ Partial Class StaffLoginForm
         Label5.AutoSize = True
         Label5.BackColor = Color.White
         Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(21, 511)
+        Label5.Location = New Point(20, 511)
         Label5.Name = "Label5"
         Label5.Size = New Size(109, 20)
         Label5.TabIndex = 22
@@ -162,7 +162,7 @@ Partial Class StaffLoginForm
         ' Button_Home
         ' 
         Button_Home.BackgroundImage = My.Resources.Resources.homeicon
-        Button_Home.Location = New Point(-1, 0)
+        Button_Home.Location = New Point(-2, 0)
         Button_Home.Name = "Button_Home"
         Button_Home.Size = New Size(159, 137)
         Button_Home.TabIndex = 14
@@ -173,7 +173,7 @@ Partial Class StaffLoginForm
         Label8.AutoSize = True
         Label8.BackColor = Color.White
         Label8.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(23, 368)
+        Label8.Location = New Point(22, 368)
         Label8.Name = "Label8"
         Label8.Size = New Size(103, 20)
         Label8.TabIndex = 21
@@ -184,7 +184,7 @@ Partial Class StaffLoginForm
         Label9.AutoSize = True
         Label9.BackColor = Color.White
         Label9.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(27, 244)
+        Label9.Location = New Point(26, 244)
         Label9.Name = "Label9"
         Label9.Size = New Size(96, 20)
         Label9.TabIndex = 20
@@ -192,8 +192,8 @@ Partial Class StaffLoginForm
         ' 
         ' Button_Login
         ' 
-        Button_Login.BackgroundImage = My.Resources.Resources.loginicon__1_
-        Button_Login.Location = New Point(-1, 670)
+        Button_Login.Image = My.Resources.Resources.loginicon__1_
+        Button_Login.Location = New Point(-2, 670)
         Button_Login.Name = "Button_Login"
         Button_Login.Size = New Size(159, 137)
         Button_Login.TabIndex = 19
@@ -201,8 +201,8 @@ Partial Class StaffLoginForm
         ' 
         ' Button_About
         ' 
-        Button_About.BackgroundImage = My.Resources.Resources.abouticon
-        Button_About.Location = New Point(-1, 539)
+        Button_About.Image = My.Resources.Resources.abouticon
+        Button_About.Location = New Point(-2, 539)
         Button_About.Name = "Button_About"
         Button_About.Size = New Size(159, 137)
         Button_About.TabIndex = 18
@@ -210,8 +210,8 @@ Partial Class StaffLoginForm
         ' 
         ' Button_CheckIn
         ' 
-        Button_CheckIn.BackgroundImage = My.Resources.Resources.checkinicon
-        Button_CheckIn.Location = New Point(-1, 405)
+        Button_CheckIn.Image = My.Resources.Resources.checkinicon
+        Button_CheckIn.Location = New Point(-2, 405)
         Button_CheckIn.Name = "Button_CheckIn"
         Button_CheckIn.Size = New Size(159, 137)
         Button_CheckIn.TabIndex = 17
@@ -219,8 +219,8 @@ Partial Class StaffLoginForm
         ' 
         ' Button_Book
         ' 
-        Button_Book.BackgroundImage = My.Resources.Resources.roomicon
-        Button_Book.Location = New Point(-1, 270)
+        Button_Book.Image = My.Resources.Resources.roomicon1
+        Button_Book.Location = New Point(-2, 270)
         Button_Book.Name = "Button_Book"
         Button_Book.Size = New Size(159, 137)
         Button_Book.TabIndex = 15
@@ -228,8 +228,8 @@ Partial Class StaffLoginForm
         ' 
         ' Button_View
         ' 
-        Button_View.BackgroundImage = My.Resources.Resources.viewroomicon
-        Button_View.Location = New Point(-1, 135)
+        Button_View.Image = My.Resources.Resources.viewroomicon
+        Button_View.Location = New Point(-2, 135)
         Button_View.Name = "Button_View"
         Button_View.Size = New Size(159, 137)
         Button_View.TabIndex = 16
@@ -265,12 +265,12 @@ Partial Class StaffLoginForm
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Button2 As Button
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents TextBox2 As TextBox
+Friend WithEvents Label2 As Label
+Friend WithEvents Label3 As Label
+Friend WithEvents TextBox1 As TextBox
+Friend WithEvents Button2 As Button
+Friend WithEvents GroupBox1 As GroupBox
+Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label4 As Label
