@@ -45,12 +45,12 @@ Namespace My.Resources
                 Return resourceMan
             End Get
         End Property
-        
+
         '''<summary>
         '''  Overrides the current thread's CurrentUICulture property for all
         '''  resource lookups using this strongly typed resource class.
         '''</summary>
-        <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
+        <Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>
         Friend Property Culture() As Global.System.Globalization.CultureInfo
             Get
                 Return resourceCulture
@@ -59,7 +59,7 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
-        
+
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
@@ -160,25 +160,25 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-        
+
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property Sleek_and_modern_hotel_room_with_smart_technology_minimalistic_decor_and_a_comfortable_bed_generative_ai___Premium_AI_generated_image() As System.Drawing.Bitmap
             Get
-                Dim obj As Object = ResourceManager.GetObject("Sleek and modern hotel room with smart technology minimalistic decor and a comfor"& _ 
+                Dim obj As Object = ResourceManager.GetObject("Sleek and modern hotel room with smart technology minimalistic decor and a comfor" &
                         "table bed generative ai _ Premium AI-generated image", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
+                Return CType(obj, System.Drawing.Bitmap)
             End Get
         End Property
-        
+
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property viewroomicon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("viewroomicon", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
+                Return CType(obj, System.Drawing.Bitmap)
             End Get
         End Property
     End Module
