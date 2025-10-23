@@ -25,30 +25,30 @@ Partial Class CheckIn
         Label1 = New Label()
         Label2 = New Label()
         GroupBox1 = New GroupBox()
+        TextBox8 = New TextBox()
+        TextBox9 = New TextBox()
+        TextBox10 = New TextBox()
+        TextBox2 = New TextBox()
+        TextBox1 = New TextBox()
         Label3 = New Label()
         Label4 = New Label()
+        TextBox6 = New TextBox()
+        Label10 = New Label()
         Label5 = New Label()
         Label6 = New Label()
         Label7 = New Label()
         Label8 = New Label()
         Label9 = New Label()
-        Label10 = New Label()
         Label11 = New Label()
         Label12 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
         TextBox3 = New TextBox()
         TextBox4 = New TextBox()
         TextBox5 = New TextBox()
-        TextBox6 = New TextBox()
         TextBox7 = New TextBox()
-        TextBox8 = New TextBox()
-        TextBox9 = New TextBox()
-        TextBox10 = New TextBox()
         GroupBox2 = New GroupBox()
-        DateTimePicker1 = New DateTimePicker()
-        NumericUpDown1 = New NumericUpDown()
         DateTimePicker2 = New DateTimePicker()
+        NumericUpDown1 = New NumericUpDown()
+        DateTimePicker1 = New DateTimePicker()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         CType(NumericUpDown1, ComponentModel.ISupportInitialize).BeginInit()
@@ -93,6 +93,41 @@ Partial Class CheckIn
         GroupBox1.TabStop = False
         GroupBox1.Text = "Guesst Information"
         ' 
+        ' TextBox8
+        ' 
+        TextBox8.Location = New Point(199, 353)
+        TextBox8.Name = "TextBox8"
+        TextBox8.Size = New Size(125, 27)
+        TextBox8.TabIndex = 19
+        ' 
+        ' TextBox9
+        ' 
+        TextBox9.Location = New Point(21, 353)
+        TextBox9.Name = "TextBox9"
+        TextBox9.Size = New Size(125, 27)
+        TextBox9.TabIndex = 20
+        ' 
+        ' TextBox10
+        ' 
+        TextBox10.Location = New Point(21, 261)
+        TextBox10.Name = "TextBox10"
+        TextBox10.Size = New Size(330, 27)
+        TextBox10.TabIndex = 21
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(226, 92)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(125, 27)
+        TextBox2.TabIndex = 7
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(19, 87)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(125, 27)
+        TextBox1.TabIndex = 6
+        ' 
         ' Label3
         ' 
         Label3.AutoSize = True
@@ -110,6 +145,22 @@ Partial Class CheckIn
         Label4.Size = New Size(53, 20)
         Label4.TabIndex = 5
         Label4.Text = "Label4"
+        ' 
+        ' TextBox6
+        ' 
+        TextBox6.Location = New Point(19, 176)
+        TextBox6.Name = "TextBox6"
+        TextBox6.Size = New Size(332, 27)
+        TextBox6.TabIndex = 17
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Location = New Point(21, 142)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(61, 20)
+        Label10.TabIndex = 11
+        Label10.Text = "Label10"
         ' 
         ' Label5
         ' 
@@ -156,15 +207,6 @@ Partial Class CheckIn
         Label9.TabIndex = 10
         Label9.Text = "Label9"
         ' 
-        ' Label10
-        ' 
-        Label10.AutoSize = True
-        Label10.Location = New Point(21, 142)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(61, 20)
-        Label10.TabIndex = 11
-        Label10.Text = "Label10"
-        ' 
         ' Label11
         ' 
         Label11.AutoSize = True
@@ -182,20 +224,6 @@ Partial Class CheckIn
         Label12.Size = New Size(61, 20)
         Label12.TabIndex = 13
         Label12.Text = "Label12"
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(19, 87)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(125, 27)
-        TextBox1.TabIndex = 6
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Location = New Point(226, 92)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(125, 27)
-        TextBox2.TabIndex = 7
         ' 
         ' TextBox3
         ' 
@@ -218,40 +246,12 @@ Partial Class CheckIn
         TextBox5.Size = New Size(125, 27)
         TextBox5.TabIndex = 16
         ' 
-        ' TextBox6
-        ' 
-        TextBox6.Location = New Point(19, 176)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(332, 27)
-        TextBox6.TabIndex = 17
-        ' 
         ' TextBox7
         ' 
         TextBox7.Location = New Point(324, 315)
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(125, 27)
         TextBox7.TabIndex = 18
-        ' 
-        ' TextBox8
-        ' 
-        TextBox8.Location = New Point(199, 353)
-        TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(125, 27)
-        TextBox8.TabIndex = 19
-        ' 
-        ' TextBox9
-        ' 
-        TextBox9.Location = New Point(21, 353)
-        TextBox9.Name = "TextBox9"
-        TextBox9.Size = New Size(125, 27)
-        TextBox9.TabIndex = 20
-        ' 
-        ' TextBox10
-        ' 
-        TextBox10.Location = New Point(21, 261)
-        TextBox10.Name = "TextBox10"
-        TextBox10.Size = New Size(330, 27)
-        TextBox10.TabIndex = 21
         ' 
         ' GroupBox2
         ' 
@@ -271,12 +271,12 @@ Partial Class CheckIn
         GroupBox2.TabStop = False
         GroupBox2.Text = "Checkin information"
         ' 
-        ' DateTimePicker1
+        ' DateTimePicker2
         ' 
-        DateTimePicker1.Location = New Point(21, 92)
-        DateTimePicker1.Name = "DateTimePicker1"
-        DateTimePicker1.Size = New Size(250, 27)
-        DateTimePicker1.TabIndex = 14
+        DateTimePicker2.Location = New Point(21, 223)
+        DateTimePicker2.Name = "DateTimePicker2"
+        DateTimePicker2.Size = New Size(250, 27)
+        DateTimePicker2.TabIndex = 17
         ' 
         ' NumericUpDown1
         ' 
@@ -285,12 +285,12 @@ Partial Class CheckIn
         NumericUpDown1.Size = New Size(150, 27)
         NumericUpDown1.TabIndex = 15
         ' 
-        ' DateTimePicker2
+        ' DateTimePicker1
         ' 
-        DateTimePicker2.Location = New Point(21, 223)
-        DateTimePicker2.Name = "DateTimePicker2"
-        DateTimePicker2.Size = New Size(250, 27)
-        DateTimePicker2.TabIndex = 17
+        DateTimePicker1.Location = New Point(21, 92)
+        DateTimePicker1.Name = "DateTimePicker1"
+        DateTimePicker1.Size = New Size(250, 27)
+        DateTimePicker1.TabIndex = 14
         ' 
         ' CheckIn
         ' 
