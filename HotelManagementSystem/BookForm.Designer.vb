@@ -370,7 +370,7 @@ Partial Class BookForm
         Button_Back.BackColor = SystemColors.GradientInactiveCaption
         Button_Back.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button_Back.ForeColor = SystemColors.HotTrack
-        Button_Back.Location = New Point(585, 693)
+        Button_Back.Location = New Point(573, 695)
         Button_Back.Name = "Button_Back"
         Button_Back.Size = New Size(250, 55)
         Button_Back.TabIndex = 6
