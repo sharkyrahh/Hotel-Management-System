@@ -192,7 +192,6 @@ Private components As System.ComponentModel.IContainer
         ' 
         ' Button_Login
         ' 
-        Button_Login.Image = My.Resources.Resources.loginicon__1_
         Button_Login.Location = New Point(-2, 670)
         Button_Login.Name = "Button_Login"
         Button_Login.Size = New Size(159, 137)
@@ -219,7 +218,6 @@ Private components As System.ComponentModel.IContainer
         ' 
         ' Button_Book
         ' 
-        Button_Book.Image = My.Resources.Resources.roomicon1
         Button_Book.Location = New Point(-2, 270)
         Button_Book.Name = "Button_Book"
         Button_Book.Size = New Size(159, 137)

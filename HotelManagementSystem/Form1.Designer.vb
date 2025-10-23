@@ -40,6 +40,7 @@ Partial Class Form1
         Panel2 = New Panel()
         Label8 = New Label()
         Label9 = New Label()
+        Button_sql = New Button()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel2.SuspendLayout()
@@ -123,7 +124,6 @@ Partial Class Form1
         ' 
         ' Button_Home
         ' 
-        Button_Home.BackgroundImage = My.Resources.Resources.homeicon
         Button_Home.Location = New Point(0, 0)
         Button_Home.Name = "Button_Home"
         Button_Home.Size = New Size(159, 137)
@@ -154,7 +154,6 @@ Partial Class Form1
         ' 
         ' Button_Login
         ' 
-        Button_Login.BackgroundImage = My.Resources.Resources.loginicon__1_
         Button_Login.Location = New Point(0, 670)
         Button_Login.Name = "Button_Login"
         Button_Login.Size = New Size(159, 137)
@@ -163,7 +162,6 @@ Partial Class Form1
         ' 
         ' Button_About
         ' 
-        Button_About.BackgroundImage = My.Resources.Resources.abouticon
         Button_About.Location = New Point(0, 539)
         Button_About.Name = "Button_About"
         Button_About.Size = New Size(159, 137)
@@ -172,7 +170,6 @@ Partial Class Form1
         ' 
         ' Button_CheckIn
         ' 
-        Button_CheckIn.BackgroundImage = My.Resources.Resources.checkinicon
         Button_CheckIn.Location = New Point(0, 405)
         Button_CheckIn.Name = "Button_CheckIn"
         Button_CheckIn.Size = New Size(159, 137)
@@ -181,7 +178,6 @@ Partial Class Form1
         ' 
         ' Button_Book
         ' 
-        Button_Book.BackgroundImage = My.Resources.Resources.roomicon
         Button_Book.Location = New Point(0, 270)
         Button_Book.Name = "Button_Book"
         Button_Book.Size = New Size(159, 137)
@@ -190,7 +186,6 @@ Partial Class Form1
         ' 
         ' Button_View
         ' 
-        Button_View.BackgroundImage = My.Resources.Resources.viewroomicon
         Button_View.Location = New Point(0, 135)
         Button_View.Name = "Button_View"
         Button_View.Size = New Size(159, 137)
@@ -199,7 +194,6 @@ Partial Class Form1
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.BackgroundImage = My.Resources.Resources.Abstract_blur_luxury_hotel_lobby_for_background___Premium_Photo_2_
         PictureBox1.BackgroundImageLayout = ImageLayout.Stretch
         PictureBox1.Location = New Point(160, 25)
         PictureBox1.Name = "PictureBox1"
@@ -209,6 +203,7 @@ Partial Class Form1
         ' 
         ' Panel2
         ' 
+        Panel2.Controls.Add(Button_sql)
         Panel2.Controls.Add(Label8)
         Panel2.Location = New Point(159, 423)
         Panel2.Name = "Panel2"
@@ -234,6 +229,15 @@ Partial Class Form1
         Label9.Size = New Size(168, 38)
         Label9.TabIndex = 6
         Label9.Text = "Welcome to"
+        ' 
+        ' Button_sql
+        ' 
+        Button_sql.Location = New Point(657, 194)
+        Button_sql.Name = "Button_sql"
+        Button_sql.Size = New Size(94, 29)
+        Button_sql.TabIndex = 6
+        Button_sql.Text = "lets test sql connection"
+        Button_sql.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
@@ -276,5 +280,6 @@ Partial Class Form1
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
+    Friend WithEvents Button_sql As Button
 
 End Class
