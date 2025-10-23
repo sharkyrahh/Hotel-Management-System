@@ -94,17 +94,19 @@ Partial Class PaymentForm
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Times New Roman", 25.8000011F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Times New Roman", 27F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.HotTrack
         Label1.Location = New Point(33, 44)
         Label1.Name = "Label1"
-        Label1.Size = New Size(346, 51)
+        Label1.Size = New Size(356, 52)
         Label1.TabIndex = 0
         Label1.Text = "Booking Payment"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(44, 131)
         Label2.Name = "Label2"
@@ -115,6 +117,7 @@ Partial Class PaymentForm
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.Location = New Point(380, 131)
         Label3.Name = "Label3"
@@ -125,6 +128,7 @@ Partial Class PaymentForm
         ' Label4
         ' 
         Label4.AutoSize = True
+        Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.Location = New Point(468, 131)
         Label4.Name = "Label4"
@@ -134,6 +138,7 @@ Partial Class PaymentForm
         ' 
         ' Panel1
         ' 
+        Panel1.BackColor = Color.Transparent
         Panel1.Controls.Add(Label31)
         Panel1.Controls.Add(Label7)
         Panel1.Controls.Add(Label6)
@@ -192,6 +197,7 @@ Partial Class PaymentForm
         ' 
         ' Panel6
         ' 
+        Panel6.BackColor = Color.Transparent
         Panel6.Controls.Add(Label18)
         Panel6.Controls.Add(Label20)
         Panel6.Location = New Point(33, 543)
@@ -221,6 +227,7 @@ Partial Class PaymentForm
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.BackColor = Color.Transparent
         GroupBox1.Controls.Add(Button1)
         GroupBox1.Controls.Add(TextBox1)
         GroupBox1.Controls.Add(Label22)
@@ -270,6 +277,7 @@ Partial Class PaymentForm
         ' 
         ' GroupBox2
         ' 
+        GroupBox2.BackColor = Color.Transparent
         GroupBox2.Controls.Add(Button_Receipt)
         GroupBox2.Controls.Add(Panel9)
         GroupBox2.Controls.Add(Panel8)
@@ -398,16 +406,18 @@ Partial Class PaymentForm
         ' Label29
         ' 
         Label29.AutoSize = True
-        Label29.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label29.BackColor = Color.Transparent
+        Label29.Font = New Font("Segoe UI Black", 16.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label29.Location = New Point(33, 84)
         Label29.Name = "Label29"
-        Label29.Size = New Size(1076, 28)
+        Label29.Size = New Size(1613, 38)
         Label29.TabIndex = 13
         Label29.Text = "_____________________________________________________________________________________________________________________________________"
         ' 
         ' Label30
         ' 
         Label30.AutoSize = True
+        Label30.BackColor = Color.Transparent
         Label30.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label30.Location = New Point(541, 131)
         Label30.Name = "Label30"
@@ -417,6 +427,7 @@ Partial Class PaymentForm
         ' 
         ' Panel2
         ' 
+        Panel2.BackColor = Color.Transparent
         Panel2.Controls.Add(Label8)
         Panel2.Controls.Add(Label9)
         Panel2.Controls.Add(Label10)
@@ -468,6 +479,7 @@ Partial Class PaymentForm
         ' 
         ' Panel3
         ' 
+        Panel3.BackColor = Color.Transparent
         Panel3.Controls.Add(Label11)
         Panel3.Controls.Add(Label12)
         Panel3.Controls.Add(Label13)
@@ -519,6 +531,7 @@ Partial Class PaymentForm
         ' 
         ' Panel4
         ' 
+        Panel4.BackColor = Color.Transparent
         Panel4.Controls.Add(Label14)
         Panel4.Controls.Add(Label15)
         Panel4.Controls.Add(Label16)
@@ -570,6 +583,7 @@ Partial Class PaymentForm
         ' 
         ' Panel10
         ' 
+        Panel10.BackColor = Color.Transparent
         Panel10.Controls.Add(Label19)
         Panel10.Controls.Add(Label38)
         Panel10.Location = New Point(33, 424)
@@ -599,6 +613,7 @@ Partial Class PaymentForm
         ' 
         ' Panel11
         ' 
+        Panel11.BackColor = Color.Transparent
         Panel11.Controls.Add(Label39)
         Panel11.Controls.Add(Label40)
         Panel11.Location = New Point(33, 483)
@@ -629,10 +644,11 @@ Partial Class PaymentForm
         ' Label17
         ' 
         Label17.AutoSize = True
-        Label17.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label17.Location = New Point(27, 383)
+        Label17.BackColor = Color.Transparent
+        Label17.Font = New Font("Segoe UI Black", 16.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label17.Location = New Point(24, 375)
         Label17.Name = "Label17"
-        Label17.Size = New Size(604, 28)
+        Label17.Size = New Size(905, 38)
         Label17.TabIndex = 15
         Label17.Text = "__________________________________________________________________________"
         ' 
@@ -640,6 +656,7 @@ Partial Class PaymentForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1134, 723)
         Controls.Add(Panel11)
         Controls.Add(Panel10)

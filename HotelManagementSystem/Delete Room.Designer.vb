@@ -24,6 +24,7 @@ Partial Class DeleteRoom
     Private Sub InitializeComponent()
         Label1 = New Label()
         GroupBox1 = New GroupBox()
+        Label5 = New Label()
         Button2 = New Button()
         Button1 = New Button()
         TextBox1 = New TextBox()
@@ -31,7 +32,6 @@ Partial Class DeleteRoom
         Label3 = New Label()
         ComboBox1 = New ComboBox()
         Label2 = New Label()
-        Label5 = New Label()
         GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -39,7 +39,7 @@ Partial Class DeleteRoom
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 15F)
-        Label1.Location = New Point(417, 9)
+        Label1.Location = New Point(419, 7)
         Label1.Name = "Label1"
         Label1.Size = New Size(159, 35)
         Label1.TabIndex = 0
@@ -57,10 +57,20 @@ Partial Class DeleteRoom
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Location = New Point(272, 45)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(463, 362)
+        GroupBox1.Size = New Size(569, 583)
         GroupBox1.TabIndex = 1
         GroupBox1.TabStop = False
         GroupBox1.Text = "GroupBox1"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.BackColor = SystemColors.ButtonShadow
+        Label5.Location = New Point(256, 126)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(201, 20)
+        Label5.TabIndex = 7
+        Label5.Text = "Show who deleted the Room"
         ' 
         ' Button2
         ' 
@@ -123,23 +133,14 @@ Partial Class DeleteRoom
         Label2.TabIndex = 0
         Label2.Text = "Select Room to be Deleted"
         ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.BackColor = SystemColors.ButtonShadow
-        Label5.Location = New Point(256, 126)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(201, 20)
-        Label5.TabIndex = 7
-        Label5.Text = "Show who deleted the Room"
-        ' 
         ' DeleteRoom
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ActiveCaption
         BackgroundImage = My.Resources.Resources.download__8_
-        ClientSize = New Size(800, 450)
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(995, 653)
         Controls.Add(GroupBox1)
         Controls.Add(Label1)
         Name = "DeleteRoom"

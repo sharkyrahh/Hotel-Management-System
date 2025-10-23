@@ -622,6 +622,7 @@ Partial Class ReceiptForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1132, 805)
         Controls.Add(Button1)
         Controls.Add(Button_Close)

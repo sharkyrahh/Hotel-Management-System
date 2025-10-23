@@ -29,6 +29,7 @@ Partial Class SplashScreen1
         ' 
         ' MainLayoutPanel
         ' 
+        MainLayoutPanel.BackColor = SystemColors.Control
         MainLayoutPanel.BackgroundImage = CType(resources.GetObject("MainLayoutPanel.BackgroundImage"), Image)
         MainLayoutPanel.BackgroundImageLayout = ImageLayout.Stretch
         MainLayoutPanel.ColumnCount = 2

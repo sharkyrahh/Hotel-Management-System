@@ -23,6 +23,7 @@ Private components As System.ComponentModel.IContainer
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim GroupBox1 As GroupBox
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StaffLoginForm))
         TextBox2 = New TextBox()
         Label2 = New Label()
         Button_login2 = New Button()
@@ -107,8 +108,9 @@ Private components As System.ComponentModel.IContainer
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Times New Roman", 50F, FontStyle.Bold Or FontStyle.Italic)
-        Label1.ForeColor = SystemColors.ControlLightLight
+        Label1.ForeColor = Color.Transparent
         Label1.Location = New Point(280, 144)
         Label1.Name = "Label1"
         Label1.Size = New Size(432, 94)
@@ -238,6 +240,8 @@ Private components As System.ComponentModel.IContainer
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Desktop
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1303, 806)
         Controls.Add(Label7)
         Controls.Add(Label6)
