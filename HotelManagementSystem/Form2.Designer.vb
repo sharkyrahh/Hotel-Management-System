@@ -132,7 +132,7 @@ Partial Class Form2
         Controls.Add(GroupBox1)
         ForeColor = SystemColors.ButtonHighlight
         Name = "Form2"
-        Text = "Form2"
+        Text = "Add Room"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         ResumeLayout(False)

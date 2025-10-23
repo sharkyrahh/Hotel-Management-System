@@ -74,6 +74,7 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+
         Friend ReadOnly Property Abstract_blur_luxury_hotel_lobby_for_background___Premium_Photo_2_() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Abstract blur luxury hotel lobby for background _ Premium Photo[2]", resourceCulture)
@@ -95,9 +96,15 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+
         Friend ReadOnly Property Dreamstime_com() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Dreamstime_com", resourceCulture)
+
+        Friend ReadOnly Property abouticon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("abouticon", resourceCulture)
+
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -105,47 +112,65 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+
         Friend ReadOnly Property homeicon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("homeicon", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-        
+
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+
+
         Friend ReadOnly Property images() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("images", resourceCulture)
+
+        Friend ReadOnly Property Abstract_blur_luxury_hotel_lobby_for_background___Premium_Photo_2_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Abstract blur luxury hotel lobby for background _ Premium Photo[2]", resourceCulture)
+
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-        
+
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+
         Friend ReadOnly Property loginicon__1_() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("loginicon (1)", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-        
+
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+
+
+
         Friend ReadOnly Property pngtree_hotel_room_interior_adorned_with_a_white_bath_towel_on_the_bed_photo_image_33122468() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("pngtree-hotel-room-interior-adorned-with-a-white-bath-towel-on-the-bed-photo-imag"& _ 
                         "e_33122468", resourceCulture)
+
+        Friend ReadOnly Property checkinicon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("checkinicon", resourceCulture)
+
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
-        
+
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+
         Friend ReadOnly Property roomicon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("roomicon", resourceCulture)
@@ -169,22 +194,70 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+
+
+
         Friend ReadOnly Property Sleek_and_modern_hotel_room_with_smart_technology_minimalistic_decor_and_a_comfortable_bed_generative_ai___Premium_AI_generated_image() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Sleek and modern hotel room with smart technology minimalistic decor and a comfor" &
                         "table bed generative ai _ Premium AI-generated image", resourceCulture)
+
                 Return CType(obj, System.Drawing.Bitmap)
             End Get
         End Property
 
+
+
+        Friend ReadOnly Property homeicon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("homeicon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property loginicon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("loginicon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property loginicon__1_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("loginicon (1)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property roomicon() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("roomicon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+     
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
         Friend ReadOnly Property viewroomicon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("viewroomicon", resourceCulture)
+
                 Return CType(obj, System.Drawing.Bitmap)
-            End Get
+
+
+                Return CType(obj,System.Drawing.Bitmap)
+
+        End Get
         End Property
     End Module
 End Namespace
