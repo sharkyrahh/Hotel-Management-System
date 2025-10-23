@@ -22,9 +22,253 @@ Partial Class Add_Staff
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Add_Staff"
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Add_Staff))
+        Label2 = New Label()
+        GroupBox1 = New GroupBox()
+        Button1 = New Button()
+        TextBox1 = New TextBox()
+        Label3 = New Label()
+        TextBox3 = New TextBox()
+        Label4 = New Label()
+        TextBox4 = New TextBox()
+        Label5 = New Label()
+        TextBox5 = New TextBox()
+        Label6 = New Label()
+        TextBox6 = New TextBox()
+        Label7 = New Label()
+        GroupBox2 = New GroupBox()
+        TextBox9 = New TextBox()
+        Label10 = New Label()
+        Button2 = New Button()
+        Button4 = New Button()
+        Button3 = New Button()
+        GroupBox1.SuspendLayout()
+        GroupBox2.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Times New Roman", 27F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = SystemColors.HotTrack
+        Label2.Location = New Point(342, 21)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(277, 52)
+        Label2.TabIndex = 3
+        Label2.Text = "Manage Staff"
+        ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.BackColor = Color.Transparent
+        GroupBox1.Controls.Add(TextBox6)
+        GroupBox1.Controls.Add(Label7)
+        GroupBox1.Controls.Add(TextBox5)
+        GroupBox1.Controls.Add(Label6)
+        GroupBox1.Controls.Add(TextBox4)
+        GroupBox1.Controls.Add(Label5)
+        GroupBox1.Controls.Add(TextBox3)
+        GroupBox1.Controls.Add(Label4)
+        GroupBox1.Controls.Add(Button1)
+        GroupBox1.Controls.Add(TextBox1)
+        GroupBox1.Controls.Add(Label3)
+        GroupBox1.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        GroupBox1.ForeColor = SystemColors.ControlText
+        GroupBox1.Location = New Point(51, 110)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(428, 379)
+        GroupBox1.TabIndex = 4
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "Add Staff"
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(181, 333)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(94, 29)
+        Button1.TabIndex = 22
+        Button1.Text = "Add"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(131, 49)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(240, 29)
+        TextBox1.TabIndex = 6
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(21, 49)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(104, 22)
+        Label3.TabIndex = 4
+        Label3.Text = "Staff Name"
+        ' 
+        ' TextBox3
+        ' 
+        TextBox3.Location = New Point(131, 107)
+        TextBox3.Name = "TextBox3"
+        TextBox3.Size = New Size(240, 29)
+        TextBox3.TabIndex = 24
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(21, 107)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(75, 22)
+        Label4.TabIndex = 23
+        Label4.Text = "Staff IC"
+        ' 
+        ' TextBox4
+        ' 
+        TextBox4.Location = New Point(131, 157)
+        TextBox4.Name = "TextBox4"
+        TextBox4.Size = New Size(240, 29)
+        TextBox4.TabIndex = 26
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Location = New Point(21, 157)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(58, 22)
+        Label5.TabIndex = 25
+        Label5.Text = "Email"
+        ' 
+        ' TextBox5
+        ' 
+        TextBox5.Location = New Point(131, 206)
+        TextBox5.Name = "TextBox5"
+        TextBox5.Size = New Size(240, 29)
+        TextBox5.TabIndex = 28
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Location = New Point(21, 206)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(93, 22)
+        Label6.TabIndex = 27
+        Label6.Text = "Username"
+        ' 
+        ' TextBox6
+        ' 
+        TextBox6.Location = New Point(131, 260)
+        TextBox6.Name = "TextBox6"
+        TextBox6.Size = New Size(240, 29)
+        TextBox6.TabIndex = 30
+        ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.Location = New Point(21, 260)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(89, 22)
+        Label7.TabIndex = 29
+        Label7.Text = "Password"
+        ' 
+        ' GroupBox2
+        ' 
+        GroupBox2.BackColor = Color.Transparent
+        GroupBox2.Controls.Add(TextBox9)
+        GroupBox2.Controls.Add(Label10)
+        GroupBox2.Controls.Add(Button2)
+        GroupBox2.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        GroupBox2.ForeColor = SystemColors.ControlText
+        GroupBox2.Location = New Point(530, 110)
+        GroupBox2.Name = "GroupBox2"
+        GroupBox2.Size = New Size(428, 207)
+        GroupBox2.TabIndex = 5
+        GroupBox2.TabStop = False
+        GroupBox2.Text = "Remove Staff"
+        ' 
+        ' TextBox9
+        ' 
+        TextBox9.Location = New Point(140, 56)
+        TextBox9.Name = "TextBox9"
+        TextBox9.Size = New Size(240, 29)
+        TextBox9.TabIndex = 24
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.Location = New Point(27, 56)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(75, 22)
+        Label10.TabIndex = 23
+        Label10.Text = "Staff IC"
+        ' 
+        ' Button2
+        ' 
+        Button2.Location = New Point(140, 150)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(94, 29)
+        Button2.TabIndex = 22
+        Button2.Text = "Delete"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' Button4
+        ' 
+        Button4.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
+        Button4.Location = New Point(881, 559)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(94, 29)
+        Button4.TabIndex = 30
+        Button4.Text = "Back"
+        Button4.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
+        Button3.Location = New Point(772, 559)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(94, 29)
+        Button3.TabIndex = 29
+        Button3.Text = "Reset"
+        Button3.UseVisualStyleBackColor = True
+        ' 
+        ' Add_Staff
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
+        ClientSize = New Size(1005, 612)
+        Controls.Add(Button4)
+        Controls.Add(Button3)
+        Controls.Add(GroupBox2)
+        Controls.Add(GroupBox1)
+        Controls.Add(Label2)
+        Name = "Add_Staff"
+        Text = "Add_Staff"
+        GroupBox1.ResumeLayout(False)
+        GroupBox1.PerformLayout()
+        GroupBox2.ResumeLayout(False)
+        GroupBox2.PerformLayout()
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
+
+    Friend WithEvents Label2 As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents TextBox9 As TextBox
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
 End Class

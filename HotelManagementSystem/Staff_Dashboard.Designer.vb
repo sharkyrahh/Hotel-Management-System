@@ -52,16 +52,23 @@ Partial Class Staff_Dashboard
         Label13 = New Label()
         Button14 = New Button()
         Label5 = New Label()
+        Label7 = New Label()
+        Label14 = New Label()
+        Label15 = New Label()
+        Label16 = New Label()
+        Label17 = New Label()
+        Label18 = New Label()
         SuspendLayout()
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Cambria", 17F)
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Times New Roman", 27F, FontStyle.Bold Or FontStyle.Italic)
         Label2.ForeColor = SystemColors.MenuHighlight
-        Label2.Location = New Point(162, 9)
+        Label2.Location = New Point(436, 9)
         Label2.Name = "Label2"
-        Label2.Size = New Size(149, 34)
+        Label2.Size = New Size(230, 52)
         Label2.TabIndex = 29
         Label2.Text = "Dashboard"
         ' 
@@ -269,6 +276,7 @@ Partial Class Staff_Dashboard
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.BackColor = Color.Cyan
         Label1.Location = New Point(346, 99)
         Label1.Name = "Label1"
         Label1.Size = New Size(66, 20)
@@ -278,6 +286,7 @@ Partial Class Staff_Dashboard
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
         Label3.Location = New Point(745, 99)
         Label3.Name = "Label3"
         Label3.Size = New Size(78, 20)
@@ -287,6 +296,7 @@ Partial Class Staff_Dashboard
         ' Label10
         ' 
         Label10.AutoSize = True
+        Label10.BackColor = Color.Fuchsia
         Label10.Location = New Point(346, 284)
         Label10.Name = "Label10"
         Label10.Size = New Size(86, 20)
@@ -296,6 +306,8 @@ Partial Class Staff_Dashboard
         ' Label11
         ' 
         Label11.AutoSize = True
+        Label11.BackColor = Color.Blue
+        Label11.ForeColor = SystemColors.ControlText
         Label11.Location = New Point(745, 284)
         Label11.Name = "Label11"
         Label11.Size = New Size(52, 20)
@@ -305,6 +317,7 @@ Partial Class Staff_Dashboard
         ' Label12
         ' 
         Label12.AutoSize = True
+        Label12.BackColor = Color.Lime
         Label12.Location = New Point(346, 478)
         Label12.Name = "Label12"
         Label12.Size = New Size(56, 20)
@@ -314,6 +327,7 @@ Partial Class Staff_Dashboard
         ' Label13
         ' 
         Label13.AutoSize = True
+        Label13.BackColor = Color.Red
         Label13.Location = New Point(745, 478)
         Label13.Name = "Label13"
         Label13.Size = New Size(121, 20)
@@ -341,11 +355,79 @@ Partial Class Staff_Dashboard
         Label5.TabIndex = 62
         Label5.Text = "Log Out"
         ' 
+        ' Label7
+        ' 
+        Label7.AutoSize = True
+        Label7.BackColor = Color.Cyan
+        Label7.Location = New Point(382, 148)
+        Label7.Name = "Label7"
+        Label7.Size = New Size(62, 20)
+        Label7.TabIndex = 63
+        Label7.Text = "datbase"
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
+        Label14.Location = New Point(804, 148)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(62, 20)
+        Label14.TabIndex = 64
+        Label14.Text = "datbase"
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.BackColor = Color.Blue
+        Label15.Location = New Point(804, 327)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(62, 20)
+        Label15.TabIndex = 65
+        Label15.Text = "datbase"
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.BackColor = Color.Fuchsia
+        Label16.Location = New Point(382, 327)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(62, 20)
+        Label16.TabIndex = 66
+        Label16.Text = "datbase"
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.BackColor = Color.Lime
+        Label17.Location = New Point(382, 535)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(62, 20)
+        Label17.TabIndex = 67
+        Label17.Text = "datbase"
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.BackColor = Color.Red
+        Label18.Location = New Point(804, 535)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(62, 20)
+        Label18.TabIndex = 68
+        Label18.Text = "datbase"
+        ' 
         ' Staff_Dashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
+        BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
+        BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1020, 684)
+        Controls.Add(Label18)
+        Controls.Add(Label17)
+        Controls.Add(Label16)
+        Controls.Add(Label15)
+        Controls.Add(Label14)
+        Controls.Add(Label7)
         Controls.Add(Label5)
         Controls.Add(Button14)
         Controls.Add(Label13)
@@ -410,4 +492,10 @@ Partial Class Staff_Dashboard
     Friend WithEvents Label13 As Label
     Friend WithEvents Button14 As Button
     Friend WithEvents Label5 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
 End Class

@@ -109,11 +109,12 @@ Partial Class PaymentForm
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Times New Roman", 25.8000011F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label1.BackColor = Color.Transparent
+        Label1.Font = New Font("Times New Roman", 27F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.HotTrack
         Label1.Location = New Point(209, 51)
         Label1.Name = "Label1"
-        Label1.Size = New Size(346, 51)
+        Label1.Size = New Size(356, 52)
         Label1.TabIndex = 0
         Label1.Text = "Booking Payment"
         ' 
@@ -126,6 +127,7 @@ Partial Class PaymentForm
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.BackColor = Color.Transparent
         GroupBox1.Controls.Add(Button1)
         GroupBox1.Controls.Add(TextBox1)
         GroupBox1.Controls.Add(Label22)
@@ -600,7 +602,7 @@ Partial Class PaymentForm
         Label29.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label29.Location = New Point(209, 91)
         Label29.Name = "Label29"
-        Label29.Size = New Size(1076, 28)
+        Label29.Size = New Size(1613, 38)
         Label29.TabIndex = 13
         Label29.Text = "_____________________________________________________________________________________________________________________________________"
         ' 
