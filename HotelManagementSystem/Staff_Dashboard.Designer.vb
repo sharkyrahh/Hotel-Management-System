@@ -22,6 +22,7 @@ Partial Class Staff_Dashboard
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Staff_Dashboard))
         Label2 = New Label()
         Label6 = New Label()
         Label4 = New Label()
@@ -49,7 +50,6 @@ Partial Class Staff_Dashboard
         Label11 = New Label()
         Label12 = New Label()
         Label13 = New Label()
-        Button13 = New Button()
         Button14 = New Button()
         Label5 = New Label()
         SuspendLayout()
@@ -70,7 +70,7 @@ Partial Class Staff_Dashboard
         Label6.AutoSize = True
         Label6.BackColor = Color.White
         Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(54, 638)
+        Label6.Location = New Point(54, 512)
         Label6.Name = "Label6"
         Label6.Size = New Size(53, 20)
         Label6.TabIndex = 40
@@ -85,7 +85,7 @@ Partial Class Staff_Dashboard
         Label4.Name = "Label4"
         Label4.Size = New Size(85, 20)
         Label4.TabIndex = 39
-        Label4.Text = "Homepage"
+        Label4.Text = "Dashboard"
         ' 
         ' Button_Home
         ' 
@@ -101,11 +101,11 @@ Partial Class Staff_Dashboard
         Label8.AutoSize = True
         Label8.BackColor = Color.White
         Label8.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(35, 372)
+        Label8.Location = New Point(29, 373)
         Label8.Name = "Label8"
-        Label8.Size = New Size(84, 20)
+        Label8.Size = New Size(103, 20)
         Label8.TabIndex = 37
-        Label8.Text = "Add Room"
+        Label8.Text = "Manage Staff"
         ' 
         ' Label9
         ' 
@@ -114,14 +114,14 @@ Partial Class Staff_Dashboard
         Label9.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label9.Location = New Point(29, 243)
         Label9.Name = "Label9"
-        Label9.Size = New Size(96, 20)
+        Label9.Size = New Size(118, 20)
         Label9.TabIndex = 36
-        Label9.Text = "View Rooms"
+        Label9.Text = "Manage Rooms"
         ' 
         ' Button_About
         ' 
         Button_About.Image = My.Resources.Resources.abouticon
-        Button_About.Location = New Point(1, 528)
+        Button_About.Location = New Point(1, 402)
         Button_About.Name = "Button_About"
         Button_About.Size = New Size(159, 137)
         Button_About.TabIndex = 34
@@ -129,6 +129,8 @@ Partial Class Staff_Dashboard
         ' 
         ' Button_Book
         ' 
+        Button_Book.BackgroundImage = CType(resources.GetObject("Button_Book.BackgroundImage"), Image)
+        Button_Book.BackgroundImageLayout = ImageLayout.Zoom
         Button_Book.Location = New Point(1, 269)
         Button_Book.Name = "Button_Book"
         Button_Book.Size = New Size(159, 137)
@@ -146,99 +148,123 @@ Partial Class Staff_Dashboard
         ' 
         ' Button1
         ' 
+        Button1.BackColor = Color.Cyan
         Button1.Location = New Point(181, 81)
         Button1.Name = "Button1"
         Button1.Size = New Size(349, 137)
         Button1.TabIndex = 42
-        Button1.UseVisualStyleBackColor = True
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
+        Button2.BackColor = Color.White
+        Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), Image)
+        Button2.BackgroundImageLayout = ImageLayout.Zoom
         Button2.Location = New Point(181, 81)
         Button2.Name = "Button2"
         Button2.Size = New Size(159, 137)
         Button2.TabIndex = 43
-        Button2.UseVisualStyleBackColor = True
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
+        Button3.BackColor = Color.WhiteSmoke
+        Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), Image)
+        Button3.BackgroundImageLayout = ImageLayout.Zoom
         Button3.Location = New Point(580, 81)
         Button3.Name = "Button3"
         Button3.Size = New Size(159, 137)
         Button3.TabIndex = 45
-        Button3.UseVisualStyleBackColor = True
+        Button3.UseVisualStyleBackColor = False
         ' 
         ' Button4
         ' 
+        Button4.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
         Button4.Location = New Point(580, 81)
         Button4.Name = "Button4"
         Button4.Size = New Size(349, 137)
         Button4.TabIndex = 44
-        Button4.UseVisualStyleBackColor = True
+        Button4.UseVisualStyleBackColor = False
         ' 
         ' Button5
         ' 
+        Button5.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
+        Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), Image)
+        Button5.BackgroundImageLayout = ImageLayout.Stretch
         Button5.Location = New Point(181, 269)
         Button5.Name = "Button5"
         Button5.Size = New Size(159, 137)
         Button5.TabIndex = 47
-        Button5.UseVisualStyleBackColor = True
+        Button5.UseVisualStyleBackColor = False
         ' 
         ' Button6
         ' 
+        Button6.BackColor = Color.Fuchsia
         Button6.Location = New Point(181, 269)
         Button6.Name = "Button6"
         Button6.Size = New Size(349, 137)
         Button6.TabIndex = 46
-        Button6.UseVisualStyleBackColor = True
+        Button6.UseVisualStyleBackColor = False
         ' 
         ' Button7
         ' 
+        Button7.BackColor = Color.Blue
+        Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), Image)
+        Button7.BackgroundImageLayout = ImageLayout.Stretch
         Button7.Location = New Point(580, 269)
         Button7.Name = "Button7"
         Button7.Size = New Size(159, 137)
         Button7.TabIndex = 49
-        Button7.UseVisualStyleBackColor = True
+        Button7.UseVisualStyleBackColor = False
         ' 
         ' Button8
         ' 
+        Button8.BackColor = Color.Blue
         Button8.Location = New Point(580, 269)
         Button8.Name = "Button8"
         Button8.Size = New Size(349, 137)
         Button8.TabIndex = 48
-        Button8.UseVisualStyleBackColor = True
+        Button8.UseVisualStyleBackColor = False
         ' 
         ' Button9
         ' 
+        Button9.BackColor = SystemColors.Window
+        Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), Image)
+        Button9.BackgroundImageLayout = ImageLayout.Zoom
         Button9.Location = New Point(181, 465)
         Button9.Name = "Button9"
         Button9.Size = New Size(159, 137)
         Button9.TabIndex = 51
-        Button9.UseVisualStyleBackColor = True
+        Button9.UseVisualStyleBackColor = False
         ' 
         ' Button10
         ' 
+        Button10.BackColor = Color.Lime
         Button10.Location = New Point(181, 465)
         Button10.Name = "Button10"
         Button10.Size = New Size(349, 137)
         Button10.TabIndex = 50
-        Button10.UseVisualStyleBackColor = True
+        Button10.UseVisualStyleBackColor = False
         ' 
         ' Button11
         ' 
+        Button11.BackColor = Color.White
+        Button11.BackgroundImage = CType(resources.GetObject("Button11.BackgroundImage"), Image)
+        Button11.BackgroundImageLayout = ImageLayout.Zoom
         Button11.Location = New Point(580, 465)
         Button11.Name = "Button11"
         Button11.Size = New Size(159, 137)
         Button11.TabIndex = 53
-        Button11.UseVisualStyleBackColor = True
+        Button11.UseVisualStyleBackColor = False
         ' 
         ' Button12
         ' 
+        Button12.BackColor = Color.Red
         Button12.Location = New Point(580, 465)
         Button12.Name = "Button12"
         Button12.Size = New Size(349, 137)
         Button12.TabIndex = 52
-        Button12.UseVisualStyleBackColor = True
+        Button12.UseVisualStyleBackColor = False
         ' 
         ' Label1
         ' 
@@ -294,18 +320,11 @@ Partial Class Staff_Dashboard
         Label13.TabIndex = 59
         Label13.Text = "Available Rooms"
         ' 
-        ' Button13
-        ' 
-        Button13.Location = New Point(779, 645)
-        Button13.Name = "Button13"
-        Button13.Size = New Size(150, 39)
-        Button13.TabIndex = 60
-        Button13.Text = "Log Out"
-        Button13.UseVisualStyleBackColor = True
-        ' 
         ' Button14
         ' 
-        Button14.Location = New Point(1, 395)
+        Button14.BackgroundImage = CType(resources.GetObject("Button14.BackgroundImage"), Image)
+        Button14.BackgroundImageLayout = ImageLayout.Zoom
+        Button14.Location = New Point(1, 535)
         Button14.Name = "Button14"
         Button14.Size = New Size(159, 137)
         Button14.TabIndex = 61
@@ -316,20 +335,19 @@ Partial Class Staff_Dashboard
         Label5.AutoSize = True
         Label5.BackColor = Color.White
         Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(35, 501)
+        Label5.Location = New Point(45, 648)
         Label5.Name = "Label5"
-        Label5.Size = New Size(100, 20)
+        Label5.Size = New Size(65, 20)
         Label5.TabIndex = 62
-        Label5.Text = "Delete Room"
+        Label5.Text = "Log Out"
         ' 
         ' Staff_Dashboard
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1020, 717)
+        ClientSize = New Size(1020, 684)
         Controls.Add(Label5)
         Controls.Add(Button14)
-        Controls.Add(Button13)
         Controls.Add(Label13)
         Controls.Add(Label12)
         Controls.Add(Label11)
@@ -390,7 +408,6 @@ Partial Class Staff_Dashboard
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents Button13 As Button
     Friend WithEvents Button14 As Button
     Friend WithEvents Label5 As Label
 End Class
