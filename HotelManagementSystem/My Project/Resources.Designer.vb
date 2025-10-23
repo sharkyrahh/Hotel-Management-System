@@ -59,6 +59,7 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+<<<<<<< Updated upstream
         
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
@@ -101,5 +102,7 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
+=======
+>>>>>>> Stashed changes
     End Module
 End Namespace
