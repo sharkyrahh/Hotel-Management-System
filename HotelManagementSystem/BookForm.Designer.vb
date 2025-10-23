@@ -50,7 +50,6 @@ Partial Class BookForm
         Panel_StandardAvail = New Panel()
         Label7 = New Label()
         CheckBox_Standard = New CheckBox()
-        Button_Back = New Button()
         Button_Next = New Button()
         Button_Prev = New Button()
         GroupBox_RoomNumber = New GroupBox()
@@ -76,6 +75,18 @@ Partial Class BookForm
         ComboBox1 = New ComboBox()
         Label9 = New Label()
         Label20 = New Label()
+        Label2 = New Label()
+        Label6 = New Label()
+        Label3 = New Label()
+        Label13 = New Label()
+        Button_Home = New Button()
+        Label14 = New Label()
+        Label15 = New Label()
+        Button_Login = New Button()
+        Button_About = New Button()
+        Button_CheckIn = New Button()
+        Button_Book = New Button()
+        Button_View = New Button()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         GroupBox3.SuspendLayout()
@@ -97,7 +108,7 @@ Partial Class BookForm
         Label1.AutoSize = True
         Label1.Font = New Font("Times New Roman", 40.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = SystemColors.Highlight
-        Label1.Location = New Point(33, 19)
+        Label1.Location = New Point(222, 28)
         Label1.Name = "Label1"
         Label1.Size = New Size(414, 75)
         Label1.TabIndex = 0
@@ -108,7 +119,7 @@ Partial Class BookForm
         GroupBox1.BackColor = SystemColors.GradientInactiveCaption
         GroupBox1.Controls.Add(Label_RoomDesc)
         GroupBox1.Controls.Add(Label_RoomType)
-        GroupBox1.Location = New Point(841, 97)
+        GroupBox1.Location = New Point(1030, 106)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(250, 215)
         GroupBox1.TabIndex = 2
@@ -147,7 +158,7 @@ Partial Class BookForm
         GroupBox2.Controls.Add(Label5)
         GroupBox2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox2.ForeColor = SystemColors.HotTrack
-        GroupBox2.Location = New Point(425, 329)
+        GroupBox2.Location = New Point(614, 338)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(366, 206)
         GroupBox2.TabIndex = 3
@@ -211,7 +222,7 @@ Partial Class BookForm
         GroupBox3.Controls.Add(Label_Total)
         GroupBox3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox3.ForeColor = SystemColors.MenuHighlight
-        GroupBox3.Location = New Point(425, 558)
+        GroupBox3.Location = New Point(614, 567)
         GroupBox3.Name = "GroupBox3"
         GroupBox3.Size = New Size(666, 107)
         GroupBox3.TabIndex = 4
@@ -245,7 +256,7 @@ Partial Class BookForm
         Button1.BackColor = SystemColors.GradientInactiveCaption
         Button1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button1.ForeColor = SystemColors.HotTrack
-        Button1.Location = New Point(841, 693)
+        Button1.Location = New Point(1030, 702)
         Button1.Name = "Button1"
         Button1.Size = New Size(250, 55)
         Button1.TabIndex = 5
@@ -260,7 +271,7 @@ Partial Class BookForm
         GroupBox_Rooms.Controls.Add(Panel_StandardAvail)
         GroupBox_Rooms.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox_Rooms.ForeColor = SystemColors.HotTrack
-        GroupBox_Rooms.Location = New Point(65, 483)
+        GroupBox_Rooms.Location = New Point(254, 492)
         GroupBox_Rooms.Name = "GroupBox_Rooms"
         GroupBox_Rooms.Size = New Size(341, 265)
         GroupBox_Rooms.TabIndex = 3
@@ -380,24 +391,12 @@ Partial Class BookForm
         CheckBox_Standard.TabIndex = 0
         CheckBox_Standard.UseVisualStyleBackColor = True
         ' 
-        ' Button_Back
-        ' 
-        Button_Back.BackColor = SystemColors.GradientInactiveCaption
-        Button_Back.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button_Back.ForeColor = SystemColors.HotTrack
-        Button_Back.Location = New Point(585, 693)
-        Button_Back.Name = "Button_Back"
-        Button_Back.Size = New Size(250, 55)
-        Button_Back.TabIndex = 6
-        Button_Back.Text = "BACK"
-        Button_Back.UseVisualStyleBackColor = False
-        ' 
         ' Button_Next
         ' 
         Button_Next.BackColor = SystemColors.GradientInactiveCaption
         Button_Next.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button_Next.ForeColor = SystemColors.HotTrack
-        Button_Next.Location = New Point(763, 182)
+        Button_Next.Location = New Point(952, 191)
         Button_Next.Name = "Button_Next"
         Button_Next.Size = New Size(50, 55)
         Button_Next.TabIndex = 7
@@ -409,7 +408,7 @@ Partial Class BookForm
         Button_Prev.BackColor = SystemColors.GradientInactiveCaption
         Button_Prev.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Button_Prev.ForeColor = SystemColors.HotTrack
-        Button_Prev.Location = New Point(23, 182)
+        Button_Prev.Location = New Point(212, 191)
         Button_Prev.Name = "Button_Prev"
         Button_Prev.Size = New Size(50, 55)
         Button_Prev.TabIndex = 8
@@ -425,7 +424,7 @@ Partial Class BookForm
         GroupBox_RoomNumber.Controls.Add(Panel_Standard)
         GroupBox_RoomNumber.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox_RoomNumber.ForeColor = SystemColors.HotTrack
-        GroupBox_RoomNumber.Location = New Point(809, 329)
+        GroupBox_RoomNumber.Location = New Point(998, 338)
         GroupBox_RoomNumber.Name = "GroupBox_RoomNumber"
         GroupBox_RoomNumber.Size = New Size(282, 206)
         GroupBox_RoomNumber.TabIndex = 8
@@ -551,7 +550,7 @@ Partial Class BookForm
         GroupBox6.Controls.Add(Label20)
         GroupBox6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox6.ForeColor = SystemColors.HotTrack
-        GroupBox6.Location = New Point(65, 329)
+        GroupBox6.Location = New Point(254, 338)
         GroupBox6.Name = "GroupBox6"
         GroupBox6.Size = New Size(341, 147)
         GroupBox6.TabIndex = 8
@@ -642,16 +641,147 @@ Partial Class BookForm
         Label20.TabIndex = 0
         Label20.Text = "From"
         ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.BackColor = Color.White
+        Label2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label2.Location = New Point(26, 769)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(99, 20)
+        Label2.TabIndex = 37
+        Label2.Text = "Admin Login"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.BackColor = Color.White
+        Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.Location = New Point(49, 641)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(53, 20)
+        Label6.TabIndex = 36
+        Label6.Text = "About"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.BackColor = Color.White
+        Label3.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label3.Location = New Point(34, 99)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(85, 20)
+        Label3.TabIndex = 35
+        Label3.Text = "Homepage"
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.BackColor = Color.White
+        Label13.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label13.Location = New Point(22, 510)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(109, 20)
+        Label13.TabIndex = 34
+        Label13.Text = "Check In / Out"
+        ' 
+        ' Button_Home
+        ' 
+        Button_Home.BackgroundImage = My.Resources.Resources.homeicon
+        Button_Home.Location = New Point(0, -1)
+        Button_Home.Name = "Button_Home"
+        Button_Home.Size = New Size(159, 137)
+        Button_Home.TabIndex = 26
+        Button_Home.UseVisualStyleBackColor = True
+        ' 
+        ' Label14
+        ' 
+        Label14.AutoSize = True
+        Label14.BackColor = Color.White
+        Label14.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label14.Location = New Point(24, 367)
+        Label14.Name = "Label14"
+        Label14.Size = New Size(103, 20)
+        Label14.TabIndex = 33
+        Label14.Text = "Book a Room"
+        ' 
+        ' Label15
+        ' 
+        Label15.AutoSize = True
+        Label15.BackColor = Color.White
+        Label15.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label15.Location = New Point(28, 243)
+        Label15.Name = "Label15"
+        Label15.Size = New Size(96, 20)
+        Label15.TabIndex = 32
+        Label15.Text = "View Rooms"
+        ' 
+        ' Button_Login
+        ' 
+        Button_Login.BackgroundImage = My.Resources.Resources.loginicon__1_
+        Button_Login.Location = New Point(0, 669)
+        Button_Login.Name = "Button_Login"
+        Button_Login.Size = New Size(159, 137)
+        Button_Login.TabIndex = 31
+        Button_Login.UseVisualStyleBackColor = True
+        ' 
+        ' Button_About
+        ' 
+        Button_About.BackgroundImage = My.Resources.Resources.abouticon
+        Button_About.Location = New Point(0, 538)
+        Button_About.Name = "Button_About"
+        Button_About.Size = New Size(159, 137)
+        Button_About.TabIndex = 30
+        Button_About.UseVisualStyleBackColor = True
+        ' 
+        ' Button_CheckIn
+        ' 
+        Button_CheckIn.BackgroundImage = My.Resources.Resources.checkinicon
+        Button_CheckIn.Location = New Point(0, 404)
+        Button_CheckIn.Name = "Button_CheckIn"
+        Button_CheckIn.Size = New Size(159, 137)
+        Button_CheckIn.TabIndex = 29
+        Button_CheckIn.UseVisualStyleBackColor = True
+        ' 
+        ' Button_Book
+        ' 
+        Button_Book.BackgroundImage = My.Resources.Resources.roomicon
+        Button_Book.Location = New Point(0, 269)
+        Button_Book.Name = "Button_Book"
+        Button_Book.Size = New Size(159, 137)
+        Button_Book.TabIndex = 27
+        Button_Book.UseVisualStyleBackColor = True
+        ' 
+        ' Button_View
+        ' 
+        Button_View.BackgroundImage = My.Resources.Resources.viewroomicon
+        Button_View.Location = New Point(0, 134)
+        Button_View.Name = "Button_View"
+        Button_View.Size = New Size(159, 137)
+        Button_View.TabIndex = 28
+        Button_View.UseVisualStyleBackColor = True
+        ' 
         ' BookForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1134, 770)
+        ClientSize = New Size(1303, 806)
+        Controls.Add(Label2)
+        Controls.Add(Label6)
+        Controls.Add(Label3)
+        Controls.Add(Label13)
+        Controls.Add(Button_Home)
+        Controls.Add(Label14)
+        Controls.Add(Label15)
+        Controls.Add(Button_Login)
+        Controls.Add(Button_About)
+        Controls.Add(Button_CheckIn)
+        Controls.Add(Button_Book)
+        Controls.Add(Button_View)
         Controls.Add(GroupBox6)
         Controls.Add(GroupBox_RoomNumber)
         Controls.Add(Button_Prev)
         Controls.Add(Button_Next)
-        Controls.Add(Button_Back)
         Controls.Add(GroupBox_Rooms)
         Controls.Add(Button1)
         Controls.Add(GroupBox3)
@@ -705,7 +835,6 @@ Partial Class BookForm
     Friend WithEvents Label8 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox_Rooms As GroupBox
-    Friend WithEvents Button_Back As Button
     Friend WithEvents Button_Next As Button
     Friend WithEvents Button_Prev As Button
     Friend WithEvents Panel_DeluxeAvail As Panel
@@ -745,4 +874,16 @@ Partial Class BookForm
     Friend WithEvents Panel_Deluxe As Panel
     Friend WithEvents Label_Deluxe As Label
     Friend WithEvents TextBox_Deluxe As TextBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label13 As Label
+    Friend WithEvents Button_Home As Button
+    Friend WithEvents Label14 As Label
+    Friend WithEvents Label15 As Label
+    Friend WithEvents Button_Login As Button
+    Friend WithEvents Button_About As Button
+    Friend WithEvents Button_CheckIn As Button
+    Friend WithEvents Button_Book As Button
+    Friend WithEvents Button_View As Button
 End Class
