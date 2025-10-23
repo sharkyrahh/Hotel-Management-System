@@ -61,6 +61,7 @@ Namespace My.Resources
         End Property
 
 
+
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
@@ -186,5 +187,6 @@ Namespace My.Resources
                 Return CType(obj, System.Drawing.Bitmap)
             End Get
         End Property
+
     End Module
 End Namespace
