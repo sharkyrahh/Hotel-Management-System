@@ -93,6 +93,16 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property download__10_() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("download (10)", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property download__8_() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("download (8)", resourceCulture)
@@ -106,6 +116,16 @@ Namespace My.Resources
         Friend ReadOnly Property Dreamstime_com() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Dreamstime_com", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Enhance_Your_Production_Capabilities_with_Staff_Augmentation_Services() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Enhance Your Production Capabilities with Staff Augmentation Services", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
@@ -136,6 +156,17 @@ Namespace My.Resources
         Friend ReadOnly Property loginicon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("loginicon", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Pin_by_Esmeralda_on_TRABAJOS_DEPORTE_Y_SALUD___Love_background_images__Wrinkled_paper_background__Paper_background() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Pin by Esmeralda on TRABAJOS DEPORTE Y SALUD _ Love background images, Wrinkled p"& _ 
+                        "aper background, Paper background", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
