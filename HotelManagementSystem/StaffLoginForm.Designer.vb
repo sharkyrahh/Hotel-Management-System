@@ -25,7 +25,7 @@ Private components As System.ComponentModel.IContainer
         Dim GroupBox1 As GroupBox
         TextBox2 = New TextBox()
         Label2 = New Label()
-        Button2 = New Button()
+        Button_login2 = New Button()
         TextBox1 = New TextBox()
         Label3 = New Label()
         Label1 = New Label()
@@ -50,7 +50,7 @@ Private components As System.ComponentModel.IContainer
         GroupBox1.BackColor = SystemColors.ButtonHighlight
         GroupBox1.Controls.Add(TextBox2)
         GroupBox1.Controls.Add(Label2)
-        GroupBox1.Controls.Add(Button2)
+        GroupBox1.Controls.Add(Button_login2)
         GroupBox1.Controls.Add(TextBox1)
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Location = New Point(395, 254)
@@ -77,14 +77,14 @@ Private components As System.ComponentModel.IContainer
         Label2.TabIndex = 1
         Label2.Text = "Username"
         ' 
-        ' Button2
+        ' Button_login2
         ' 
-        Button2.Location = New Point(518, 295)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(182, 67)
-        Button2.TabIndex = 6
-        Button2.Text = "Login"
-        Button2.UseVisualStyleBackColor = True
+        Button_login2.Location = New Point(518, 295)
+        Button_login2.Name = "Button_login2"
+        Button_login2.Size = New Size(182, 67)
+        Button_login2.TabIndex = 6
+        Button_login2.Text = "Login"
+        Button_login2.UseVisualStyleBackColor = True
         ' 
         ' TextBox1
         ' 
@@ -268,7 +268,7 @@ Private components As System.ComponentModel.IContainer
 Friend WithEvents Label2 As Label
 Friend WithEvents Label3 As Label
 Friend WithEvents TextBox1 As TextBox
-Friend WithEvents Button2 As Button
+Friend WithEvents Button_login2 As Button
 Friend WithEvents GroupBox1 As GroupBox
 Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label7 As Label
