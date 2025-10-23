@@ -24,14 +24,8 @@ Partial Class CheckIn
     Private Sub InitializeComponent()
         Label2 = New Label()
         GroupBox1 = New GroupBox()
-        TextBox10 = New TextBox()
-        TextBox2 = New TextBox()
         TextBox1 = New TextBox()
         Label3 = New Label()
-        Label4 = New Label()
-        TextBox6 = New TextBox()
-        Label10 = New Label()
-        Label5 = New Label()
         Label8 = New Label()
         Label11 = New Label()
         Label12 = New Label()
@@ -40,9 +34,6 @@ Partial Class CheckIn
         NumericUpDown1 = New NumericUpDown()
         DateTimePicker1 = New DateTimePicker()
         Button1 = New Button()
-        RadioButton1 = New RadioButton()
-        RadioButton2 = New RadioButton()
-        Label1 = New Label()
         GroupBox3 = New GroupBox()
         Label6 = New Label()
         ComboBox1 = New ComboBox()
@@ -55,6 +46,9 @@ Partial Class CheckIn
         Button2 = New Button()
         Button3 = New Button()
         Button4 = New Button()
+        Label1 = New Label()
+        ComboBox3 = New ComboBox()
+        Button5 = New Button()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         CType(NumericUpDown1, ComponentModel.ISupportInitialize).BeginInit()
@@ -64,52 +58,31 @@ Partial Class CheckIn
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.Font = New Font("Cambria", 17F)
+        Label2.ForeColor = SystemColors.MenuHighlight
         Label2.Location = New Point(357, 9)
         Label2.Name = "Label2"
-        Label2.Size = New Size(183, 20)
+        Label2.Size = New Size(350, 34)
         Label2.TabIndex = 2
-        Label2.Text = "Hotel Checkin Information"
+        Label2.Text = "Hotel Check-In Information"
         ' 
         ' GroupBox1
         ' 
-        GroupBox1.Controls.Add(Label1)
-        GroupBox1.Controls.Add(RadioButton2)
-        GroupBox1.Controls.Add(RadioButton1)
         GroupBox1.Controls.Add(Button1)
-        GroupBox1.Controls.Add(TextBox2)
-        GroupBox1.Controls.Add(TextBox10)
         GroupBox1.Controls.Add(TextBox1)
         GroupBox1.Controls.Add(Label3)
-        GroupBox1.Controls.Add(Label4)
-        GroupBox1.Controls.Add(TextBox6)
-        GroupBox1.Controls.Add(Label10)
-        GroupBox1.Controls.Add(Label5)
         GroupBox1.Location = New Point(26, 63)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(393, 414)
+        GroupBox1.Size = New Size(449, 156)
         GroupBox1.TabIndex = 3
         GroupBox1.TabStop = False
         GroupBox1.Text = "Guest Info"
-        ' 
-        ' TextBox10
-        ' 
-        TextBox10.Location = New Point(117, 253)
-        TextBox10.Name = "TextBox10"
-        TextBox10.Size = New Size(251, 27)
-        TextBox10.TabIndex = 21
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Location = New Point(117, 186)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(251, 27)
-        TextBox2.TabIndex = 7
         ' 
         ' TextBox1
         ' 
         TextBox1.Location = New Point(117, 42)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(251, 27)
+        TextBox1.Size = New Size(300, 27)
         TextBox1.TabIndex = 6
         ' 
         ' Label3
@@ -120,40 +93,6 @@ Partial Class CheckIn
         Label3.Size = New Size(63, 20)
         Label3.TabIndex = 4
         Label3.Text = "Guest IC"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(19, 256)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(63, 40)
-        Label4.TabIndex = 5
-        Label4.Text = "Phone " & vbCrLf & "Number"
-        ' 
-        ' TextBox6
-        ' 
-        TextBox6.Location = New Point(117, 118)
-        TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(251, 27)
-        TextBox6.TabIndex = 17
-        ' 
-        ' Label10
-        ' 
-        Label10.AutoSize = True
-        Label10.Location = New Point(21, 118)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(90, 20)
-        Label10.TabIndex = 11
-        Label10.Text = "Guest Name"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Location = New Point(21, 186)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(46, 20)
-        Label5.TabIndex = 6
-        Label5.Text = "Email"
         ' 
         ' Label8
         ' 
@@ -190,7 +129,7 @@ Partial Class CheckIn
         GroupBox2.Controls.Add(Label12)
         GroupBox2.Controls.Add(Label8)
         GroupBox2.Controls.Add(Label11)
-        GroupBox2.Location = New Point(478, 75)
+        GroupBox2.Location = New Point(26, 254)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(449, 211)
         GroupBox2.TabIndex = 19
@@ -220,53 +159,25 @@ Partial Class CheckIn
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(293, 379)
+        Button1.Location = New Point(166, 107)
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 29)
         Button1.TabIndex = 22
         Button1.Text = "Check"
         Button1.UseVisualStyleBackColor = True
         ' 
-        ' RadioButton1
-        ' 
-        RadioButton1.AutoSize = True
-        RadioButton1.Location = New Point(117, 379)
-        RadioButton1.Name = "RadioButton1"
-        RadioButton1.Size = New Size(78, 24)
-        RadioButton1.TabIndex = 23
-        RadioButton1.TabStop = True
-        RadioButton1.Text = "Female"
-        RadioButton1.UseVisualStyleBackColor = True
-        ' 
-        ' RadioButton2
-        ' 
-        RadioButton2.AutoSize = True
-        RadioButton2.Location = New Point(117, 330)
-        RadioButton2.Name = "RadioButton2"
-        RadioButton2.Size = New Size(63, 24)
-        RadioButton2.TabIndex = 24
-        RadioButton2.TabStop = True
-        RadioButton2.Text = "Male"
-        RadioButton2.UseVisualStyleBackColor = True
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(29, 334)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(57, 20)
-        Label1.TabIndex = 25
-        Label1.Text = "Gender"
-        ' 
         ' GroupBox3
         ' 
+        GroupBox3.Controls.Add(Button5)
+        GroupBox3.Controls.Add(ComboBox3)
+        GroupBox3.Controls.Add(Label1)
         GroupBox3.Controls.Add(Label7)
         GroupBox3.Controls.Add(ComboBox2)
         GroupBox3.Controls.Add(ComboBox1)
         GroupBox3.Controls.Add(Label6)
-        GroupBox3.Location = New Point(478, 310)
+        GroupBox3.Location = New Point(521, 63)
         GroupBox3.Name = "GroupBox3"
-        GroupBox3.Size = New Size(449, 161)
+        GroupBox3.Size = New Size(449, 248)
         GroupBox3.TabIndex = 20
         GroupBox3.TabStop = False
         GroupBox3.Text = "Room Information"
@@ -310,7 +221,7 @@ Partial Class CheckIn
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Location = New Point(354, 507)
+        Label9.Location = New Point(558, 327)
         Label9.Name = "Label9"
         Label9.Size = New Size(65, 20)
         Label9.TabIndex = 21
@@ -319,7 +230,7 @@ Partial Class CheckIn
         ' Label13
         ' 
         Label13.AutoSize = True
-        Label13.Location = New Point(449, 507)
+        Label13.Location = New Point(653, 327)
         Label13.Name = "Label13"
         Label13.Size = New Size(116, 20)
         Label13.TabIndex = 22
@@ -328,7 +239,7 @@ Partial Class CheckIn
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Location = New Point(354, 551)
+        Label14.Location = New Point(558, 371)
         Label14.Name = "Label14"
         Label14.Size = New Size(45, 20)
         Label14.TabIndex = 23
@@ -337,7 +248,7 @@ Partial Class CheckIn
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Location = New Point(449, 551)
+        Label15.Location = New Point(653, 371)
         Label15.Name = "Label15"
         Label15.Size = New Size(116, 20)
         Label15.TabIndex = 24
@@ -370,6 +281,33 @@ Partial Class CheckIn
         Button4.Text = "Back"
         Button4.UseVisualStyleBackColor = True
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(37, 161)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(147, 20)
+        Label1.TabIndex = 4
+        Label1.Text = "Change Room Status"
+        ' 
+        ' ComboBox3
+        ' 
+        ComboBox3.FormattingEnabled = True
+        ComboBox3.Items.AddRange(New Object() {"Reserved", "Unavailable", "Booked"})
+        ComboBox3.Location = New Point(209, 158)
+        ComboBox3.Name = "ComboBox3"
+        ComboBox3.Size = New Size(176, 28)
+        ComboBox3.TabIndex = 5
+        ' 
+        ' Button5
+        ' 
+        Button5.Location = New Point(315, 204)
+        Button5.Name = "Button5"
+        Button5.Size = New Size(128, 29)
+        Button5.TabIndex = 6
+        Button5.Text = "Update Status"
+        Button5.UseVisualStyleBackColor = True
+        ' 
         ' CheckIn
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -387,7 +325,6 @@ Partial Class CheckIn
         Controls.Add(GroupBox1)
         Controls.Add(Label2)
         Name = "CheckIn"
-        Text = "CheckIn"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         GroupBox2.ResumeLayout(False)
@@ -401,23 +338,14 @@ Partial Class CheckIn
     Friend WithEvents Label2 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
-    Friend WithEvents TextBox10 As TextBox
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox6 As TextBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents DateTimePicker2 As DateTimePicker
     Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents Label1 As Label
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents ComboBox2 As ComboBox
@@ -431,4 +359,7 @@ Partial Class CheckIn
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Button5 As Button
 End Class
