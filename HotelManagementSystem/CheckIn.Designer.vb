@@ -230,7 +230,7 @@ Partial Class CheckIn
         ' ComboBox2
         ' 
         ComboBox2.FormattingEnabled = True
-        ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21"})
+        ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
         ComboBox2.Location = New Point(185, 105)
         ComboBox2.Name = "ComboBox2"
         ComboBox2.Size = New Size(176, 30)
@@ -239,7 +239,7 @@ Partial Class CheckIn
         ' ComboBox1
         ' 
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"Deluxe", "Twin", "Single"})
+        ComboBox1.Items.AddRange(New Object() {"Deluxe", "Twin", "Single", "Standard"})
         ComboBox1.Location = New Point(184, 44)
         ComboBox1.Name = "ComboBox1"
         ComboBox1.Size = New Size(177, 30)
