@@ -15,6 +15,11 @@ Public Class Form1
         Me.Hide()
     End Sub
 
+    Private Sub Button_View_Click(sender As Object, e As EventArgs) Handles Button_View.Click
+        ViewForm.Show()
+        Me.Hide()
+    End Sub
+
     Private Sub Button_sql_Click(sender As Object, e As EventArgs) Handles Button_sql.Click
         conn = New MySqlConnection
         conn.ConnectionString = "server=localhost;userid=root;password='';database=hoteldb"
@@ -27,5 +32,16 @@ Public Class Form1
             MsgBox(ex.Message)
             conn.Close()
         End Try
+
+
+    End Sub
+
+    Private Sub Button_About_Click(sender As Object, e As EventArgs) Handles Button_About.Click
+        AboutBox1.Show()
+    End Sub
+
+    Private Sub Button_CheckIn_Click(sender As Object, e As EventArgs) Handles Button_CheckIn.Click
+        CheckIn.Show()
+        Me.Hide()
     End Sub
 End Class

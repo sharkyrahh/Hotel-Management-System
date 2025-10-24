@@ -23,283 +23,242 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
-        Label1 = New Label()
-        Label2 = New Label()
-        Label3 = New Label()
-        Label4 = New Label()
-        GroupBox1 = New GroupBox()
+        Label10 = New Label()
         Button2 = New Button()
-        Button1 = New Button()
         GroupBox2 = New GroupBox()
-        CheckBox4 = New CheckBox()
-        CheckBox3 = New CheckBox()
-        CheckBox2 = New CheckBox()
-        CheckBox1 = New CheckBox()
-        ComboBox6 = New ComboBox()
-        Label8 = New Label()
+        TextBox6 = New TextBox()
         Label7 = New Label()
-        ComboBox5 = New ComboBox()
+        TextBox5 = New TextBox()
         Label6 = New Label()
-        ComboBox4 = New ComboBox()
+        TextBox4 = New TextBox()
+        Button1 = New Button()
+        GroupBox1 = New GroupBox()
         Label5 = New Label()
-        ComboBox3 = New ComboBox()
+        Label2 = New Label()
+        Label1 = New Label()
         ComboBox2 = New ComboBox()
         ComboBox1 = New ComboBox()
-        GroupBox1.SuspendLayout()
+        Label3 = New Label()
+        ComboBox3 = New ComboBox()
+        Button4 = New Button()
+        Button3 = New Button()
+        Label4 = New Label()
+        ComboBox4 = New ComboBox()
         GroupBox2.SuspendLayout()
+        GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
-        ' Label1
+        ' Label10
         ' 
-        Label1.AutoSize = True
-        Label1.BackColor = Color.Moccasin
-        Label1.Font = New Font("Segoe UI", 20F)
-        Label1.ForeColor = SystemColors.ActiveCaptionText
-        Label1.Location = New Point(190, 0)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(179, 46)
-        Label1.TabIndex = 0
-        Label1.Text = "Add Room"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Coral
-        Label2.Font = New Font("Segoe UI", 12F)
-        Label2.Location = New Point(10, 205)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(99, 28)
-        Label2.TabIndex = 1
-        Label2.Text = "No.of Bed"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.BackColor = Color.Coral
-        Label3.Font = New Font("Segoe UI", 12F)
-        Label3.Location = New Point(488, 57)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(88, 28)
-        Label3.TabIndex = 3
-        Label3.Text = "Room ID"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.BackColor = Color.Coral
-        Label4.Font = New Font("Segoe UI", 12F)
-        Label4.Location = New Point(6, 57)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(110, 28)
-        Label4.TabIndex = 4
-        Label4.Text = "Room Type"
-        ' 
-        ' GroupBox1
-        ' 
-        GroupBox1.BackgroundImage = CType(resources.GetObject("GroupBox1.BackgroundImage"), Image)
-        GroupBox1.Controls.Add(Button2)
-        GroupBox1.Controls.Add(Button1)
-        GroupBox1.Controls.Add(GroupBox2)
-        GroupBox1.Controls.Add(ComboBox6)
-        GroupBox1.Controls.Add(Label8)
-        GroupBox1.Controls.Add(Label7)
-        GroupBox1.Controls.Add(ComboBox5)
-        GroupBox1.Controls.Add(Label6)
-        GroupBox1.Controls.Add(ComboBox4)
-        GroupBox1.Controls.Add(Label5)
-        GroupBox1.Controls.Add(ComboBox3)
-        GroupBox1.Controls.Add(ComboBox2)
-        GroupBox1.Controls.Add(ComboBox1)
-        GroupBox1.Controls.Add(Label2)
-        GroupBox1.Controls.Add(Label4)
-        GroupBox1.Controls.Add(Label1)
-        GroupBox1.Controls.Add(Label3)
-        GroupBox1.Location = New Point(237, 12)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(582, 646)
-        GroupBox1.TabIndex = 7
-        GroupBox1.TabStop = False
+        Label10.AutoSize = True
+        Label10.Location = New Point(27, 56)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(86, 22)
+        Label10.TabIndex = 23
+        Label10.Text = "Room ID"
         ' 
         ' Button2
         ' 
-        Button2.BackColor = Color.IndianRed
-        Button2.Location = New Point(347, 507)
+        Button2.Location = New Point(140, 150)
         Button2.Name = "Button2"
         Button2.Size = New Size(94, 29)
-        Button2.TabIndex = 18
-        Button2.Text = "Clear"
-        Button2.UseVisualStyleBackColor = False
-        ' 
-        ' Button1
-        ' 
-        Button1.BackColor = Color.LimeGreen
-        Button1.ForeColor = SystemColors.ActiveCaptionText
-        Button1.Location = New Point(105, 507)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
-        Button1.TabIndex = 17
-        Button1.Text = "save"
-        Button1.UseVisualStyleBackColor = False
+        Button2.TabIndex = 22
+        Button2.Text = "Delete"
+        Button2.UseVisualStyleBackColor = True
         ' 
         ' GroupBox2
         ' 
-        GroupBox2.BackColor = Color.SeaShell
-        GroupBox2.Controls.Add(CheckBox4)
-        GroupBox2.Controls.Add(CheckBox3)
-        GroupBox2.Controls.Add(CheckBox2)
-        GroupBox2.Controls.Add(CheckBox1)
-        GroupBox2.Location = New Point(154, 308)
+        GroupBox2.BackColor = Color.Transparent
+        GroupBox2.Controls.Add(ComboBox4)
+        GroupBox2.Controls.Add(Label4)
+        GroupBox2.Controls.Add(ComboBox3)
+        GroupBox2.Controls.Add(Label10)
+        GroupBox2.Controls.Add(Button2)
+        GroupBox2.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        GroupBox2.ForeColor = SystemColors.ControlText
+        GroupBox2.Location = New Point(534, 141)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(252, 125)
-        GroupBox2.TabIndex = 16
+        GroupBox2.Size = New Size(428, 207)
+        GroupBox2.TabIndex = 33
         GroupBox2.TabStop = False
-        GroupBox2.Text = "Amenities & Features"
+        GroupBox2.Text = "Remove Room"
         ' 
-        ' CheckBox4
+        ' TextBox6
         ' 
-        CheckBox4.AutoSize = True
-        CheckBox4.ForeColor = SystemColors.ActiveCaptionText
-        CheckBox4.Location = New Point(128, 68)
-        CheckBox4.Name = "CheckBox4"
-        CheckBox4.Size = New Size(120, 24)
-        CheckBox4.TabIndex = 3
-        CheckBox4.Text = "Coffee Maker"
-        CheckBox4.UseVisualStyleBackColor = True
-        ' 
-        ' CheckBox3
-        ' 
-        CheckBox3.AutoSize = True
-        CheckBox3.ForeColor = SystemColors.ActiveCaptionText
-        CheckBox3.Location = New Point(128, 38)
-        CheckBox3.Name = "CheckBox3"
-        CheckBox3.Size = New Size(95, 24)
-        CheckBox3.TabIndex = 2
-        CheckBox3.Text = "Smart TV "
-        CheckBox3.UseVisualStyleBackColor = True
-        ' 
-        ' CheckBox2
-        ' 
-        CheckBox2.AutoSize = True
-        CheckBox2.ForeColor = SystemColors.ActiveCaptionText
-        CheckBox2.Location = New Point(7, 65)
-        CheckBox2.Name = "CheckBox2"
-        CheckBox2.Size = New Size(91, 24)
-        CheckBox2.TabIndex = 1
-        CheckBox2.Text = "Sea View"
-        CheckBox2.UseVisualStyleBackColor = True
-        ' 
-        ' CheckBox1
-        ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.ForeColor = SystemColors.ActiveCaptionText
-        CheckBox1.Location = New Point(6, 35)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(87, 24)
-        CheckBox1.TabIndex = 0
-        CheckBox1.Text = "Balcony "
-        CheckBox1.UseVisualStyleBackColor = True
-        ' 
-        ' ComboBox6
-        ' 
-        ComboBox6.AutoCompleteCustomSource.AddRange(New String() {"Standard Room", "Deluxe Room", "Twin Room", "Single Room"})
-        ComboBox6.BackColor = Color.MistyRose
-        ComboBox6.FormattingEnabled = True
-        ComboBox6.Location = New Point(398, 159)
-        ComboBox6.Name = "ComboBox6"
-        ComboBox6.Size = New Size(184, 28)
-        ComboBox6.TabIndex = 15
-        ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.BackColor = Color.Coral
-        Label8.Font = New Font("Segoe UI", 12F)
-        Label8.Location = New Point(464, 128)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(112, 28)
-        Label8.TabIndex = 14
-        Label8.Text = "Room price"
+        TextBox6.Location = New Point(181, 260)
+        TextBox6.Name = "TextBox6"
+        TextBox6.Size = New Size(176, 29)
+        TextBox6.TabIndex = 30
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.BackColor = Color.Coral
-        Label7.Font = New Font("Segoe UI", 15F)
-        Label7.Location = New Point(288, 243)
+        Label7.Location = New Point(21, 260)
         Label7.Name = "Label7"
-        Label7.Size = New Size(0, 35)
-        Label7.TabIndex = 13
+        Label7.Size = New Size(57, 22)
+        Label7.TabIndex = 29
+        Label7.Text = "Rules"
         ' 
-        ' ComboBox5
+        ' TextBox5
         ' 
-        ComboBox5.AutoCompleteCustomSource.AddRange(New String() {"1", "2", "3", "4", "5", "6"})
-        ComboBox5.BackColor = Color.MistyRose
-        ComboBox5.FormattingEnabled = True
-        ComboBox5.Location = New Point(6, 159)
-        ComboBox5.Name = "ComboBox5"
-        ComboBox5.Size = New Size(190, 28)
-        ComboBox5.TabIndex = 12
+        TextBox5.Location = New Point(181, 203)
+        TextBox5.Name = "TextBox5"
+        TextBox5.Size = New Size(176, 29)
+        TextBox5.TabIndex = 28
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.BackColor = Color.Coral
-        Label6.Font = New Font("Segoe UI", 12F)
-        Label6.Location = New Point(6, 128)
+        Label6.Location = New Point(21, 206)
         Label6.Name = "Label6"
-        Label6.Size = New Size(125, 28)
-        Label6.TabIndex = 11
-        Label6.Text = "No.of People"
+        Label6.Size = New Size(119, 22)
+        Label6.TabIndex = 27
+        Label6.Text = "Num of Beds"
         ' 
-        ' ComboBox4
+        ' TextBox4
         ' 
-        ComboBox4.AutoCompleteCustomSource.AddRange(New String() {"Non-Smoking Room ", "No Parties or Excessive Noise", "Registered Guests Only", "No Pets Allowed", "No Cooking or Incense Burning"})
-        ComboBox4.BackColor = Color.MistyRose
-        ComboBox4.FormattingEnabled = True
-        ComboBox4.Location = New Point(417, 236)
-        ComboBox4.Name = "ComboBox4"
-        ComboBox4.Size = New Size(184, 28)
-        ComboBox4.TabIndex = 10
+        TextBox4.Location = New Point(181, 157)
+        TextBox4.Name = "TextBox4"
+        TextBox4.Size = New Size(177, 29)
+        TextBox4.TabIndex = 26
+        ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(181, 333)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(94, 29)
+        Button1.TabIndex = 22
+        Button1.Text = "Add"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.BackColor = Color.Transparent
+        GroupBox1.Controls.Add(Label1)
+        GroupBox1.Controls.Add(TextBox6)
+        GroupBox1.Controls.Add(ComboBox2)
+        GroupBox1.Controls.Add(Label7)
+        GroupBox1.Controls.Add(ComboBox1)
+        GroupBox1.Controls.Add(Label3)
+        GroupBox1.Controls.Add(TextBox5)
+        GroupBox1.Controls.Add(Label6)
+        GroupBox1.Controls.Add(TextBox4)
+        GroupBox1.Controls.Add(Label5)
+        GroupBox1.Controls.Add(Button1)
+        GroupBox1.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        GroupBox1.ForeColor = SystemColors.ControlText
+        GroupBox1.Location = New Point(55, 141)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(428, 379)
+        GroupBox1.TabIndex = 32
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "Add Rooms"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.BackColor = Color.Coral
-        Label5.Font = New Font("Segoe UI", 12F)
-        Label5.Location = New Point(467, 205)
+        Label5.Location = New Point(21, 157)
         Label5.Name = "Label5"
-        Label5.Size = New Size(115, 28)
-        Label5.TabIndex = 9
-        Label5.Text = "Room Rules"
+        Label5.Size = New Size(105, 22)
+        Label5.TabIndex = 25
+        Label5.Text = "Room Price"
         ' 
-        ' ComboBox3
+        ' Label2
         ' 
-        ComboBox3.BackColor = Color.MistyRose
-        ComboBox3.FormattingEnabled = True
-        ComboBox3.Location = New Point(398, 88)
-        ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(178, 28)
-        ComboBox3.TabIndex = 8
+        Label2.AutoSize = True
+        Label2.BackColor = Color.Transparent
+        Label2.Font = New Font("Times New Roman", 27F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = SystemColors.HotTrack
+        Label2.Location = New Point(346, 52)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(316, 52)
+        Label2.TabIndex = 31
+        Label2.Text = "Manage Rooms"
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(21, 108)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(86, 22)
+        Label1.TabIndex = 39
+        Label1.Text = "Room ID"
         ' 
         ' ComboBox2
         ' 
-        ComboBox2.AutoCompleteCustomSource.AddRange(New String() {"1", "2", "3", "4"})
-        ComboBox2.BackColor = Color.MistyRose
         ComboBox2.FormattingEnabled = True
-        ComboBox2.Location = New Point(6, 236)
+        ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
+        ComboBox2.Location = New Point(181, 108)
         ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(190, 28)
-        ComboBox2.TabIndex = 7
+        ComboBox2.Size = New Size(176, 30)
+        ComboBox2.TabIndex = 38
         ' 
         ' ComboBox1
         ' 
-        ComboBox1.AutoCompleteCustomSource.AddRange(New String() {"Standard Room", "Deluxe Room", "Twin Room", "Single Room"})
-        ComboBox1.BackColor = Color.MistyRose
         ComboBox1.FormattingEnabled = True
-        ComboBox1.Location = New Point(6, 88)
+        ComboBox1.Items.AddRange(New Object() {"Deluxe", "Twin", "Single", "Standard"})
+        ComboBox1.Location = New Point(181, 55)
         ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(190, 28)
-        ComboBox1.TabIndex = 6
+        ComboBox1.Size = New Size(177, 30)
+        ComboBox1.TabIndex = 37
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(21, 56)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(106, 22)
+        Label3.TabIndex = 36
+        Label3.Text = "Room Type"
+        ' 
+        ' ComboBox3
+        ' 
+        ComboBox3.FormattingEnabled = True
+        ComboBox3.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
+        ComboBox3.Location = New Point(140, 53)
+        ComboBox3.Name = "ComboBox3"
+        ComboBox3.Size = New Size(176, 30)
+        ComboBox3.TabIndex = 39
+        ' 
+        ' Button4
+        ' 
+        Button4.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
+        Button4.ForeColor = SystemColors.ActiveCaptionText
+        Button4.Location = New Point(911, 613)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(94, 29)
+        Button4.TabIndex = 36
+        Button4.Text = "Back"
+        Button4.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
+        Button3.ForeColor = SystemColors.ActiveCaptionText
+        Button3.Location = New Point(802, 613)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(94, 29)
+        Button3.TabIndex = 35
+        Button3.Text = "Reset"
+        Button3.UseVisualStyleBackColor = True
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(27, 108)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(70, 22)
+        Label4.TabIndex = 40
+        Label4.Text = "Reason"
+        ' 
+        ' ComboBox4
+        ' 
+        ComboBox4.FormattingEnabled = True
+        ComboBox4.Items.AddRange(New Object() {"Clean Up Progress", "Renovating"})
+        ComboBox4.Location = New Point(140, 105)
+        ComboBox4.Name = "ComboBox4"
+        ComboBox4.Size = New Size(176, 30)
+        ComboBox4.TabIndex = 41
         ' 
         ' Form2
         ' 
@@ -309,37 +268,40 @@ Partial Class Form2
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1035, 670)
+        Controls.Add(Button4)
+        Controls.Add(Button3)
+        Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
+        Controls.Add(Label2)
         ForeColor = SystemColors.ButtonHighlight
         Name = "Form2"
         Text = "Add Room"
-        GroupBox1.ResumeLayout(False)
-        GroupBox1.PerformLayout()
         GroupBox2.ResumeLayout(False)
         GroupBox2.PerformLayout()
+        GroupBox1.ResumeLayout(False)
+        GroupBox1.PerformLayout()
         ResumeLayout(False)
+        PerformLayout()
     End Sub
-
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents Label8 As Label
-    Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents Label10 As Label
     Friend WithEvents Button2 As Button
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents Label4 As Label
 End Class
