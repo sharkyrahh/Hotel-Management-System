@@ -36,6 +36,8 @@ Partial Class Form1
         Button_CheckIn = New Button()
         Button_Book = New Button()
         Button_View = New Button()
+        Button_Check = New Button()
+        Button_Book2 = New Button()
         PictureBox1 = New PictureBox()
         Panel2 = New Panel()
         Label8 = New Label()
@@ -73,6 +75,8 @@ Partial Class Form1
         Panel1.Controls.Add(Button_CheckIn)
         Panel1.Controls.Add(Button_Book)
         Panel1.Controls.Add(Button_View)
+        Panel1.Controls.Add(Button_Check)
+        Panel1.Controls.Add(Button_Book2)
         Panel1.Location = New Point(0, 0)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(159, 807)
@@ -173,21 +177,17 @@ Partial Class Form1
         ' 
         ' Button_CheckIn
         ' 
-        Button_CheckIn.BackgroundImage = My.Resources.Resources.checkinicon
-        Button_CheckIn.Location = New Point(0, 405)
+        Button_CheckIn.Location = New Point(0, 0)
         Button_CheckIn.Name = "Button_CheckIn"
-        Button_CheckIn.Size = New Size(159, 137)
-        Button_CheckIn.TabIndex = 5
-        Button_CheckIn.UseVisualStyleBackColor = True
+        Button_CheckIn.Size = New Size(75, 23)
+        Button_CheckIn.TabIndex = 14
         ' 
         ' Button_Book
         ' 
-        Button_Book.BackgroundImage = My.Resources.Resources.roomicon
-        Button_Book.Location = New Point(0, 270)
+        Button_Book.Location = New Point(0, 0)
         Button_Book.Name = "Button_Book"
-        Button_Book.Size = New Size(159, 137)
-        Button_Book.TabIndex = 4
-        Button_Book.UseVisualStyleBackColor = True
+        Button_Book.Size = New Size(75, 23)
+        Button_Book.TabIndex = 15
         ' 
         ' Button_View
         ' 
@@ -197,6 +197,24 @@ Partial Class Form1
         Button_View.Size = New Size(159, 137)
         Button_View.TabIndex = 4
         Button_View.UseVisualStyleBackColor = True
+        ' 
+        ' Button_Check
+        ' 
+        Button_Check.BackgroundImage = My.Resources.Resources.checkinicon
+        Button_Check.Location = New Point(0, 404)
+        Button_Check.Name = "Button_Check"
+        Button_Check.Size = New Size(159, 137)
+        Button_Check.TabIndex = 19
+        Button_Check.UseVisualStyleBackColor = True
+        ' 
+        ' Button_Book2
+        ' 
+        Button_Book2.BackgroundImage = My.Resources.Resources.roomicon
+        Button_Book2.Location = New Point(0, 269)
+        Button_Book2.Name = "Button_Book2"
+        Button_Book2.Size = New Size(159, 137)
+        Button_Book2.TabIndex = 18
+        Button_Book2.UseVisualStyleBackColor = True
         ' 
         ' PictureBox1
         ' 
@@ -288,5 +306,7 @@ Partial Class Form1
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Button_sql As Button
+    Friend WithEvents Button_Check As Button
+    Friend WithEvents Button_Book2 As Button
 
 End Class

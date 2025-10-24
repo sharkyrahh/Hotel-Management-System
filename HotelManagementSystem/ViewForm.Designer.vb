@@ -91,6 +91,7 @@ Partial Class ViewForm
         ' 
         ' Button_Home
         ' 
+        Button_Home.BackgroundImage = My.Resources.Resources.homeicon
         Button_Home.Location = New Point(0, -2)
         Button_Home.Name = "Button_Home"
         Button_Home.Size = New Size(159, 137)
@@ -121,6 +122,7 @@ Partial Class ViewForm
         ' 
         ' Button_Login
         ' 
+        Button_Login.BackgroundImage = My.Resources.Resources.loginicon1
         Button_Login.Location = New Point(0, 668)
         Button_Login.Name = "Button_Login"
         Button_Login.Size = New Size(159, 137)
@@ -129,6 +131,7 @@ Partial Class ViewForm
         ' 
         ' Button_About
         ' 
+        Button_About.BackgroundImage = My.Resources.Resources.abouticon
         Button_About.Location = New Point(0, 537)
         Button_About.Name = "Button_About"
         Button_About.Size = New Size(159, 137)
@@ -137,6 +140,7 @@ Partial Class ViewForm
         ' 
         ' Button_CheckIn
         ' 
+        Button_CheckIn.BackgroundImage = My.Resources.Resources.checkinicon
         Button_CheckIn.Location = New Point(0, 403)
         Button_CheckIn.Name = "Button_CheckIn"
         Button_CheckIn.Size = New Size(159, 137)
@@ -145,6 +149,7 @@ Partial Class ViewForm
         ' 
         ' Button_Book
         ' 
+        Button_Book.BackgroundImage = My.Resources.Resources.roomicon
         Button_Book.Location = New Point(0, 268)
         Button_Book.Name = "Button_Book"
         Button_Book.Size = New Size(159, 137)
@@ -153,6 +158,7 @@ Partial Class ViewForm
         ' 
         ' Button_View
         ' 
+        Button_View.BackgroundImage = My.Resources.Resources.viewroomicon
         Button_View.Location = New Point(0, 133)
         Button_View.Name = "Button_View"
         Button_View.Size = New Size(159, 137)
@@ -172,9 +178,10 @@ Partial Class ViewForm
         ' 
         ' PictureBox1
         ' 
+        PictureBox1.Image = My.Resources.Resources.standard1
         PictureBox1.Location = New Point(286, 98)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(858, 416)
+        PictureBox1.Size = New Size(858, 492)
         PictureBox1.TabIndex = 27
         PictureBox1.TabStop = False
         ' 
@@ -207,7 +214,7 @@ Partial Class ViewForm
         Label8.AutoSize = True
         Label8.Font = New Font("Times New Roman", 25.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label8.ForeColor = SystemColors.HotTrack
-        Label8.Location = New Point(212, 493)
+        Label8.Location = New Point(220, 593)
         Label8.Name = "Label8"
         Label8.Size = New Size(292, 47)
         Label8.TabIndex = 30
@@ -218,7 +225,7 @@ Partial Class ViewForm
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label9.ForeColor = SystemColors.ControlDarkDark
-        Label9.Location = New Point(452, 596)
+        Label9.Location = New Point(471, 642)
         Label9.Name = "Label9"
         Label9.Size = New Size(497, 46)
         Label9.TabIndex = 31
@@ -229,7 +236,7 @@ Partial Class ViewForm
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label10.ForeColor = SystemColors.ControlDarkDark
-        Label10.Location = New Point(452, 642)
+        Label10.Location = New Point(471, 688)
         Label10.Name = "Label10"
         Label10.Size = New Size(404, 46)
         Label10.TabIndex = 32

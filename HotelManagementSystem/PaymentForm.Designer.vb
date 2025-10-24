@@ -92,6 +92,8 @@ Partial Class PaymentForm
         Button_Book = New Button()
         Button_View = New Button()
         Button_Back = New Button()
+        Button_Check = New Button()
+        Button_Book2 = New Button()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         Panel6.SuspendLayout()
@@ -602,7 +604,7 @@ Partial Class PaymentForm
         Label29.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label29.Location = New Point(209, 91)
         Label29.Name = "Label29"
-        Label29.Size = New Size(1613, 38)
+        Label29.Size = New Size(1076, 28)
         Label29.TabIndex = 13
         Label29.Text = "_____________________________________________________________________________________________________________________________________"
         ' 
@@ -776,21 +778,17 @@ Partial Class PaymentForm
         ' 
         ' Button_CheckIn
         ' 
-        Button_CheckIn.BackgroundImage = My.Resources.Resources.checkinicon
-        Button_CheckIn.Location = New Point(-1, 405)
+        Button_CheckIn.Location = New Point(0, 0)
         Button_CheckIn.Name = "Button_CheckIn"
-        Button_CheckIn.Size = New Size(159, 137)
-        Button_CheckIn.TabIndex = 29
-        Button_CheckIn.UseVisualStyleBackColor = True
+        Button_CheckIn.Size = New Size(75, 23)
+        Button_CheckIn.TabIndex = 39
         ' 
         ' Button_Book
         ' 
-        Button_Book.BackgroundImage = My.Resources.Resources.roomicon
-        Button_Book.Location = New Point(-1, 270)
+        Button_Book.Location = New Point(0, 0)
         Button_Book.Name = "Button_Book"
-        Button_Book.Size = New Size(159, 137)
-        Button_Book.TabIndex = 27
-        Button_Book.UseVisualStyleBackColor = True
+        Button_Book.Size = New Size(75, 23)
+        Button_Book.TabIndex = 40
         ' 
         ' Button_View
         ' 
@@ -809,6 +807,24 @@ Partial Class PaymentForm
         Button_Back.TabIndex = 38
         Button_Back.Text = "BACK"
         Button_Back.UseVisualStyleBackColor = True
+        ' 
+        ' Button_Check
+        ' 
+        Button_Check.BackgroundImage = My.Resources.Resources.checkinicon
+        Button_Check.Location = New Point(0, 403)
+        Button_Check.Name = "Button_Check"
+        Button_Check.Size = New Size(159, 137)
+        Button_Check.TabIndex = 42
+        Button_Check.UseVisualStyleBackColor = True
+        ' 
+        ' Button_Book2
+        ' 
+        Button_Book2.BackgroundImage = My.Resources.Resources.roomicon
+        Button_Book2.Location = New Point(0, 268)
+        Button_Book2.Name = "Button_Book2"
+        Button_Book2.Size = New Size(159, 137)
+        Button_Book2.TabIndex = 41
+        Button_Book2.UseVisualStyleBackColor = True
         ' 
         ' PaymentForm
         ' 
@@ -834,6 +850,8 @@ Partial Class PaymentForm
         Controls.Add(Label29)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
+        Controls.Add(Button_Book2)
+        Controls.Add(Button_Check)
         Name = "PaymentForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Payment"
@@ -935,4 +953,6 @@ Partial Class PaymentForm
     Friend WithEvents Button_Book As Button
     Friend WithEvents Button_View As Button
     Friend WithEvents Button_Back As Button
+    Friend WithEvents Button_Check As Button
+    Friend WithEvents Button_Book2 As Button
 End Class

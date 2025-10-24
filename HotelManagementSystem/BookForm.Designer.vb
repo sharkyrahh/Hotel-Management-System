@@ -79,7 +79,7 @@ Partial Class BookForm
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Times New Roman", 30.0F, FontStyle.Bold Or FontStyle.Italic)
+        Label1.Font = New Font("Times New Roman", 30F, FontStyle.Bold Or FontStyle.Italic)
         Label1.ForeColor = SystemColors.HotTrack
         Label1.Location = New Point(39, 31)
         Label1.Name = "Label1"
@@ -90,7 +90,7 @@ Partial Class BookForm
         ' Button1
         ' 
         Button1.BackColor = SystemColors.Highlight
-        Button1.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Button1.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
         Button1.ForeColor = SystemColors.ControlLightLight
         Button1.Location = New Point(1165, 735)
         Button1.Name = "Button1"
@@ -138,7 +138,7 @@ Partial Class BookForm
         ' Button_Find
         ' 
         Button_Find.BackColor = SystemColors.Highlight
-        Button_Find.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Button_Find.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
         Button_Find.ForeColor = Color.GhostWhite
         Button_Find.Location = New Point(1041, 292)
         Button_Find.Name = "Button_Find"
@@ -151,7 +151,7 @@ Partial Class BookForm
         ' 
         Label17.AutoSize = True
         Label17.BackColor = Color.White
-        Label17.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label17.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label17.Location = New Point(25, 770)
         Label17.Name = "Label17"
         Label17.Size = New Size(99, 20)
@@ -162,7 +162,7 @@ Partial Class BookForm
         ' 
         Label18.AutoSize = True
         Label18.BackColor = Color.White
-        Label18.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label18.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label18.Location = New Point(48, 642)
         Label18.Name = "Label18"
         Label18.Size = New Size(53, 20)
@@ -173,7 +173,7 @@ Partial Class BookForm
         ' 
         Label19.AutoSize = True
         Label19.BackColor = Color.White
-        Label19.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label19.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label19.Location = New Point(33, 100)
         Label19.Name = "Label19"
         Label19.Size = New Size(85, 20)
@@ -184,7 +184,7 @@ Partial Class BookForm
         ' 
         Label21.AutoSize = True
         Label21.BackColor = Color.White
-        Label21.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label21.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label21.Location = New Point(21, 511)
         Label21.Name = "Label21"
         Label21.Size = New Size(109, 20)
@@ -193,6 +193,7 @@ Partial Class BookForm
         ' 
         ' Button_Home
         ' 
+        Button_Home.BackgroundImage = My.Resources.Resources.homeicon
         Button_Home.Location = New Point(-1, 0)
         Button_Home.Name = "Button_Home"
         Button_Home.Size = New Size(159, 137)
@@ -203,7 +204,7 @@ Partial Class BookForm
         ' 
         Label22.AutoSize = True
         Label22.BackColor = Color.White
-        Label22.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label22.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label22.Location = New Point(23, 368)
         Label22.Name = "Label22"
         Label22.Size = New Size(103, 20)
@@ -214,7 +215,7 @@ Partial Class BookForm
         ' 
         Label23.AutoSize = True
         Label23.BackColor = Color.White
-        Label23.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label23.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label23.Location = New Point(27, 244)
         Label23.Name = "Label23"
         Label23.Size = New Size(96, 20)
@@ -223,6 +224,7 @@ Partial Class BookForm
         ' 
         ' Button_Login
         ' 
+        Button_Login.BackgroundImage = My.Resources.Resources.loginicon
         Button_Login.Location = New Point(-1, 670)
         Button_Login.Name = "Button_Login"
         Button_Login.Size = New Size(159, 137)
@@ -231,6 +233,7 @@ Partial Class BookForm
         ' 
         ' Button_About
         ' 
+        Button_About.BackgroundImage = My.Resources.Resources.abouticon
         Button_About.Location = New Point(-1, 539)
         Button_About.Name = "Button_About"
         Button_About.Size = New Size(159, 137)
@@ -239,6 +242,7 @@ Partial Class BookForm
         ' 
         ' Button_CheckIn
         ' 
+        Button_CheckIn.BackgroundImage = My.Resources.Resources.checkinicon
         Button_CheckIn.Location = New Point(-1, 405)
         Button_CheckIn.Name = "Button_CheckIn"
         Button_CheckIn.Size = New Size(159, 137)
@@ -247,6 +251,7 @@ Partial Class BookForm
         ' 
         ' Button_Book
         ' 
+        Button_Book.BackgroundImage = My.Resources.Resources.roomicon
         Button_Book.Location = New Point(-1, 270)
         Button_Book.Name = "Button_Book"
         Button_Book.Size = New Size(159, 137)
@@ -255,6 +260,7 @@ Partial Class BookForm
         ' 
         ' Button_View
         ' 
+        Button_View.BackgroundImage = My.Resources.Resources.viewroomicon
         Button_View.Location = New Point(-1, 135)
         Button_View.Name = "Button_View"
         Button_View.Size = New Size(159, 137)
@@ -265,7 +271,7 @@ Partial Class BookForm
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Label2.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
         Label2.ForeColor = SystemColors.HotTrack
         Label2.Location = New Point(362, 92)
         Label2.Name = "Label2"
@@ -284,7 +290,7 @@ Partial Class BookForm
         GroupBox1.Controls.Add(Label6)
         GroupBox1.Controls.Add(Label5)
         GroupBox1.Controls.Add(Label3)
-        GroupBox1.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        GroupBox1.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         GroupBox1.ForeColor = SystemColors.HotTrack
         GroupBox1.Location = New Point(419, 251)
         GroupBox1.Name = "GroupBox1"
@@ -295,7 +301,7 @@ Partial Class BookForm
         ' Label8
         ' 
         Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        Label8.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label8.ForeColor = SystemColors.HotTrack
         Label8.Location = New Point(521, 13)
         Label8.Name = "Label8"
@@ -306,7 +312,7 @@ Partial Class BookForm
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label6.ForeColor = SystemColors.HotTrack
         Label6.Location = New Point(382, 13)
         Label6.Name = "Label6"
@@ -317,7 +323,7 @@ Partial Class BookForm
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label5.ForeColor = SystemColors.HotTrack
         Label5.Location = New Point(218, 13)
         Label5.Name = "Label5"
@@ -328,7 +334,7 @@ Partial Class BookForm
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        Label3.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label3.ForeColor = SystemColors.HotTrack
         Label3.Location = New Point(34, 13)
         Label3.Name = "Label3"
@@ -340,7 +346,7 @@ Partial Class BookForm
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label4.ForeColor = SystemColors.HotTrack
         Label4.Location = New Point(362, 231)
         Label4.Name = "Label4"
@@ -352,7 +358,7 @@ Partial Class BookForm
         ' 
         Label7.AutoSize = True
         Label7.BackColor = Color.Transparent
-        Label7.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Label7.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
         Label7.ForeColor = SystemColors.HotTrack
         Label7.Location = New Point(225, 359)
         Label7.Name = "Label7"
@@ -364,7 +370,7 @@ Partial Class BookForm
         ' 
         Label10.AutoSize = True
         Label10.BackColor = Color.Transparent
-        Label10.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Label10.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
         Label10.ForeColor = SystemColors.HotTrack
         Label10.Location = New Point(738, 359)
         Label10.Name = "Label10"
@@ -376,7 +382,7 @@ Partial Class BookForm
         ' 
         Label11.AutoSize = True
         Label11.BackColor = Color.Transparent
-        Label11.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Label11.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
         Label11.ForeColor = SystemColors.Control
         Label11.Location = New Point(197, 311)
         Label11.Name = "Label11"
@@ -387,7 +393,7 @@ Partial Class BookForm
         ' Button2
         ' 
         Button2.BackColor = SystemColors.Highlight
-        Button2.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Button2.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
         Button2.ForeColor = SystemColors.Window
         Button2.Location = New Point(260, 737)
         Button2.Name = "Button2"
@@ -399,7 +405,7 @@ Partial Class BookForm
         ' Button3
         ' 
         Button3.BackColor = SystemColors.Highlight
-        Button3.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Button3.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
         Button3.ForeColor = SystemColors.Control
         Button3.Location = New Point(763, 735)
         Button3.Name = "Button3"
@@ -419,7 +425,7 @@ Partial Class BookForm
         GroupBox6.Controls.Add(ComboBox1)
         GroupBox6.Controls.Add(Label9)
         GroupBox6.Controls.Add(Label20)
-        GroupBox6.Font = New Font("Segoe UI", 9.0F, FontStyle.Bold)
+        GroupBox6.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
         GroupBox6.ForeColor = SystemColors.HotTrack
         GroupBox6.Location = New Point(38, 20)
         GroupBox6.Name = "GroupBox6"
@@ -429,7 +435,7 @@ Partial Class BookForm
         ' 
         ' ComboBox6
         ' 
-        ComboBox6.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        ComboBox6.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         ComboBox6.FormattingEnabled = True
         ComboBox6.Items.AddRange(New Object() {"2025", "2026"})
         ComboBox6.Location = New Point(508, 73)
@@ -439,7 +445,7 @@ Partial Class BookForm
         ' 
         ' ComboBox4
         ' 
-        ComboBox4.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        ComboBox4.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         ComboBox4.FormattingEnabled = True
         ComboBox4.Items.AddRange(New Object() {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"})
         ComboBox4.Location = New Point(249, 73)
@@ -449,7 +455,7 @@ Partial Class BookForm
         ' 
         ' ComboBox2
         ' 
-        ComboBox2.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        ComboBox2.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         ComboBox2.FormattingEnabled = True
         ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"})
         ComboBox2.Location = New Point(98, 73)
@@ -459,7 +465,7 @@ Partial Class BookForm
         ' 
         ' ComboBox5
         ' 
-        ComboBox5.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        ComboBox5.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         ComboBox5.FormattingEnabled = True
         ComboBox5.Items.AddRange(New Object() {"2025", "2026"})
         ComboBox5.Location = New Point(509, 14)
@@ -469,7 +475,7 @@ Partial Class BookForm
         ' 
         ' ComboBox3
         ' 
-        ComboBox3.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        ComboBox3.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         ComboBox3.FormattingEnabled = True
         ComboBox3.Items.AddRange(New Object() {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"})
         ComboBox3.Location = New Point(249, 14)
@@ -479,7 +485,7 @@ Partial Class BookForm
         ' 
         ' ComboBox1
         ' 
-        ComboBox1.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        ComboBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         ComboBox1.FormattingEnabled = True
         ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"})
         ComboBox1.Location = New Point(98, 14)
@@ -490,7 +496,7 @@ Partial Class BookForm
         ' Label9
         ' 
         Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        Label9.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label9.ForeColor = SystemColors.HotTrack
         Label9.Location = New Point(22, 76)
         Label9.Name = "Label9"
@@ -501,7 +507,7 @@ Partial Class BookForm
         ' Label20
         ' 
         Label20.AutoSize = True
-        Label20.Font = New Font("Segoe UI", 12.0F, FontStyle.Bold)
+        Label20.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
         Label20.ForeColor = SystemColors.HotTrack
         Label20.Location = New Point(22, 19)
         Label20.Name = "Label20"
@@ -522,7 +528,7 @@ Partial Class BookForm
         ' 
         ' ListBox1
         ' 
-        ListBox1.Font = New Font("Segoe UI", 12.0F)
+        ListBox1.Font = New Font("Segoe UI", 12F)
         ListBox1.FormattingEnabled = True
         ListBox1.ItemHeight = 28
         ListBox1.Location = New Point(272, 406)
@@ -532,7 +538,7 @@ Partial Class BookForm
         ' 
         ' ListBox2
         ' 
-        ListBox2.Font = New Font("Segoe UI", 12.0F)
+        ListBox2.Font = New Font("Segoe UI", 12F)
         ListBox2.FormattingEnabled = True
         ListBox2.ItemHeight = 28
         ListBox2.Location = New Point(774, 406)
@@ -569,7 +575,7 @@ Partial Class BookForm
         ' 
         Label12.AutoSize = True
         Label12.BackColor = Color.Transparent
-        Label12.Font = New Font("Segoe UI", 15.0F, FontStyle.Bold)
+        Label12.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
         Label12.ForeColor = SystemColors.HotTrack
         Label12.Location = New Point(156, 316)
         Label12.Name = "Label12"
@@ -579,7 +585,7 @@ Partial Class BookForm
         ' 
         ' BookForm
         ' 
-        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Control
         ClientSize = New Size(1303, 806)

@@ -9,12 +9,12 @@
         Me.Hide()
     End Sub
 
-    Private Sub Button_Book_Click(sender As Object, e As EventArgs) Handles Button_Book.Click
+    Private Sub Button_Book2_Click(sender As Object, e As EventArgs) Handles Button_Book2.Click
         BookForm.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Button_CheckIn_Click(sender As Object, e As EventArgs) Handles Button_CheckIn.Click
+    Private Sub Button_Check_Click(sender As Object, e As EventArgs) Handles Button_Check.Click
         CheckIn.Show()
         Me.Hide()
     End Sub

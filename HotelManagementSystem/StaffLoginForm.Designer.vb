@@ -42,6 +42,8 @@ Private components As System.ComponentModel.IContainer
         Button_CheckIn = New Button()
         Button_Book = New Button()
         Button_View = New Button()
+        Button_Check = New Button()
+        Button_Book2 = New Button()
         GroupBox1 = New GroupBox()
         GroupBox1.SuspendLayout()
         SuspendLayout()
@@ -212,21 +214,17 @@ Private components As System.ComponentModel.IContainer
         ' 
         ' Button_CheckIn
         ' 
-        Button_CheckIn.Image = My.Resources.Resources.checkinicon
-        Button_CheckIn.Location = New Point(-2, 405)
+        Button_CheckIn.Location = New Point(0, 0)
         Button_CheckIn.Name = "Button_CheckIn"
-        Button_CheckIn.Size = New Size(159, 137)
-        Button_CheckIn.TabIndex = 17
-        Button_CheckIn.UseVisualStyleBackColor = True
+        Button_CheckIn.Size = New Size(75, 23)
+        Button_CheckIn.TabIndex = 26
         ' 
         ' Button_Book
         ' 
-        Button_Book.BackgroundImage = My.Resources.Resources.roomicon
-        Button_Book.Location = New Point(-2, 270)
+        Button_Book.Location = New Point(0, 0)
         Button_Book.Name = "Button_Book"
-        Button_Book.Size = New Size(159, 137)
-        Button_Book.TabIndex = 15
-        Button_Book.UseVisualStyleBackColor = True
+        Button_Book.Size = New Size(75, 23)
+        Button_Book.TabIndex = 27
         ' 
         ' Button_View
         ' 
@@ -236,6 +234,24 @@ Private components As System.ComponentModel.IContainer
         Button_View.Size = New Size(159, 137)
         Button_View.TabIndex = 16
         Button_View.UseVisualStyleBackColor = True
+        ' 
+        ' Button_Check
+        ' 
+        Button_Check.BackgroundImage = My.Resources.Resources.checkinicon
+        Button_Check.Location = New Point(-2, 405)
+        Button_Check.Name = "Button_Check"
+        Button_Check.Size = New Size(159, 137)
+        Button_Check.TabIndex = 29
+        Button_Check.UseVisualStyleBackColor = True
+        ' 
+        ' Button_Book2
+        ' 
+        Button_Book2.BackgroundImage = My.Resources.Resources.roomicon
+        Button_Book2.Location = New Point(-2, 270)
+        Button_Book2.Name = "Button_Book2"
+        Button_Book2.Size = New Size(159, 137)
+        Button_Book2.TabIndex = 28
+        Button_Book2.UseVisualStyleBackColor = True
         ' 
         ' StaffLoginForm
         ' 
@@ -259,6 +275,8 @@ Private components As System.ComponentModel.IContainer
         Controls.Add(Button_View)
         Controls.Add(GroupBox1)
         Controls.Add(Label1)
+        Controls.Add(Button_Check)
+        Controls.Add(Button_Book2)
         Name = "StaffLoginForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Staff Login"
@@ -287,4 +305,6 @@ Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button_CheckIn As Button
     Friend WithEvents Button_Book As Button
     Friend WithEvents Button_View As Button
+    Friend WithEvents Button_Check As Button
+    Friend WithEvents Button_Book2 As Button
 End Class

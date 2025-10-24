@@ -5,7 +5,7 @@ Public Class Form1
     Dim conn As MySqlConnection
     Dim command As MySqlCommand
 
-    Private Sub Button_Book_Click(sender As Object, e As EventArgs) Handles Button_Book.Click
+    Private Sub Button_Book2_Click(sender As Object, e As EventArgs) Handles Button_Book2.Click
         BookForm.Show()
         Me.Hide()
     End Sub
@@ -16,8 +16,8 @@ Public Class Form1
     End Sub
 
     Private Sub Button_View_Click(sender As Object, e As EventArgs) Handles Button_View.Click
-        ViewForm.Show()
-        Me.Hide()
+        ViewForm.Show
+        Hide
     End Sub
 
     Private Sub Button_sql_Click(sender As Object, e As EventArgs) Handles Button_sql.Click
@@ -40,7 +40,7 @@ Public Class Form1
         AboutBox1.Show()
     End Sub
 
-    Private Sub Button_CheckIn_Click(sender As Object, e As EventArgs) Handles Button_CheckIn.Click
+    Private Sub Button_Check_Click(sender As Object, e As EventArgs) Handles Button_Check.Click
         CheckIn.Show()
         Me.Hide()
     End Sub
