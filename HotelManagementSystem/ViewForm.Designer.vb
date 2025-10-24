@@ -91,7 +91,6 @@ Partial Class ViewForm
         ' 
         ' Button_Home
         ' 
-        Button_Home.BackgroundImage = My.Resources.Resources.homeicon
         Button_Home.Location = New Point(0, -2)
         Button_Home.Name = "Button_Home"
         Button_Home.Size = New Size(159, 137)
@@ -122,7 +121,6 @@ Partial Class ViewForm
         ' 
         ' Button_Login
         ' 
-        Button_Login.BackgroundImage = My.Resources.Resources.loginicon
         Button_Login.Location = New Point(0, 668)
         Button_Login.Name = "Button_Login"
         Button_Login.Size = New Size(159, 137)
@@ -131,7 +129,6 @@ Partial Class ViewForm
         ' 
         ' Button_About
         ' 
-        Button_About.BackgroundImage = My.Resources.Resources.abouticon
         Button_About.Location = New Point(0, 537)
         Button_About.Name = "Button_About"
         Button_About.Size = New Size(159, 137)
@@ -140,7 +137,6 @@ Partial Class ViewForm
         ' 
         ' Button_CheckIn
         ' 
-        Button_CheckIn.BackgroundImage = My.Resources.Resources.checkinicon
         Button_CheckIn.Location = New Point(0, 403)
         Button_CheckIn.Name = "Button_CheckIn"
         Button_CheckIn.Size = New Size(159, 137)
@@ -149,7 +145,6 @@ Partial Class ViewForm
         ' 
         ' Button_Book
         ' 
-        Button_Book.BackgroundImage = My.Resources.Resources.roomicon
         Button_Book.Location = New Point(0, 268)
         Button_Book.Name = "Button_Book"
         Button_Book.Size = New Size(159, 137)
@@ -158,7 +153,6 @@ Partial Class ViewForm
         ' 
         ' Button_View
         ' 
-        Button_View.BackgroundImage = My.Resources.Resources.viewroomicon
         Button_View.Location = New Point(0, 133)
         Button_View.Name = "Button_View"
         Button_View.Size = New Size(159, 137)
@@ -169,6 +163,7 @@ Partial Class ViewForm
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Times New Roman", 25.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = SystemColors.MenuHighlight
         Label1.Location = New Point(196, 34)
         Label1.Name = "Label1"
         Label1.Size = New Size(234, 47)
@@ -185,24 +180,33 @@ Partial Class ViewForm
         ' 
         ' Button1
         ' 
+        Button1.BackColor = SystemColors.ActiveCaption
+        Button1.Font = New Font("Segoe UI", 30F)
+        Button1.ForeColor = SystemColors.ButtonHighlight
         Button1.Location = New Point(1154, 187)
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 240)
         Button1.TabIndex = 28
-        Button1.UseVisualStyleBackColor = True
+        Button1.Text = ">"
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
+        Button2.BackColor = SystemColors.ActiveCaption
+        Button2.Font = New Font("Segoe UI", 30F)
+        Button2.ForeColor = SystemColors.ButtonHighlight
         Button2.Location = New Point(181, 187)
         Button2.Name = "Button2"
         Button2.Size = New Size(94, 240)
         Button2.TabIndex = 29
-        Button2.UseVisualStyleBackColor = True
+        Button2.Text = "<"
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Label8
         ' 
         Label8.AutoSize = True
         Label8.Font = New Font("Times New Roman", 25.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label8.ForeColor = SystemColors.HotTrack
         Label8.Location = New Point(212, 493)
         Label8.Name = "Label8"
         Label8.Size = New Size(292, 47)
@@ -213,6 +217,7 @@ Partial Class ViewForm
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label9.ForeColor = SystemColors.ControlDarkDark
         Label9.Location = New Point(452, 596)
         Label9.Name = "Label9"
         Label9.Size = New Size(497, 46)
@@ -223,6 +228,7 @@ Partial Class ViewForm
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.ForeColor = SystemColors.ControlDarkDark
         Label10.Location = New Point(452, 642)
         Label10.Name = "Label10"
         Label10.Size = New Size(404, 46)
@@ -233,6 +239,7 @@ Partial Class ViewForm
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Times New Roman", 25.2F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Label11.ForeColor = SystemColors.ActiveCaption
         Label11.Location = New Point(425, 21)
         Label11.Name = "Label11"
         Label11.Size = New Size(1049, 47)
