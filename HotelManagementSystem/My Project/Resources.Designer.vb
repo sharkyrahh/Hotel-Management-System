@@ -103,6 +103,17 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Blur_Gradient_Vectors___Download_Free_High_Quality_Vectors_from_Freepik___Freepik() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Blur Gradient Vectors - Download Free High-Quality Vectors from Freepik _ Freepik"& _ 
+                        "", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property checkinicon() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("checkinicon", resourceCulture)
@@ -176,6 +187,16 @@ Namespace My.Resources
         Friend ReadOnly Property images() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("images", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property istockphoto_1496130767_612x612() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("istockphoto-1496130767-612x612", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property

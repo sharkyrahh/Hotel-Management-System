@@ -127,8 +127,8 @@
   <data name="download (10)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\download (10).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="twin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\twin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="istockphoto-1496130767-612x612" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\istockphoto-1496130767-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="abouticon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\abouticon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,20 +157,8 @@
   <data name="atas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\atas.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="standard1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\standard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Pin by Esmeralda on TRABAJOS DEPORTE Y SALUD _ Love background images, Wrinkled paper background, Paper background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Pin by Esmeralda on TRABAJOS DEPORTE Y SALUD _ Love background images, Wrinkled paper background, Paper background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="download (8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\download (8).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="deluxe" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\deluxe.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="single" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\single.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="homeicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\homeicon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,7 +166,7 @@
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="loginicon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\loginicon1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Blur Gradient Vectors - Download Free High-Quality Vectors from Freepik _ Freepik" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Blur Gradient Vectors - Download Free High-Quality Vectors from Freepik _ Freepik.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
