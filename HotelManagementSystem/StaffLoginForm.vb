@@ -22,10 +22,8 @@
     Private Sub Button_About_Click(sender As Object, e As EventArgs) Handles Button_About.Click
         AboutBox1.Show()
     End Sub
-
-
     Private Sub Button_login2_Click(sender As Object, e As EventArgs) Handles Button_login2.Click
-        Form2.Show()
+        Staff_Dashboard.Show()
         Me.Hide()
     End Sub
 End Class

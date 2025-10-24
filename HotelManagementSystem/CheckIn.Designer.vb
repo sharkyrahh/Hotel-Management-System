@@ -50,6 +50,18 @@ Partial Class CheckIn
         Button2 = New Button()
         Button3 = New Button()
         Button4 = New Button()
+        Label4 = New Label()
+        Label5 = New Label()
+        Label10 = New Label()
+        Label16 = New Label()
+        Button_Home = New Button()
+        Label17 = New Label()
+        Label18 = New Label()
+        Button_Login = New Button()
+        Button_About = New Button()
+        Button_View = New Button()
+        Button_Check = New Button()
+        Button_Book2 = New Button()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         CType(NumericUpDown1, ComponentModel.ISupportInitialize).BeginInit()
@@ -62,7 +74,7 @@ Partial Class CheckIn
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Times New Roman", 27F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = SystemColors.HotTrack
-        Label2.Location = New Point(270, 9)
+        Label2.Location = New Point(427, 109)
         Label2.Name = "Label2"
         Label2.Size = New Size(555, 52)
         Label2.TabIndex = 2
@@ -76,7 +88,7 @@ Partial Class CheckIn
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox1.ForeColor = SystemColors.ControlText
-        GroupBox1.Location = New Point(36, 102)
+        GroupBox1.Location = New Point(220, 192)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(489, 156)
         GroupBox1.TabIndex = 3
@@ -145,7 +157,7 @@ Partial Class CheckIn
         GroupBox2.Controls.Add(Label8)
         GroupBox2.Controls.Add(Label11)
         GroupBox2.Font = New Font("Book Antiqua", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        GroupBox2.Location = New Point(36, 308)
+        GroupBox2.Location = New Point(220, 398)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(489, 210)
         GroupBox2.TabIndex = 19
@@ -184,7 +196,7 @@ Partial Class CheckIn
         GroupBox3.Controls.Add(ComboBox1)
         GroupBox3.Controls.Add(Label6)
         GroupBox3.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        GroupBox3.Location = New Point(558, 119)
+        GroupBox3.Location = New Point(742, 209)
         GroupBox3.Name = "GroupBox3"
         GroupBox3.Size = New Size(457, 248)
         GroupBox3.TabIndex = 20
@@ -260,7 +272,7 @@ Partial Class CheckIn
         Label9.BackColor = Color.Transparent
         Label9.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
         Label9.ForeColor = SystemColors.ActiveCaptionText
-        Label9.Location = New Point(558, 440)
+        Label9.Location = New Point(742, 530)
         Label9.Name = "Label9"
         Label9.Size = New Size(159, 22)
         Label9.TabIndex = 21
@@ -272,11 +284,11 @@ Partial Class CheckIn
         Label13.BackColor = Color.Transparent
         Label13.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
         Label13.ForeColor = SystemColors.ActiveCaptionText
-        Label13.Location = New Point(723, 440)
+        Label13.Location = New Point(907, 530)
         Label13.Name = "Label13"
-        Label13.Size = New Size(146, 22)
+        Label13.Size = New Size(28, 22)
         Label13.TabIndex = 22
-        Label13.Text = "delete yg ni nnti"
+        Label13.Text = "10"
         ' 
         ' Label14
         ' 
@@ -284,7 +296,7 @@ Partial Class CheckIn
         Label14.BackColor = Color.Transparent
         Label14.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
         Label14.ForeColor = SystemColors.ActiveCaptionText
-        Label14.Location = New Point(558, 484)
+        Label14.Location = New Point(742, 574)
         Label14.Name = "Label14"
         Label14.Size = New Size(58, 22)
         Label14.TabIndex = 23
@@ -296,16 +308,16 @@ Partial Class CheckIn
         Label15.BackColor = Color.Transparent
         Label15.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
         Label15.ForeColor = SystemColors.ActiveCaptionText
-        Label15.Location = New Point(723, 484)
+        Label15.Location = New Point(907, 574)
         Label15.Name = "Label15"
-        Label15.Size = New Size(146, 22)
+        Label15.Size = New Size(28, 22)
         Label15.TabIndex = 24
-        Label15.Text = "delete yg ni nnti"
+        Label15.Text = "10"
         ' 
         ' Button2
         ' 
         Button2.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Button2.Location = New Point(704, 551)
+        Button2.Location = New Point(915, 736)
         Button2.Name = "Button2"
         Button2.Size = New Size(94, 29)
         Button2.TabIndex = 25
@@ -315,7 +327,7 @@ Partial Class CheckIn
         ' Button3
         ' 
         Button3.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Button3.Location = New Point(812, 551)
+        Button3.Location = New Point(1023, 736)
         Button3.Name = "Button3"
         Button3.Size = New Size(94, 29)
         Button3.TabIndex = 26
@@ -325,12 +337,132 @@ Partial Class CheckIn
         ' Button4
         ' 
         Button4.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Button4.Location = New Point(921, 551)
+        Button4.Location = New Point(1132, 736)
         Button4.Name = "Button4"
         Button4.Size = New Size(94, 29)
         Button4.TabIndex = 27
         Button4.Text = "Back"
         Button4.UseVisualStyleBackColor = True
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.BackColor = Color.White
+        Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(23, 769)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(99, 20)
+        Label4.TabIndex = 39
+        Label4.Text = "Admin Login"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.BackColor = Color.White
+        Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(47, 645)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(53, 20)
+        Label5.TabIndex = 38
+        Label5.Text = "About"
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.BackColor = Color.White
+        Label10.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.Location = New Point(31, 99)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(85, 20)
+        Label10.TabIndex = 37
+        Label10.Text = "Homepage"
+        ' 
+        ' Label16
+        ' 
+        Label16.AutoSize = True
+        Label16.BackColor = Color.White
+        Label16.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label16.Location = New Point(19, 510)
+        Label16.Name = "Label16"
+        Label16.Size = New Size(109, 20)
+        Label16.TabIndex = 36
+        Label16.Text = "Check In / Out"
+        ' 
+        ' Button_Home
+        ' 
+        Button_Home.BackgroundImage = My.Resources.Resources.homeicon
+        Button_Home.Location = New Point(-3, -1)
+        Button_Home.Name = "Button_Home"
+        Button_Home.Size = New Size(159, 137)
+        Button_Home.TabIndex = 30
+        Button_Home.UseVisualStyleBackColor = True
+        ' 
+        ' Label17
+        ' 
+        Label17.AutoSize = True
+        Label17.BackColor = Color.White
+        Label17.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label17.Location = New Point(21, 367)
+        Label17.Name = "Label17"
+        Label17.Size = New Size(103, 20)
+        Label17.TabIndex = 35
+        Label17.Text = "Book a Room"
+        ' 
+        ' Label18
+        ' 
+        Label18.AutoSize = True
+        Label18.BackColor = Color.White
+        Label18.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label18.Location = New Point(25, 243)
+        Label18.Name = "Label18"
+        Label18.Size = New Size(96, 20)
+        Label18.TabIndex = 34
+        Label18.Text = "View Rooms"
+        ' 
+        ' Button_Login
+        ' 
+        Button_Login.BackgroundImage = My.Resources.Resources.loginicon
+        Button_Login.Location = New Point(-3, 669)
+        Button_Login.Name = "Button_Login"
+        Button_Login.Size = New Size(159, 137)
+        Button_Login.TabIndex = 33
+        Button_Login.UseVisualStyleBackColor = True
+        ' 
+        ' Button_About
+        ' 
+        Button_About.Image = My.Resources.Resources.abouticon
+        Button_About.Location = New Point(-3, 538)
+        Button_About.Name = "Button_About"
+        Button_About.Size = New Size(159, 137)
+        Button_About.TabIndex = 32
+        Button_About.UseVisualStyleBackColor = True
+        ' 
+        ' Button_View
+        ' 
+        Button_View.Image = My.Resources.Resources.viewroomicon
+        Button_View.Location = New Point(-3, 134)
+        Button_View.Name = "Button_View"
+        Button_View.Size = New Size(159, 137)
+        Button_View.TabIndex = 31
+        Button_View.UseVisualStyleBackColor = True
+        ' 
+        ' Button_Check
+        ' 
+        Button_Check.BackgroundImage = My.Resources.Resources.checkinicon
+        Button_Check.Location = New Point(-3, 404)
+        Button_Check.Name = "Button_Check"
+        Button_Check.Size = New Size(159, 137)
+        Button_Check.TabIndex = 41
+        Button_Check.UseVisualStyleBackColor = True
+        ' 
+        ' Button_Book2
+        ' 
+        Button_Book2.BackgroundImage = My.Resources.Resources.roomicon
+        Button_Book2.Location = New Point(-3, 269)
+        Button_Book2.Name = "Button_Book2"
+        Button_Book2.Size = New Size(159, 137)
+        Button_Book2.TabIndex = 40
+        Button_Book2.UseVisualStyleBackColor = True
         ' 
         ' CheckIn
         ' 
@@ -338,7 +470,19 @@ Partial Class CheckIn
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1040, 620)
+        ClientSize = New Size(1303, 806)
+        Controls.Add(Label4)
+        Controls.Add(Label5)
+        Controls.Add(Label10)
+        Controls.Add(Label16)
+        Controls.Add(Button_Home)
+        Controls.Add(Label17)
+        Controls.Add(Label18)
+        Controls.Add(Button_Login)
+        Controls.Add(Button_About)
+        Controls.Add(Button_View)
+        Controls.Add(Button_Check)
+        Controls.Add(Button_Book2)
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
@@ -388,4 +532,16 @@ Partial Class CheckIn
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button5 As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Label16 As Label
+    Friend WithEvents Button_Home As Button
+    Friend WithEvents Label17 As Label
+    Friend WithEvents Label18 As Label
+    Friend WithEvents Button_Login As Button
+    Friend WithEvents Button_About As Button
+    Friend WithEvents Button_View As Button
+    Friend WithEvents Button_Check As Button
+    Friend WithEvents Button_Book2 As Button
 End Class

@@ -30,7 +30,7 @@ Partial Class Staff_Dashboard
         Label8 = New Label()
         Label9 = New Label()
         Button_About = New Button()
-        Button_Book = New Button()
+        Button_Change = New Button()
         Button_View = New Button()
         Button1 = New Button()
         Button2 = New Button()
@@ -50,7 +50,7 @@ Partial Class Staff_Dashboard
         Label11 = New Label()
         Label12 = New Label()
         Label13 = New Label()
-        Button14 = New Button()
+        Button_Logout = New Button()
         Label5 = New Label()
         Label7 = New Label()
         Label14 = New Label()
@@ -58,17 +58,19 @@ Partial Class Staff_Dashboard
         Label16 = New Label()
         Label17 = New Label()
         Label18 = New Label()
+        Button_Manage = New Button()
+        Label19 = New Label()
         SuspendLayout()
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Times New Roman", 27F, FontStyle.Bold Or FontStyle.Italic)
+        Label2.Font = New Font("Times New Roman", 35F, FontStyle.Bold Or FontStyle.Italic)
         Label2.ForeColor = SystemColors.MenuHighlight
-        Label2.Location = New Point(436, 9)
+        Label2.Location = New Point(552, 53)
         Label2.Name = "Label2"
-        Label2.Size = New Size(230, 52)
+        Label2.Size = New Size(300, 66)
         Label2.TabIndex = 29
         Label2.Text = "Dashboard"
         ' 
@@ -77,7 +79,7 @@ Partial Class Staff_Dashboard
         Label6.AutoSize = True
         Label6.BackColor = Color.White
         Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(54, 512)
+        Label6.Location = New Point(54, 644)
         Label6.Name = "Label6"
         Label6.Size = New Size(53, 20)
         Label6.TabIndex = 40
@@ -108,11 +110,11 @@ Partial Class Staff_Dashboard
         Label8.AutoSize = True
         Label8.BackColor = Color.White
         Label8.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(29, 373)
+        Label8.Location = New Point(24, 380)
         Label8.Name = "Label8"
-        Label8.Size = New Size(103, 20)
+        Label8.Size = New Size(114, 20)
         Label8.TabIndex = 37
-        Label8.Text = "Manage Staff"
+        Label8.Text = "Change Rooms"
         ' 
         ' Label9
         ' 
@@ -128,21 +130,21 @@ Partial Class Staff_Dashboard
         ' Button_About
         ' 
         Button_About.Image = My.Resources.Resources.abouticon
-        Button_About.Location = New Point(1, 402)
+        Button_About.Location = New Point(1, 534)
         Button_About.Name = "Button_About"
         Button_About.Size = New Size(159, 137)
         Button_About.TabIndex = 34
         Button_About.UseVisualStyleBackColor = True
         ' 
-        ' Button_Book
+        ' Button_Change
         ' 
-        Button_Book.BackgroundImage = CType(resources.GetObject("Button_Book.BackgroundImage"), Image)
-        Button_Book.BackgroundImageLayout = ImageLayout.Zoom
-        Button_Book.Location = New Point(1, 269)
-        Button_Book.Name = "Button_Book"
-        Button_Book.Size = New Size(159, 137)
-        Button_Book.TabIndex = 31
-        Button_Book.UseVisualStyleBackColor = True
+        Button_Change.BackgroundImage = My.Resources.Resources.changeicon
+        Button_Change.BackgroundImageLayout = ImageLayout.Zoom
+        Button_Change.Location = New Point(1, 269)
+        Button_Change.Name = "Button_Change"
+        Button_Change.Size = New Size(159, 137)
+        Button_Change.TabIndex = 31
+        Button_Change.UseVisualStyleBackColor = True
         ' 
         ' Button_View
         ' 
@@ -156,7 +158,7 @@ Partial Class Staff_Dashboard
         ' Button1
         ' 
         Button1.BackColor = Color.Cyan
-        Button1.Location = New Point(181, 81)
+        Button1.Location = New Point(334, 145)
         Button1.Name = "Button1"
         Button1.Size = New Size(349, 137)
         Button1.TabIndex = 42
@@ -167,7 +169,7 @@ Partial Class Staff_Dashboard
         Button2.BackColor = Color.White
         Button2.BackgroundImage = CType(resources.GetObject("Button2.BackgroundImage"), Image)
         Button2.BackgroundImageLayout = ImageLayout.Zoom
-        Button2.Location = New Point(181, 81)
+        Button2.Location = New Point(334, 145)
         Button2.Name = "Button2"
         Button2.Size = New Size(159, 137)
         Button2.TabIndex = 43
@@ -178,7 +180,7 @@ Partial Class Staff_Dashboard
         Button3.BackColor = Color.WhiteSmoke
         Button3.BackgroundImage = CType(resources.GetObject("Button3.BackgroundImage"), Image)
         Button3.BackgroundImageLayout = ImageLayout.Zoom
-        Button3.Location = New Point(580, 81)
+        Button3.Location = New Point(733, 145)
         Button3.Name = "Button3"
         Button3.Size = New Size(159, 137)
         Button3.TabIndex = 45
@@ -187,7 +189,7 @@ Partial Class Staff_Dashboard
         ' Button4
         ' 
         Button4.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
-        Button4.Location = New Point(580, 81)
+        Button4.Location = New Point(733, 145)
         Button4.Name = "Button4"
         Button4.Size = New Size(349, 137)
         Button4.TabIndex = 44
@@ -198,7 +200,7 @@ Partial Class Staff_Dashboard
         Button5.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
         Button5.BackgroundImage = CType(resources.GetObject("Button5.BackgroundImage"), Image)
         Button5.BackgroundImageLayout = ImageLayout.Stretch
-        Button5.Location = New Point(181, 269)
+        Button5.Location = New Point(334, 333)
         Button5.Name = "Button5"
         Button5.Size = New Size(159, 137)
         Button5.TabIndex = 47
@@ -207,7 +209,7 @@ Partial Class Staff_Dashboard
         ' Button6
         ' 
         Button6.BackColor = Color.Fuchsia
-        Button6.Location = New Point(181, 269)
+        Button6.Location = New Point(334, 333)
         Button6.Name = "Button6"
         Button6.Size = New Size(349, 137)
         Button6.TabIndex = 46
@@ -218,7 +220,7 @@ Partial Class Staff_Dashboard
         Button7.BackColor = Color.Blue
         Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), Image)
         Button7.BackgroundImageLayout = ImageLayout.Stretch
-        Button7.Location = New Point(580, 269)
+        Button7.Location = New Point(733, 333)
         Button7.Name = "Button7"
         Button7.Size = New Size(159, 137)
         Button7.TabIndex = 49
@@ -227,7 +229,7 @@ Partial Class Staff_Dashboard
         ' Button8
         ' 
         Button8.BackColor = Color.Blue
-        Button8.Location = New Point(580, 269)
+        Button8.Location = New Point(733, 333)
         Button8.Name = "Button8"
         Button8.Size = New Size(349, 137)
         Button8.TabIndex = 48
@@ -238,7 +240,7 @@ Partial Class Staff_Dashboard
         Button9.BackColor = SystemColors.Window
         Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), Image)
         Button9.BackgroundImageLayout = ImageLayout.Zoom
-        Button9.Location = New Point(181, 465)
+        Button9.Location = New Point(334, 529)
         Button9.Name = "Button9"
         Button9.Size = New Size(159, 137)
         Button9.TabIndex = 51
@@ -247,7 +249,7 @@ Partial Class Staff_Dashboard
         ' Button10
         ' 
         Button10.BackColor = Color.Lime
-        Button10.Location = New Point(181, 465)
+        Button10.Location = New Point(334, 529)
         Button10.Name = "Button10"
         Button10.Size = New Size(349, 137)
         Button10.TabIndex = 50
@@ -258,7 +260,7 @@ Partial Class Staff_Dashboard
         Button11.BackColor = Color.White
         Button11.BackgroundImage = CType(resources.GetObject("Button11.BackgroundImage"), Image)
         Button11.BackgroundImageLayout = ImageLayout.Zoom
-        Button11.Location = New Point(580, 465)
+        Button11.Location = New Point(733, 529)
         Button11.Name = "Button11"
         Button11.Size = New Size(159, 137)
         Button11.TabIndex = 53
@@ -267,7 +269,7 @@ Partial Class Staff_Dashboard
         ' Button12
         ' 
         Button12.BackColor = Color.Red
-        Button12.Location = New Point(580, 465)
+        Button12.Location = New Point(733, 529)
         Button12.Name = "Button12"
         Button12.Size = New Size(349, 137)
         Button12.TabIndex = 52
@@ -277,9 +279,10 @@ Partial Class Staff_Dashboard
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Cyan
-        Label1.Location = New Point(346, 99)
+        Label1.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label1.Location = New Point(499, 163)
         Label1.Name = "Label1"
-        Label1.Size = New Size(66, 20)
+        Label1.Size = New Size(79, 23)
         Label1.TabIndex = 54
         Label1.Text = "Check-In"
         ' 
@@ -287,9 +290,10 @@ Partial Class Staff_Dashboard
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
-        Label3.Location = New Point(745, 99)
+        Label3.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label3.Location = New Point(898, 163)
         Label3.Name = "Label3"
-        Label3.Size = New Size(78, 20)
+        Label3.Size = New Size(94, 23)
         Label3.TabIndex = 55
         Label3.Text = "Check-Out"
         ' 
@@ -297,9 +301,10 @@ Partial Class Staff_Dashboard
         ' 
         Label10.AutoSize = True
         Label10.BackColor = Color.Fuchsia
-        Label10.Location = New Point(346, 284)
+        Label10.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label10.Location = New Point(499, 348)
         Label10.Name = "Label10"
-        Label10.Size = New Size(86, 20)
+        Label10.Size = New Size(104, 23)
         Label10.TabIndex = 56
         Label10.Text = "Reservation"
         ' 
@@ -307,10 +312,11 @@ Partial Class Staff_Dashboard
         ' 
         Label11.AutoSize = True
         Label11.BackColor = Color.Blue
+        Label11.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
         Label11.ForeColor = SystemColors.ControlText
-        Label11.Location = New Point(745, 284)
+        Label11.Location = New Point(898, 348)
         Label11.Name = "Label11"
-        Label11.Size = New Size(52, 20)
+        Label11.Size = New Size(62, 23)
         Label11.TabIndex = 57
         Label11.Text = "Guests"
         ' 
@@ -318,9 +324,10 @@ Partial Class Staff_Dashboard
         ' 
         Label12.AutoSize = True
         Label12.BackColor = Color.Lime
-        Label12.Location = New Point(346, 478)
+        Label12.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label12.Location = New Point(499, 542)
         Label12.Name = "Label12"
-        Label12.Size = New Size(56, 20)
+        Label12.Size = New Size(66, 23)
         Label12.TabIndex = 58
         Label12.Text = "Invoice"
         ' 
@@ -328,28 +335,29 @@ Partial Class Staff_Dashboard
         ' 
         Label13.AutoSize = True
         Label13.BackColor = Color.Red
-        Label13.Location = New Point(745, 478)
+        Label13.Font = New Font("Segoe UI", 10.2F, FontStyle.Bold)
+        Label13.Location = New Point(898, 542)
         Label13.Name = "Label13"
-        Label13.Size = New Size(121, 20)
+        Label13.Size = New Size(143, 23)
         Label13.TabIndex = 59
         Label13.Text = "Available Rooms"
         ' 
-        ' Button14
+        ' Button_Logout
         ' 
-        Button14.BackgroundImage = CType(resources.GetObject("Button14.BackgroundImage"), Image)
-        Button14.BackgroundImageLayout = ImageLayout.Zoom
-        Button14.Location = New Point(1, 535)
-        Button14.Name = "Button14"
-        Button14.Size = New Size(159, 137)
-        Button14.TabIndex = 61
-        Button14.UseVisualStyleBackColor = True
+        Button_Logout.BackgroundImage = CType(resources.GetObject("Button_Logout.BackgroundImage"), Image)
+        Button_Logout.BackgroundImageLayout = ImageLayout.Zoom
+        Button_Logout.Location = New Point(1, 669)
+        Button_Logout.Name = "Button_Logout"
+        Button_Logout.Size = New Size(159, 137)
+        Button_Logout.TabIndex = 61
+        Button_Logout.UseVisualStyleBackColor = True
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
         Label5.BackColor = Color.White
         Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(45, 648)
+        Label5.Location = New Point(45, 780)
         Label5.Name = "Label5"
         Label5.Size = New Size(65, 20)
         Label5.TabIndex = 62
@@ -359,61 +367,88 @@ Partial Class Staff_Dashboard
         ' 
         Label7.AutoSize = True
         Label7.BackColor = Color.Cyan
-        Label7.Location = New Point(382, 148)
+        Label7.Font = New Font("MS Reference Sans Serif", 28.2F, FontStyle.Bold)
+        Label7.Location = New Point(538, 195)
         Label7.Name = "Label7"
-        Label7.Size = New Size(62, 20)
+        Label7.Size = New Size(87, 59)
         Label7.TabIndex = 63
-        Label7.Text = "datbase"
+        Label7.Text = "10"
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
         Label14.BackColor = Color.FromArgb(CByte(255), CByte(128), CByte(0))
-        Label14.Location = New Point(804, 148)
+        Label14.Font = New Font("MS Reference Sans Serif", 28.2F, FontStyle.Bold)
+        Label14.Location = New Point(944, 195)
         Label14.Name = "Label14"
-        Label14.Size = New Size(62, 20)
+        Label14.Size = New Size(87, 59)
         Label14.TabIndex = 64
-        Label14.Text = "datbase"
+        Label14.Text = "10"
         ' 
         ' Label15
         ' 
         Label15.AutoSize = True
         Label15.BackColor = Color.Blue
-        Label15.Location = New Point(804, 327)
+        Label15.Font = New Font("MS Reference Sans Serif", 28.2F, FontStyle.Bold)
+        Label15.Location = New Point(950, 374)
         Label15.Name = "Label15"
-        Label15.Size = New Size(62, 20)
+        Label15.Size = New Size(87, 59)
         Label15.TabIndex = 65
-        Label15.Text = "datbase"
+        Label15.Text = "10"
         ' 
         ' Label16
         ' 
         Label16.AutoSize = True
         Label16.BackColor = Color.Fuchsia
-        Label16.Location = New Point(382, 327)
+        Label16.Font = New Font("MS Reference Sans Serif", 28.2F, FontStyle.Bold)
+        Label16.Location = New Point(538, 382)
         Label16.Name = "Label16"
-        Label16.Size = New Size(62, 20)
+        Label16.Size = New Size(87, 59)
         Label16.TabIndex = 66
-        Label16.Text = "datbase"
+        Label16.Text = "10"
         ' 
         ' Label17
         ' 
         Label17.AutoSize = True
         Label17.BackColor = Color.Lime
-        Label17.Location = New Point(382, 535)
+        Label17.Font = New Font("MS Reference Sans Serif", 28.2F, FontStyle.Bold)
+        Label17.Location = New Point(538, 576)
         Label17.Name = "Label17"
-        Label17.Size = New Size(62, 20)
+        Label17.Size = New Size(87, 59)
         Label17.TabIndex = 67
-        Label17.Text = "datbase"
+        Label17.Text = "10"
         ' 
         ' Label18
         ' 
         Label18.AutoSize = True
         Label18.BackColor = Color.Red
-        Label18.Location = New Point(804, 535)
+        Label18.Font = New Font("MS Reference Sans Serif", 28.2F, FontStyle.Bold)
+        Label18.Location = New Point(946, 577)
         Label18.Name = "Label18"
-        Label18.Size = New Size(62, 20)
+        Label18.Size = New Size(87, 59)
         Label18.TabIndex = 68
-        Label18.Text = "datbase"
+        Label18.Text = "10"
+        ' 
+        ' Button_Manage
+        ' 
+        Button_Manage.BackgroundImage = CType(resources.GetObject("Button_Manage.BackgroundImage"), Image)
+        Button_Manage.BackgroundImageLayout = ImageLayout.Zoom
+        Button_Manage.Location = New Point(1, 400)
+        Button_Manage.Name = "Button_Manage"
+        Button_Manage.Size = New Size(159, 137)
+        Button_Manage.TabIndex = 69
+        Button_Manage.UseVisualStyleBackColor = True
+        ' 
+        ' Label19
+        ' 
+        Label19.AutoSize = True
+        Label19.BackColor = Color.White
+        Label19.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label19.Location = New Point(29, 504)
+        Label19.Name = "Label19"
+        Label19.Size = New Size(103, 20)
+        Label19.TabIndex = 70
+        Label19.Text = "Manage Staff"
         ' 
         ' Staff_Dashboard
         ' 
@@ -421,7 +456,9 @@ Partial Class Staff_Dashboard
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1020, 684)
+        ClientSize = New Size(1303, 806)
+        Controls.Add(Label19)
+        Controls.Add(Button_Manage)
         Controls.Add(Label18)
         Controls.Add(Label17)
         Controls.Add(Label16)
@@ -429,7 +466,7 @@ Partial Class Staff_Dashboard
         Controls.Add(Label14)
         Controls.Add(Label7)
         Controls.Add(Label5)
-        Controls.Add(Button14)
+        Controls.Add(Button_Logout)
         Controls.Add(Label13)
         Controls.Add(Label12)
         Controls.Add(Label11)
@@ -454,7 +491,7 @@ Partial Class Staff_Dashboard
         Controls.Add(Label8)
         Controls.Add(Label9)
         Controls.Add(Button_About)
-        Controls.Add(Button_Book)
+        Controls.Add(Button_Change)
         Controls.Add(Button_View)
         Controls.Add(Label2)
         Name = "Staff_Dashboard"
@@ -470,7 +507,7 @@ Partial Class Staff_Dashboard
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Button_About As Button
-    Friend WithEvents Button_Book As Button
+    Friend WithEvents Button_Change As Button
     Friend WithEvents Button_View As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
@@ -490,7 +527,7 @@ Partial Class Staff_Dashboard
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents Button14 As Button
+    Friend WithEvents Button_Logout As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label14 As Label
@@ -498,4 +535,6 @@ Partial Class Staff_Dashboard
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
+    Friend WithEvents Button_Manage As Button
+    Friend WithEvents Label19 As Label
 End Class

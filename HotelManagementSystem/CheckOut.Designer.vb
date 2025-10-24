@@ -42,6 +42,18 @@ Partial Class CheckOut
         GroupBox1 = New GroupBox()
         Label2 = New Label()
         Button6 = New Button()
+        Label4 = New Label()
+        Label6 = New Label()
+        Label5 = New Label()
+        Label8 = New Label()
+        Button_Home = New Button()
+        Label9 = New Label()
+        Label10 = New Label()
+        Button_Login = New Button()
+        Button_About = New Button()
+        Button_View = New Button()
+        Button_Check = New Button()
+        Button_Book2 = New Button()
         GroupBox2.SuspendLayout()
         GroupBox1.SuspendLayout()
         SuspendLayout()
@@ -67,7 +79,7 @@ Partial Class CheckOut
         ' Button4
         ' 
         Button4.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Button4.Location = New Point(901, 518)
+        Button4.Location = New Point(1118, 736)
         Button4.Name = "Button4"
         Button4.Size = New Size(103, 29)
         Button4.TabIndex = 38
@@ -77,7 +89,7 @@ Partial Class CheckOut
         ' Button3
         ' 
         Button3.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Button3.Location = New Point(782, 518)
+        Button3.Location = New Point(999, 736)
         Button3.Name = "Button3"
         Button3.Size = New Size(110, 29)
         Button3.TabIndex = 37
@@ -87,7 +99,7 @@ Partial Class CheckOut
         ' Button2
         ' 
         Button2.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Button2.Location = New Point(643, 518)
+        Button2.Location = New Point(860, 736)
         Button2.Name = "Button2"
         Button2.Size = New Size(124, 29)
         Button2.TabIndex = 36
@@ -99,18 +111,18 @@ Partial Class CheckOut
         Label15.AutoSize = True
         Label15.BackColor = Color.Transparent
         Label15.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Label15.Location = New Point(284, 450)
+        Label15.Location = New Point(485, 549)
         Label15.Name = "Label15"
-        Label15.Size = New Size(146, 22)
+        Label15.Size = New Size(91, 22)
         Label15.TabIndex = 35
-        Label15.Text = "delete yg ni nnti"
+        Label15.Text = "RM100.00"
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
         Label14.BackColor = Color.Transparent
         Label14.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Label14.Location = New Point(189, 450)
+        Label14.Location = New Point(390, 549)
         Label14.Name = "Label14"
         Label14.Size = New Size(58, 22)
         Label14.TabIndex = 34
@@ -171,7 +183,7 @@ Partial Class CheckOut
         GroupBox2.Controls.Add(Label7)
         GroupBox2.Controls.Add(ComboBox2)
         GroupBox2.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        GroupBox2.Location = New Point(533, 109)
+        GroupBox2.Location = New Point(734, 208)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(449, 294)
         GroupBox2.TabIndex = 30
@@ -211,7 +223,7 @@ Partial Class CheckOut
         GroupBox1.Controls.Add(TextBox1)
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        GroupBox1.Location = New Point(23, 109)
+        GroupBox1.Location = New Point(224, 208)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(449, 156)
         GroupBox1.TabIndex = 29
@@ -224,7 +236,7 @@ Partial Class CheckOut
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Times New Roman", 27F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = SystemColors.HotTrack
-        Label2.Location = New Point(215, 9)
+        Label2.Location = New Point(416, 108)
         Label2.Name = "Label2"
         Label2.Size = New Size(582, 52)
         Label2.TabIndex = 28
@@ -234,12 +246,132 @@ Partial Class CheckOut
         ' 
         Button6.BackColor = Color.Transparent
         Button6.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button6.Location = New Point(245, 485)
+        Button6.Location = New Point(446, 584)
         Button6.Name = "Button6"
         Button6.Size = New Size(94, 29)
         Button6.TabIndex = 23
         Button6.Text = "Bill"
         Button6.UseVisualStyleBackColor = False
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.BackColor = Color.White
+        Label4.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Location = New Point(26, 767)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(99, 20)
+        Label4.TabIndex = 48
+        Label4.Text = "Admin Login"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.BackColor = Color.White
+        Label6.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.Location = New Point(50, 643)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(53, 20)
+        Label6.TabIndex = 47
+        Label6.Text = "About"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.BackColor = Color.White
+        Label5.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Location = New Point(34, 97)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(85, 20)
+        Label5.TabIndex = 46
+        Label5.Text = "Homepage"
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.BackColor = Color.White
+        Label8.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label8.Location = New Point(22, 508)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(109, 20)
+        Label8.TabIndex = 45
+        Label8.Text = "Check In / Out"
+        ' 
+        ' Button_Home
+        ' 
+        Button_Home.BackgroundImage = My.Resources.Resources.homeicon
+        Button_Home.Location = New Point(0, -3)
+        Button_Home.Name = "Button_Home"
+        Button_Home.Size = New Size(159, 137)
+        Button_Home.TabIndex = 39
+        Button_Home.UseVisualStyleBackColor = True
+        ' 
+        ' Label9
+        ' 
+        Label9.AutoSize = True
+        Label9.BackColor = Color.White
+        Label9.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label9.Location = New Point(24, 365)
+        Label9.Name = "Label9"
+        Label9.Size = New Size(103, 20)
+        Label9.TabIndex = 44
+        Label9.Text = "Book a Room"
+        ' 
+        ' Label10
+        ' 
+        Label10.AutoSize = True
+        Label10.BackColor = Color.White
+        Label10.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label10.Location = New Point(28, 241)
+        Label10.Name = "Label10"
+        Label10.Size = New Size(96, 20)
+        Label10.TabIndex = 43
+        Label10.Text = "View Rooms"
+        ' 
+        ' Button_Login
+        ' 
+        Button_Login.BackgroundImage = My.Resources.Resources.loginicon
+        Button_Login.Location = New Point(0, 667)
+        Button_Login.Name = "Button_Login"
+        Button_Login.Size = New Size(159, 137)
+        Button_Login.TabIndex = 42
+        Button_Login.UseVisualStyleBackColor = True
+        ' 
+        ' Button_About
+        ' 
+        Button_About.Image = My.Resources.Resources.abouticon
+        Button_About.Location = New Point(0, 536)
+        Button_About.Name = "Button_About"
+        Button_About.Size = New Size(159, 137)
+        Button_About.TabIndex = 41
+        Button_About.UseVisualStyleBackColor = True
+        ' 
+        ' Button_View
+        ' 
+        Button_View.Image = My.Resources.Resources.viewroomicon
+        Button_View.Location = New Point(0, 132)
+        Button_View.Name = "Button_View"
+        Button_View.Size = New Size(159, 137)
+        Button_View.TabIndex = 40
+        Button_View.UseVisualStyleBackColor = True
+        ' 
+        ' Button_Check
+        ' 
+        Button_Check.BackgroundImage = My.Resources.Resources.checkinicon
+        Button_Check.Location = New Point(0, 402)
+        Button_Check.Name = "Button_Check"
+        Button_Check.Size = New Size(159, 137)
+        Button_Check.TabIndex = 50
+        Button_Check.UseVisualStyleBackColor = True
+        ' 
+        ' Button_Book2
+        ' 
+        Button_Book2.BackgroundImage = My.Resources.Resources.roomicon
+        Button_Book2.Location = New Point(0, 267)
+        Button_Book2.Name = "Button_Book2"
+        Button_Book2.Size = New Size(159, 137)
+        Button_Book2.TabIndex = 49
+        Button_Book2.UseVisualStyleBackColor = True
         ' 
         ' CheckOut
         ' 
@@ -247,7 +379,19 @@ Partial Class CheckOut
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1013, 578)
+        ClientSize = New Size(1303, 806)
+        Controls.Add(Label4)
+        Controls.Add(Label6)
+        Controls.Add(Label5)
+        Controls.Add(Label8)
+        Controls.Add(Button_Home)
+        Controls.Add(Label9)
+        Controls.Add(Label10)
+        Controls.Add(Button_Login)
+        Controls.Add(Button_About)
+        Controls.Add(Button_View)
+        Controls.Add(Button_Check)
+        Controls.Add(Button_Book2)
         Controls.Add(Button6)
         Controls.Add(Button4)
         Controls.Add(Button3)
@@ -286,4 +430,16 @@ Partial Class CheckOut
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Button6 As Button
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label8 As Label
+    Friend WithEvents Button_Home As Button
+    Friend WithEvents Label9 As Label
+    Friend WithEvents Label10 As Label
+    Friend WithEvents Button_Login As Button
+    Friend WithEvents Button_About As Button
+    Friend WithEvents Button_View As Button
+    Friend WithEvents Button_Check As Button
+    Friend WithEvents Button_Book2 As Button
 End Class
