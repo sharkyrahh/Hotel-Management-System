@@ -54,6 +54,7 @@ Partial Class CheckOut
         Button_View = New Button()
         Button_Check = New Button()
         Button_Book2 = New Button()
+        Label12 = New Label()
         GroupBox2.SuspendLayout()
         GroupBox1.SuspendLayout()
         SuspendLayout()
@@ -113,9 +114,9 @@ Partial Class CheckOut
         Label15.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
         Label15.Location = New Point(485, 549)
         Label15.Name = "Label15"
-        Label15.Size = New Size(91, 22)
+        Label15.Size = New Size(41, 22)
         Label15.TabIndex = 35
-        Label15.Text = "RM100.00"
+        Label15.Text = "RM"
         ' 
         ' Label14
         ' 
@@ -219,6 +220,7 @@ Partial Class CheckOut
         ' 
         GroupBox1.BackColor = Color.Transparent
         GroupBox1.BackgroundImageLayout = ImageLayout.Center
+        GroupBox1.Controls.Add(Label12)
         GroupBox1.Controls.Add(Button1)
         GroupBox1.Controls.Add(TextBox1)
         GroupBox1.Controls.Add(Label3)
@@ -373,6 +375,14 @@ Partial Class CheckOut
         Button_Book2.TabIndex = 49
         Button_Book2.UseVisualStyleBackColor = True
         ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Location = New Point(343, 116)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(0, 22)
+        Label12.TabIndex = 23
+        ' 
         ' CheckOut
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -442,4 +452,5 @@ Partial Class CheckOut
     Friend WithEvents Button_View As Button
     Friend WithEvents Button_Check As Button
     Friend WithEvents Button_Book2 As Button
+    Friend WithEvents Label12 As Label
 End Class

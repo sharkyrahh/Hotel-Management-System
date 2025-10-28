@@ -26,7 +26,9 @@ Partial Class Form2
         Label10 = New Label()
         Button2 = New Button()
         GroupBox2 = New GroupBox()
+        TextBox1 = New TextBox()
         Label4 = New Label()
+        ComboBox3 = New ComboBox()
         TextBox6 = New TextBox()
         Label7 = New Label()
         TextBox5 = New TextBox()
@@ -34,6 +36,7 @@ Partial Class Form2
         TextBox4 = New TextBox()
         Button1 = New Button()
         GroupBox1 = New GroupBox()
+        TextBox2 = New TextBox()
         Label1 = New Label()
         ComboBox1 = New ComboBox()
         Label3 = New Label()
@@ -52,9 +55,6 @@ Partial Class Form2
         Button_About = New Button()
         Button_Change = New Button()
         Button_View = New Button()
-        ComboBox3 = New ComboBox()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
         GroupBox2.SuspendLayout()
         GroupBox1.SuspendLayout()
         SuspendLayout()
@@ -94,6 +94,13 @@ Partial Class Form2
         GroupBox2.TabStop = False
         GroupBox2.Text = "Remove Room"
         ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(140, 105)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(176, 29)
+        TextBox1.TabIndex = 40
+        ' 
         ' Label4
         ' 
         Label4.AutoSize = True
@@ -102,6 +109,15 @@ Partial Class Form2
         Label4.Size = New Size(70, 22)
         Label4.TabIndex = 40
         Label4.Text = "Reason"
+        ' 
+        ' ComboBox3
+        ' 
+        ComboBox3.FormattingEnabled = True
+        ComboBox3.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
+        ComboBox3.Location = New Point(140, 53)
+        ComboBox3.Name = "ComboBox3"
+        ComboBox3.Size = New Size(176, 30)
+        ComboBox3.TabIndex = 39
         ' 
         ' TextBox6
         ' 
@@ -173,6 +189,13 @@ Partial Class Form2
         GroupBox1.TabIndex = 32
         GroupBox1.TabStop = False
         GroupBox1.Text = "Add Rooms"
+        ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(181, 101)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(177, 29)
+        TextBox2.TabIndex = 40
         ' 
         ' Label1
         ' 
@@ -363,29 +386,6 @@ Partial Class Form2
         Button_View.TabIndex = 73
         Button_View.UseVisualStyleBackColor = True
         ' 
-        ' ComboBox3
-        ' 
-        ComboBox3.FormattingEnabled = True
-        ComboBox3.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
-        ComboBox3.Location = New Point(140, 53)
-        ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(176, 30)
-        ComboBox3.TabIndex = 39
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(140, 105)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(176, 29)
-        TextBox1.TabIndex = 40
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Location = New Point(181, 101)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(177, 29)
-        TextBox2.TabIndex = 40
-        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -393,7 +393,7 @@ Partial Class Form2
         BackColor = Color.DeepSkyBlue
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1303, 806)
+        ClientSize = New Size(1306, 805)
         Controls.Add(Label19)
         Controls.Add(Button_Manage)
         Controls.Add(Label8)

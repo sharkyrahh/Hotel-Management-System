@@ -62,6 +62,7 @@ Partial Class CheckIn
         Button_View = New Button()
         Button_Check = New Button()
         Button_Book2 = New Button()
+        labelstatus = New Label()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         CType(NumericUpDown1, ComponentModel.ISupportInitialize).BeginInit()
@@ -83,6 +84,7 @@ Partial Class CheckIn
         ' GroupBox1
         ' 
         GroupBox1.BackColor = Color.Transparent
+        GroupBox1.Controls.Add(labelstatus)
         GroupBox1.Controls.Add(Button1)
         GroupBox1.Controls.Add(TextBox1)
         GroupBox1.Controls.Add(Label3)
@@ -464,6 +466,14 @@ Partial Class CheckIn
         Button_Book2.TabIndex = 40
         Button_Book2.UseVisualStyleBackColor = True
         ' 
+        ' labelstatus
+        ' 
+        labelstatus.AutoSize = True
+        labelstatus.Location = New Point(343, 110)
+        labelstatus.Name = "labelstatus"
+        labelstatus.Size = New Size(0, 22)
+        labelstatus.TabIndex = 23
+        ' 
         ' CheckIn
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -544,4 +554,5 @@ Partial Class CheckIn
     Friend WithEvents Button_View As Button
     Friend WithEvents Button_Check As Button
     Friend WithEvents Button_Book2 As Button
+    Friend WithEvents labelstatus As Label
 End Class
