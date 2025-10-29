@@ -9,10 +9,9 @@ Public Class manageroom
         Try
             conn.Open()
             Dim cmd As New MySqlCommand("INSERT INTO rooms (room_id, room_type, room_rules, price, roomstatus) VALUES (@id, @type, @rules, @price, @status)", conn)
-            cmd.Parameters.AddWithValue("@id", TextBox3.Text)
+
             cmd.Parameters.AddWithValue("@type", ListBox1.SelectedItem.ToString())
             cmd.Parameters.AddWithValue("@rules", TextBox4.Text)
-            cmd.Parameters.AddWithValue("@price", TextBox2.Text)
             cmd.Parameters.AddWithValue("@status", ListBox2.SelectedItem.ToString())
             cmd.ExecuteNonQuery()
             MessageBox.Show("Added successfully.")
@@ -41,8 +40,7 @@ Public Class manageroom
     ' Clear everything
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         TextBox1.Clear()
-        TextBox2.Clear()
-        TextBox3.Clear()
+
         TextBox4.Clear()
         ListBox1.ClearSelected()
         ListBox2.ClearSelected()

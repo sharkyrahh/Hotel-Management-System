@@ -1,8 +1,8 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports MySql.Data.MySqlClient
 
 Public Class change_room
     Private conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
-
     ' Logout
     Private Sub Button_Logout_Click(sender As Object, e As EventArgs) Handles Button_Logout.Click
         If MessageBox.Show("Are you sure you want to log out?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
@@ -36,45 +36,22 @@ Public Class change_room
 
     ' Find user based on IC (Button2)
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If String.IsNullOrWhiteSpace(TextBox_IC.Text) Then
-            MessageBox.Show("Enter user IC first")
+        If TextBox_IC.Text.Trim() = "" Then
+            MessageBox.Show("Enter IC first")
             Return
         End If
 
         Try
             conn.Open()
-            Dim cmd As New MySqlCommand("SELECT users_id FROM users WHERE IC=@ic", conn)
-            cmd.Parameters.AddWithValue("@ic", TextBox_IC.Text)
-            Dim reader As MySqlDataReader = cmd.ExecuteReader()
-            Dim userId As Integer = -1
-            If reader.Read() Then
-                userId = Convert.ToInt32(reader("users_id"))
-            Else
-                MessageBox.Show("User not found")
-            End If
-            reader.Close()
-
-            ' Display current booked rooms for user
-            If userId <> -1 Then
-                Dim cmdRooms As New MySqlCommand("SELECT room_id FROM bookings WHERE users_id=@uid AND roomstatus='Booked'", conn)
-                cmdRooms.Parameters.AddWithValue("@uid", userId)
-                Dim roomReader As MySqlDataReader = cmdRooms.ExecuteReader()
-                CurrentBookedRoom.Items.Clear()
-                While roomReader.Read()
-                    CurrentBookedRoom.Items.Add(roomReader("room_id").ToString())
-                End While
-                roomReader.Close()
-
-                If CurrentBookedRoom.Items.Count = 0 Then
-                    CurrentBookedRoom.Items.Add("No bookings made")
-                End If
-            End If
+            conn.Open()
+                Dim cmd As New MySqlCommand("SELECT users_id FROM users WHERE IC=@ic", conn)
+                cmd.Parameters.AddWithValue("@ic", TextBox_IC.Text.Trim())
+                Dim userId As Object = cmd.ExecuteScalar()
 
         Catch ex As Exception
             MessageBox.Show(ex.Message)
-        Finally
-            conn.Close()
         End Try
+
     End Sub
 
     ' Show available rooms
@@ -125,6 +102,23 @@ Public Class change_room
             MessageBox.Show(ex.Message)
         Finally
             conn.Close()
+        End Try
+    End Sub
+
+    Private Sub CurrentBookedRoom_SelectedIndexChanged(sender As Object, e As EventArgs) Handles CurrentBookedRoom.SelectedIndexChanged
+        If CurrentBookedRoom.SelectedItem Is Nothing Then Exit Sub
+        Try
+            conn.Open()
+            conn.Open()
+                Dim cmd As New MySqlCommand("SELECT r.room_id, r.room_type, r.price, r.roomstatus FROM bookings b JOIN rooms r ON b.room_id=r.room_id WHERE b.users_id=@uid", conn)
+                Dim reader As MySqlDataReader = cmd.ExecuteReader()
+                CurrentBookedRoom.Items.Clear()
+                While reader.Read()
+                    CurrentBookedRoom.Items.Add("Room ID: " & reader("room_id") & " | Type: " & reader("room_type"))
+                End While
+
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
         End Try
     End Sub
 End Class

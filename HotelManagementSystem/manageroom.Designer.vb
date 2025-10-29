@@ -26,14 +26,10 @@ Partial Class manageroom
         GroupBox1 = New GroupBox()
         ListBox2 = New ListBox()
         TextBox4 = New TextBox()
-        TextBox3 = New TextBox()
-        TextBox2 = New TextBox()
         ListBox1 = New ListBox()
         ButtonAdd = New Button()
         Label7 = New Label()
         Label6 = New Label()
-        Label5 = New Label()
-        Label4 = New Label()
         Label3 = New Label()
         Label2 = New Label()
         GroupBox2 = New GroupBox()
@@ -52,14 +48,10 @@ Partial Class manageroom
         GroupBox1.BackColor = Color.Transparent
         GroupBox1.Controls.Add(ListBox2)
         GroupBox1.Controls.Add(TextBox4)
-        GroupBox1.Controls.Add(TextBox3)
-        GroupBox1.Controls.Add(TextBox2)
         GroupBox1.Controls.Add(ListBox1)
         GroupBox1.Controls.Add(ButtonAdd)
         GroupBox1.Controls.Add(Label7)
         GroupBox1.Controls.Add(Label6)
-        GroupBox1.Controls.Add(Label5)
-        GroupBox1.Controls.Add(Label4)
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -74,31 +66,17 @@ Partial Class manageroom
         ' 
         ListBox2.FormattingEnabled = True
         ListBox2.Items.AddRange(New Object() {"Available", "Reserved", "Unavailable"})
-        ListBox2.Location = New Point(152, 298)
+        ListBox2.Location = New Point(150, 247)
         ListBox2.Name = "ListBox2"
         ListBox2.Size = New Size(249, 64)
         ListBox2.TabIndex = 12
         ' 
         ' TextBox4
         ' 
-        TextBox4.Location = New Point(150, 245)
+        TextBox4.Location = New Point(152, 158)
         TextBox4.Name = "TextBox4"
         TextBox4.Size = New Size(249, 27)
         TextBox4.TabIndex = 11
-        ' 
-        ' TextBox3
-        ' 
-        TextBox3.Location = New Point(150, 181)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(249, 27)
-        TextBox3.TabIndex = 10
-        ' 
-        ' TextBox2
-        ' 
-        TextBox2.Location = New Point(150, 138)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(249, 27)
-        TextBox2.TabIndex = 9
         ' 
         ' ListBox1
         ' 
@@ -122,7 +100,7 @@ Partial Class manageroom
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(14, 298)
+        Label7.Location = New Point(24, 247)
         Label7.Name = "Label7"
         Label7.Size = New Size(132, 28)
         Label7.TabIndex = 5
@@ -132,31 +110,11 @@ Partial Class manageroom
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(14, 245)
+        Label6.Location = New Point(24, 158)
         Label6.Name = "Label6"
         Label6.Size = New Size(130, 28)
         Label6.TabIndex = 4
         Label6.Text = "Room  Rules"
-        ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(24, 177)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(91, 28)
-        Label5.TabIndex = 3
-        Label5.Text = "Room Id"
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(22, 134)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(120, 28)
-        Label4.TabIndex = 2
-        Label4.Text = "Room Price"
         ' 
         ' Label3
         ' 
@@ -278,18 +236,14 @@ Partial Class manageroom
     Friend WithEvents ButtonAdd As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents ButtonDelete As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents ListBox2 As ListBox
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
 End Class
