@@ -171,9 +171,9 @@ Partial Class Add_Staff
         Label10.AutoSize = True
         Label10.Location = New Point(27, 56)
         Label10.Name = "Label10"
-        Label10.Size = New Size(75, 22)
+        Label10.Size = New Size(103, 22)
         Label10.TabIndex = 23
-        Label10.Text = "Staff IC"
+        Label10.Text = "Staff Email"
         ' 
         ' Button2
         ' 
