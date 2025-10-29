@@ -152,7 +152,7 @@ Partial Class CheckOut
         ' 
         ListBox2.FormattingEnabled = True
         ListBox2.ItemHeight = 22
-        ListBox2.Items.AddRange(New Object() {" "})
+        ListBox2.Items.AddRange(New Object() {" Available"})
         ListBox2.Location = New Point(211, 200)
         ListBox2.Name = "ListBox2"
         ListBox2.Size = New Size(232, 26)

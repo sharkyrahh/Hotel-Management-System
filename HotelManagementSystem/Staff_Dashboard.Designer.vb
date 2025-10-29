@@ -370,9 +370,8 @@ Partial Class Staff_Dashboard
         Label7.Font = New Font("MS Reference Sans Serif", 28.2F, FontStyle.Bold)
         Label7.Location = New Point(538, 195)
         Label7.Name = "Label7"
-        Label7.Size = New Size(87, 59)
+        Label7.Size = New Size(0, 59)
         Label7.TabIndex = 63
-        Label7.Text = "10"
         ' 
         ' Label14
         ' 
@@ -381,9 +380,8 @@ Partial Class Staff_Dashboard
         Label14.Font = New Font("MS Reference Sans Serif", 28.2F, FontStyle.Bold)
         Label14.Location = New Point(944, 195)
         Label14.Name = "Label14"
-        Label14.Size = New Size(87, 59)
+        Label14.Size = New Size(0, 59)
         Label14.TabIndex = 64
-        Label14.Text = "10"
         ' 
         ' Label15
         ' 
@@ -392,9 +390,8 @@ Partial Class Staff_Dashboard
         Label15.Font = New Font("MS Reference Sans Serif", 28.2F, FontStyle.Bold)
         Label15.Location = New Point(950, 374)
         Label15.Name = "Label15"
-        Label15.Size = New Size(87, 59)
+        Label15.Size = New Size(0, 59)
         Label15.TabIndex = 65
-        Label15.Text = "10"
         ' 
         ' Label16
         ' 
@@ -403,9 +400,8 @@ Partial Class Staff_Dashboard
         Label16.Font = New Font("MS Reference Sans Serif", 28.2F, FontStyle.Bold)
         Label16.Location = New Point(538, 382)
         Label16.Name = "Label16"
-        Label16.Size = New Size(87, 59)
+        Label16.Size = New Size(0, 59)
         Label16.TabIndex = 66
-        Label16.Text = "10"
         ' 
         ' Label17
         ' 
@@ -414,9 +410,8 @@ Partial Class Staff_Dashboard
         Label17.Font = New Font("MS Reference Sans Serif", 28.2F, FontStyle.Bold)
         Label17.Location = New Point(538, 576)
         Label17.Name = "Label17"
-        Label17.Size = New Size(87, 59)
+        Label17.Size = New Size(0, 59)
         Label17.TabIndex = 67
-        Label17.Text = "10"
         ' 
         ' Label18
         ' 
@@ -425,9 +420,8 @@ Partial Class Staff_Dashboard
         Label18.Font = New Font("MS Reference Sans Serif", 28.2F, FontStyle.Bold)
         Label18.Location = New Point(946, 577)
         Label18.Name = "Label18"
-        Label18.Size = New Size(87, 59)
+        Label18.Size = New Size(0, 59)
         Label18.TabIndex = 68
-        Label18.Text = "10"
         ' 
         ' Button_Manage
         ' 
