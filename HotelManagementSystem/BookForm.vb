@@ -69,7 +69,7 @@ Public Class BookForm
         End If
 
         If Date.Parse(fromDate) < Date.Today Then
-            MessageBox.Show("Check-in date cannot be in the past.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Date cannot be in the past.", "Invalid Date", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Return
         End If
 
@@ -151,9 +151,6 @@ Public Class BookForm
             Dim nights As Integer = (Date.Parse(toDate) - Date.Parse(fromDate)).Days
             nights = If(nights > 0, nights, 1)
 
-            Dim checkinDate As String = fromDate
-            Dim checkoutDate As String = toDate
-
             Dim guestName As String = "Guest"
             Dim newUserId As Integer = CreateGuestUser(guestName)
 
@@ -168,14 +165,14 @@ Public Class BookForm
                 Dim roomId As Integer = ExtractRoomId(roomItem)
 
                 If roomId > 0 Then
-                    Dim sql As String = "INSERT INTO bookings (room_id, users_id, checkin_date, checkout_date, roomstatus) " &
-                               "VALUES (@room_id, @user_id, @checkin, @checkout, 'Processing')"
+                    Dim sql As String = "INSERT INTO bookings (room_id, users_id, from_date, tot_date, roomstatus) " &
+                               "VALUES (@room_id, @user_id, @from, @to, 'Processing')"
 
                     command = New MySqlCommand(sql, conn)
                     command.Parameters.AddWithValue("@room_id", roomId)
                     command.Parameters.AddWithValue("@user_id", newUserId)
-                    command.Parameters.AddWithValue("@checkin", checkinDate)
-                    command.Parameters.AddWithValue("@checkout", checkoutDate)
+                    command.Parameters.AddWithValue("@from", fromDate)
+                    command.Parameters.AddWithValue("@to", toDate)
 
                     command.ExecuteNonQuery()
                 End If

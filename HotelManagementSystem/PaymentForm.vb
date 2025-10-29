@@ -73,7 +73,7 @@ Public Class PaymentForm
                 subtotal += GetPanelTotal(i)
             Next
 
-            Dim nightsSql As String = "SELECT DATEDIFF(checkout_date, checkin_date) as nights FROM bookings WHERE booking_id = (SELECT MAX(booking_id) FROM bookings)"
+            Dim nightsSql As String = "SELECT DATEDIFF(from_date, to_date) as nights FROM bookings WHERE booking_id = (SELECT MAX(booking_id) FROM bookings)"
             command = New MySqlCommand(nightsSql, conn)
             Dim nightsResult As Object = command.ExecuteScalar()
             nights = If(nightsResult IsNot Nothing AndAlso IsNumeric(nightsResult), Convert.ToInt32(nightsResult), 1)
