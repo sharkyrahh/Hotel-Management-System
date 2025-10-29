@@ -288,7 +288,7 @@ Partial Class change_room
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1303, 806)
+        ClientSize = New Size(1303, 892)
         Controls.Add(Label7)
         Controls.Add(Label2)
         Controls.Add(Label3)
