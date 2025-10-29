@@ -41,6 +41,8 @@ Partial Class manageroom
         Button2 = New Button()
         Label8 = New Label()
         Label1 = New Label()
+        Button4 = New Button()
+        Button3 = New Button()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         SuspendLayout()
@@ -227,6 +229,26 @@ Partial Class manageroom
         Label1.TabIndex = 2
         Label1.Text = "Manage Rooms"
         ' 
+        ' Button4
+        ' 
+        Button4.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
+        Button4.Location = New Point(842, 572)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(94, 29)
+        Button4.TabIndex = 29
+        Button4.Text = "Back"
+        Button4.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
+        Button3.Location = New Point(733, 572)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(94, 29)
+        Button3.TabIndex = 28
+        Button3.Text = "Reset"
+        Button3.UseVisualStyleBackColor = True
+        ' 
         ' manageroom
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -234,6 +256,8 @@ Partial Class manageroom
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(1053, 642)
+        Controls.Add(Button4)
+        Controls.Add(Button3)
         Controls.Add(Label1)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
@@ -266,4 +290,6 @@ Partial Class manageroom
     Friend WithEvents ListBox2 As ListBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
 End Class

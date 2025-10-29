@@ -10,7 +10,7 @@
     End Sub
 
     Private Sub Button_View_Click(sender As Object, e As EventArgs) Handles Button_View.Click
-        Form2.Show()
+        manageroom.Show()
         Me.Hide()
     End Sub
 
