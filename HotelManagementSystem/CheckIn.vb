@@ -41,9 +41,9 @@ Public Class CheckIn
                 Dim cmd As New MySqlCommand("SELECT r.room_id, r.room_type, r.price, r.roomstatus FROM bookings b JOIN rooms r ON b.room_id=r.room_id WHERE b.users_id=@uid", conn)
                 cmd.Parameters.AddWithValue("@uid", LabelUserID.Text)
                 Dim reader As MySqlDataReader = cmd.ExecuteReader()
-                ListBox2.Items.Clear()
+                ListBox1.Items.Clear()
                 While reader.Read()
-                    ListBox2.Items.Add("Room ID: " & reader("room_id") & " | Type: " & reader("room_type") & " | Price: " & reader("price") & " | Status: " & reader("roomstatus"))
+                    ListBox1.Items.Add("Room ID: " & reader("room_id") & " | Type: " & reader("room_type") & " | Price: " & reader("price") & " | Status: " & reader("roomstatus"))
                 End While
             End Using
         Catch ex As Exception
@@ -122,8 +122,13 @@ Public Class CheckIn
     End Sub
 
     Private Sub ListBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox2.SelectedIndexChanged
-        ' choose between unavailable and reserved
+        If ListBox2.SelectedItem Is Nothing Then Exit Sub
+        Dim choice As String = ListBox2.SelectedItem.ToString()
+        If choice = "Unavailable" Or choice = "Reserved" Then
+            MessageBox.Show("You selected: " & choice)
+        End If
     End Sub
+
 
     ' Save after filling details
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
