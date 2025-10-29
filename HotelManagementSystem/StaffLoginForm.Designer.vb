@@ -24,10 +24,10 @@ Private components As System.ComponentModel.IContainer
     Private Sub InitializeComponent()
         Dim GroupBox1 As GroupBox
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StaffLoginForm))
-        TextBox2 = New TextBox()
+        TextBoxPass = New TextBox()
         Label2 = New Label()
         Button_login2 = New Button()
-        TextBox1 = New TextBox()
+        TextBoxUser = New TextBox()
         Label3 = New Label()
         Label1 = New Label()
         Label7 = New Label()
@@ -51,10 +51,10 @@ Private components As System.ComponentModel.IContainer
         ' GroupBox1
         ' 
         GroupBox1.BackColor = SystemColors.ButtonHighlight
-        GroupBox1.Controls.Add(TextBox2)
+        GroupBox1.Controls.Add(TextBoxPass)
         GroupBox1.Controls.Add(Label2)
         GroupBox1.Controls.Add(Button_login2)
-        GroupBox1.Controls.Add(TextBox1)
+        GroupBox1.Controls.Add(TextBoxUser)
         GroupBox1.Controls.Add(Label3)
         GroupBox1.Location = New Point(395, 254)
         GroupBox1.Name = "GroupBox1"
@@ -62,13 +62,14 @@ Private components As System.ComponentModel.IContainer
         GroupBox1.TabIndex = 7
         GroupBox1.TabStop = False
         ' 
-        ' TextBox2
+        ' TextBoxPass
         ' 
-        TextBox2.Font = New Font("Segoe UI", 20F)
-        TextBox2.Location = New Point(255, 212)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(350, 52)
-        TextBox2.TabIndex = 7
+        TextBoxPass.Font = New Font("Segoe UI", 20F)
+        TextBoxPass.Location = New Point(255, 212)
+        TextBoxPass.Name = "TextBoxPass"
+        TextBoxPass.PasswordChar = "*"c
+        TextBoxPass.Size = New Size(350, 52)
+        TextBoxPass.TabIndex = 7
         ' 
         ' Label2
         ' 
@@ -89,13 +90,13 @@ Private components As System.ComponentModel.IContainer
         Button_login2.Text = "Login"
         Button_login2.UseVisualStyleBackColor = True
         ' 
-        ' TextBox1
+        ' TextBoxUser
         ' 
-        TextBox1.Font = New Font("Segoe UI", 20F)
-        TextBox1.Location = New Point(255, 88)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(350, 52)
-        TextBox1.TabIndex = 3
+        TextBoxUser.Font = New Font("Segoe UI", 20F)
+        TextBoxUser.Location = New Point(255, 88)
+        TextBoxUser.Name = "TextBoxUser"
+        TextBoxUser.Size = New Size(350, 52)
+        TextBoxUser.TabIndex = 3
         ' 
         ' Label3
         ' 
@@ -289,10 +290,10 @@ Private components As System.ComponentModel.IContainer
     Friend WithEvents Label1 As Label
 Friend WithEvents Label2 As Label
 Friend WithEvents Label3 As Label
-Friend WithEvents TextBox1 As TextBox
+Friend WithEvents TextBoxUser As TextBox
 Friend WithEvents Button_login2 As Button
 Friend WithEvents GroupBox1 As GroupBox
-Friend WithEvents TextBox2 As TextBox
+Friend WithEvents TextBoxPass As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label4 As Label

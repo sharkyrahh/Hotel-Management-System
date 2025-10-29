@@ -50,7 +50,7 @@ Public Class CheckIn
 
     ' Search user IC
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=hotel_db")
+        Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
         Dim cmd As New MySqlCommand("SELECT * FROM users WHERE IC=@ic", conn)
         cmd.Parameters.AddWithValue("@ic", TextBox1.Text)
 
