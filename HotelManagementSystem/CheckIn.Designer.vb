@@ -25,15 +25,12 @@ Partial Class CheckIn
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CheckIn))
         Label2 = New Label()
         GroupBox1 = New GroupBox()
+        labelstatus = New Label()
         Button1 = New Button()
         TextBox1 = New TextBox()
         Label3 = New Label()
-        Label8 = New Label()
-        Label11 = New Label()
         Label12 = New Label()
         GroupBox2 = New GroupBox()
-        DateTimePicker2 = New DateTimePicker()
-        NumericUpDown1 = New NumericUpDown()
         DateTimePicker1 = New DateTimePicker()
         GroupBox3 = New GroupBox()
         Button5 = New Button()
@@ -62,10 +59,8 @@ Partial Class CheckIn
         Button_View = New Button()
         Button_Check = New Button()
         Button_Book2 = New Button()
-        labelstatus = New Label()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
-        CType(NumericUpDown1, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox3.SuspendLayout()
         SuspendLayout()
         ' 
@@ -97,6 +92,14 @@ Partial Class CheckIn
         GroupBox1.TabStop = False
         GroupBox1.Text = "Guest Info"
         ' 
+        ' labelstatus
+        ' 
+        labelstatus.AutoSize = True
+        labelstatus.Location = New Point(343, 110)
+        labelstatus.Name = "labelstatus"
+        labelstatus.Size = New Size(0, 22)
+        labelstatus.TabIndex = 23
+        ' 
         ' Button1
         ' 
         Button1.Location = New Point(166, 107)
@@ -122,24 +125,6 @@ Partial Class CheckIn
         Label3.TabIndex = 4
         Label3.Text = "Guest IC"
         ' 
-        ' Label8
-        ' 
-        Label8.AutoSize = True
-        Label8.Location = New Point(334, 37)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(97, 22)
-        Label8.TabIndex = 9
-        Label8.Text = "No of Days"
-        ' 
-        ' Label11
-        ' 
-        Label11.AutoSize = True
-        Label11.Location = New Point(37, 130)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(137, 22)
-        Label11.TabIndex = 12
-        Label11.Text = "Check-Out Date"
-        ' 
         ' Label12
         ' 
         Label12.AutoSize = True
@@ -152,33 +137,15 @@ Partial Class CheckIn
         ' GroupBox2
         ' 
         GroupBox2.BackColor = Color.Transparent
-        GroupBox2.Controls.Add(DateTimePicker2)
-        GroupBox2.Controls.Add(NumericUpDown1)
         GroupBox2.Controls.Add(DateTimePicker1)
         GroupBox2.Controls.Add(Label12)
-        GroupBox2.Controls.Add(Label8)
-        GroupBox2.Controls.Add(Label11)
         GroupBox2.Font = New Font("Book Antiqua", 10.2F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox2.Location = New Point(220, 398)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(489, 210)
+        GroupBox2.Size = New Size(489, 121)
         GroupBox2.TabIndex = 19
         GroupBox2.TabStop = False
         GroupBox2.Text = "Check-In information"
-        ' 
-        ' DateTimePicker2
-        ' 
-        DateTimePicker2.Location = New Point(21, 167)
-        DateTimePicker2.Name = "DateTimePicker2"
-        DateTimePicker2.Size = New Size(274, 28)
-        DateTimePicker2.TabIndex = 17
-        ' 
-        ' NumericUpDown1
-        ' 
-        NumericUpDown1.Location = New Point(333, 73)
-        NumericUpDown1.Name = "NumericUpDown1"
-        NumericUpDown1.Size = New Size(150, 28)
-        NumericUpDown1.TabIndex = 15
         ' 
         ' DateTimePicker1
         ' 
@@ -466,14 +433,6 @@ Partial Class CheckIn
         Button_Book2.TabIndex = 40
         Button_Book2.UseVisualStyleBackColor = True
         ' 
-        ' labelstatus
-        ' 
-        labelstatus.AutoSize = True
-        labelstatus.Location = New Point(343, 110)
-        labelstatus.Name = "labelstatus"
-        labelstatus.Size = New Size(0, 22)
-        labelstatus.TabIndex = 23
-        ' 
         ' CheckIn
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -510,7 +469,6 @@ Partial Class CheckIn
         GroupBox1.PerformLayout()
         GroupBox2.ResumeLayout(False)
         GroupBox2.PerformLayout()
-        CType(NumericUpDown1, ComponentModel.ISupportInitialize).EndInit()
         GroupBox3.ResumeLayout(False)
         GroupBox3.PerformLayout()
         ResumeLayout(False)
@@ -519,14 +477,10 @@ Partial Class CheckIn
     Friend WithEvents Label2 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents DateTimePicker2 As DateTimePicker
-    Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents ComboBox2 As ComboBox

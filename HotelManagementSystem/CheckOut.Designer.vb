@@ -28,8 +28,6 @@ Partial Class CheckOut
         Button4 = New Button()
         Button3 = New Button()
         Button2 = New Button()
-        Label15 = New Label()
-        Label14 = New Label()
         ComboBox3 = New ComboBox()
         Label7 = New Label()
         ComboBox2 = New ComboBox()
@@ -40,8 +38,8 @@ Partial Class CheckOut
         TextBox1 = New TextBox()
         Label3 = New Label()
         GroupBox1 = New GroupBox()
+        Label12 = New Label()
         Label2 = New Label()
-        Button6 = New Button()
         Label4 = New Label()
         Label6 = New Label()
         Label5 = New Label()
@@ -54,7 +52,6 @@ Partial Class CheckOut
         Button_View = New Button()
         Button_Check = New Button()
         Button_Book2 = New Button()
-        Label12 = New Label()
         GroupBox2.SuspendLayout()
         GroupBox1.SuspendLayout()
         SuspendLayout()
@@ -106,28 +103,6 @@ Partial Class CheckOut
         Button2.TabIndex = 36
         Button2.Text = "Check-Out"
         Button2.UseVisualStyleBackColor = True
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.BackColor = Color.Transparent
-        Label15.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Label15.Location = New Point(485, 549)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(41, 22)
-        Label15.TabIndex = 35
-        Label15.Text = "RM"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.BackColor = Color.Transparent
-        Label14.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Label14.Location = New Point(390, 549)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(58, 22)
-        Label14.TabIndex = 34
-        Label14.Text = "Total:"
         ' 
         ' ComboBox3
         ' 
@@ -232,6 +207,14 @@ Partial Class CheckOut
         GroupBox1.TabStop = False
         GroupBox1.Text = "Guest Info"
         ' 
+        ' Label12
+        ' 
+        Label12.AutoSize = True
+        Label12.Location = New Point(343, 116)
+        Label12.Name = "Label12"
+        Label12.Size = New Size(0, 22)
+        Label12.TabIndex = 23
+        ' 
         ' Label2
         ' 
         Label2.AutoSize = True
@@ -243,17 +226,6 @@ Partial Class CheckOut
         Label2.Size = New Size(582, 52)
         Label2.TabIndex = 28
         Label2.Text = "Hotel Check-Out Information"
-        ' 
-        ' Button6
-        ' 
-        Button6.BackColor = Color.Transparent
-        Button6.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button6.Location = New Point(446, 584)
-        Button6.Name = "Button6"
-        Button6.Size = New Size(94, 29)
-        Button6.TabIndex = 23
-        Button6.Text = "Bill"
-        Button6.UseVisualStyleBackColor = False
         ' 
         ' Label4
         ' 
@@ -375,14 +347,6 @@ Partial Class CheckOut
         Button_Book2.TabIndex = 49
         Button_Book2.UseVisualStyleBackColor = True
         ' 
-        ' Label12
-        ' 
-        Label12.AutoSize = True
-        Label12.Location = New Point(343, 116)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(0, 22)
-        Label12.TabIndex = 23
-        ' 
         ' CheckOut
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -402,12 +366,9 @@ Partial Class CheckOut
         Controls.Add(Button_View)
         Controls.Add(Button_Check)
         Controls.Add(Button_Book2)
-        Controls.Add(Button6)
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
-        Controls.Add(Label15)
-        Controls.Add(Label14)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
         Controls.Add(Label2)
@@ -427,8 +388,6 @@ Partial Class CheckOut
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents Label7 As Label
     Friend WithEvents ComboBox2 As ComboBox
@@ -440,7 +399,6 @@ Partial Class CheckOut
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button6 As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label

@@ -90,12 +90,6 @@ Public Class CheckOut
     End Sub
 
 
-    ' Go to payment form
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Dim f As New PaymentForm
-        f.Show()
-        Me.Hide()
-    End Sub
 
 
     ' Clear form
