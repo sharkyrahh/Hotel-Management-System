@@ -1,9 +1,69 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
-Imports MySql.Data.MySqlClient
-Imports Org.BouncyCastle.Asn1.Cmp
+﻿Imports MySql.Data.MySqlClient
 
 Public Class CheckIn
+    Private connString As String = "server=localhost;userid=root;password=;database=hoteldb"
 
+    Private Sub CheckIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Load all room IDs once
+        Try
+            Using conn As New MySqlConnection(connString)
+                conn.Open()
+                Dim cmd As New MySqlCommand("SELECT room_id FROM rooms", conn)
+                Dim reader As MySqlDataReader = cmd.ExecuteReader()
+                ListBox1.Items.Clear()
+                While reader.Read()
+                    ListBox1.Items.Add(reader("room_id").ToString())
+                End While
+            End Using
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+
+        ' Load room status options
+        ListBox2.Items.Clear()
+        ListBox2.Items.Add("Unavailable")
+        ListBox2.Items.Add("Reserved")
+
+        ' Ensure single selection
+        ListBox1.SelectionMode = SelectionMode.One
+        ListBox2.SelectionMode = SelectionMode.One
+    End Sub
+
+    ' Update room status
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If ListBox1.SelectedIndex = -1 Or ListBox2.SelectedIndex = -1 Then
+            MessageBox.Show("Please select a room ID and status.")
+            Return
+        End If
+
+        Dim roomID As Integer = CInt(ListBox1.SelectedItem.ToString())
+        Dim roomStatus As String = ListBox2.SelectedItem.ToString()
+
+        Try
+            Using conn As New MySqlConnection(connString)
+                conn.Open()
+                Dim cmd As New MySqlCommand("UPDATE rooms SET roomstatus=@status WHERE room_id=@id", conn)
+                cmd.Parameters.AddWithValue("@status", roomStatus)
+                cmd.Parameters.AddWithValue("@id", roomID)
+                Dim rowsAffected As Integer = cmd.ExecuteNonQuery()
+                If rowsAffected > 0 Then
+                    MessageBox.Show("Room status updated successfully.")
+                Else
+                    MessageBox.Show("No matching room found.")
+                End If
+            End Using
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
+    ' Clear form
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        ListBox1.ClearSelected()
+        ListBox2.ClearSelected()
+    End Sub
+
+    ' Sidebar navigation examples
     Private Sub Button_Home_Click(sender As Object, e As EventArgs) Handles Button_Home.Click
         Dim f As New Form1
         f.Show()
@@ -36,110 +96,5 @@ Public Class CheckIn
         Dim f As New StaffLoginForm
         f.Show()
         Me.Hide()
-    End Sub
-
-
-    ' Search user IC
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
-        Dim cmd As New MySqlCommand("SELECT * FROM users WHERE IC=@ic", conn)
-        cmd.Parameters.AddWithValue("@ic", TextBox1.Text)
-
-        Try
-            conn.Open()
-            Dim reader As MySqlDataReader = cmd.ExecuteReader()
-            If reader.HasRows Then
-                labelstatus.Text = "User found"
-                labelstatus.ForeColor = Color.Green
-            Else
-                labelstatus.Text = "User not found"
-                labelstatus.ForeColor = Color.Red
-            End If
-            conn.Close()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
-    End Sub
-
-
-    ' Save data to database
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        ' Placeholder: will insert Check In details once table ready
-        MessageBox.Show("Data stored successfully.")
-    End Sub
-
-    ' Update data
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        ' Placeholder: will run UPDATE query later
-        MessageBox.Show("Data updated successfully.")
-    End Sub
-
-    ' Clear form
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        TextBox1.Clear()
-        ListBox2.SelectedIndex = -1
-        ListBox1.SelectedIndex = -1
-    End Sub
-
-    ' Go home
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Dim f As New Form1
-        f.Show()
-        Me.Hide()
-    End Sub
-
-
-
-    ' Load checkin_date from database
-    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
-        Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
-            Try
-                conn.Open()
-                Dim cmd As New MySqlCommand("SELECT checkin_date FROM bookings WHERE IC=@ic", conn)
-                cmd.Parameters.AddWithValue("@ic", TextBox1.Text)
-                Dim reader As MySqlDataReader = cmd.ExecuteReader()
-                If reader.Read() Then
-                    DateTimePicker1.Value = reader.GetDateTime("checkin_date")
-                End If
-            Catch ex As Exception
-                MessageBox.Show(ex.Message)
-            End Try
-        End Using
-    End Sub
-
-
-
-
-    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
-
-        Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
-            Try
-                conn.Open()
-                Dim cmd As New MySqlCommand("SELECT room_type FROM rooms", conn)
-                Dim reader As MySqlDataReader = cmd.ExecuteReader()
-                ListBox1.Items.Clear()
-                While reader.Read()
-                    ListBox1.Items.Add(reader("room_type").ToString())
-                End While
-            Catch ex As Exception
-                MessageBox.Show(ex.Message)
-            End Try
-        End Using
-    End Sub
-
-    Private Sub ListBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox2.SelectedIndexChanged
-        Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
-            Try
-                conn.Open()
-                Dim cmd As New MySqlCommand("SELECT DISTINCT roomstatus FROM bookings", conn)
-                Dim reader As MySqlDataReader = cmd.ExecuteReader()
-                ListBox2.Items.Clear()
-                While reader.Read()
-                    ListBox2.Items.Add(reader("roomstatus").ToString())
-                End While
-            Catch ex As Exception
-                MessageBox.Show(ex.Message)
-            End Try
-        End Using
     End Sub
 End Class
