@@ -165,7 +165,7 @@ Public Class BookForm
                 Dim roomId As Integer = ExtractRoomId(roomItem)
 
                 If roomId > 0 Then
-                    Dim sql As String = "INSERT INTO bookings (room_id, users_id, from_date, tot_date, roomstatus) " &
+                    Dim sql As String = "INSERT INTO bookings (room_id, users_id, from_date, to_date, roomstatus) " &
                                "VALUES (@room_id, @user_id, @from, @to, 'Processing')"
 
                     command = New MySqlCommand(sql, conn)
