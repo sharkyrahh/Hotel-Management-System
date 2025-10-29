@@ -116,7 +116,7 @@ Partial Class CheckOut
         ' Button1
         ' 
         Button1.BackColor = Color.Transparent
-        Button1.Location = New Point(166, 107)
+        Button1.Location = New Point(120, 107)
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 29)
         Button1.TabIndex = 22
@@ -212,7 +212,7 @@ Partial Class CheckOut
         ' Label12
         ' 
         Label12.AutoSize = True
-        Label12.Location = New Point(343, 116)
+        Label12.Location = New Point(255, 116)
         Label12.Name = "Label12"
         Label12.Size = New Size(0, 22)
         Label12.TabIndex = 23

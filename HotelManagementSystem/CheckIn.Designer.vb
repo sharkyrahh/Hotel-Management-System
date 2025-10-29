@@ -25,6 +25,7 @@ Partial Class CheckIn
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CheckIn))
         Label2 = New Label()
         GroupBox1 = New GroupBox()
+        LabelUserID = New Label()
         labelstatus = New Label()
         Button1 = New Button()
         TextBox1 = New TextBox()
@@ -73,6 +74,7 @@ Partial Class CheckIn
         ' GroupBox1
         ' 
         GroupBox1.BackColor = Color.Transparent
+        GroupBox1.Controls.Add(LabelUserID)
         GroupBox1.Controls.Add(labelstatus)
         GroupBox1.Controls.Add(Button1)
         GroupBox1.Controls.Add(TextBox1)
@@ -85,6 +87,14 @@ Partial Class CheckIn
         GroupBox1.TabIndex = 3
         GroupBox1.TabStop = False
         GroupBox1.Text = "Guest Info"
+        ' 
+        ' LabelUserID
+        ' 
+        LabelUserID.AutoSize = True
+        LabelUserID.Location = New Point(318, 114)
+        LabelUserID.Name = "LabelUserID"
+        LabelUserID.Size = New Size(0, 22)
+        LabelUserID.TabIndex = 24
         ' 
         ' labelstatus
         ' 
@@ -428,4 +438,5 @@ Partial Class CheckIn
     Friend WithEvents labelstatus As Label
     Friend WithEvents ListBox1 As ListBox
     Friend WithEvents ListBox2 As ListBox
+    Friend WithEvents LabelUserID As Label
 End Class
