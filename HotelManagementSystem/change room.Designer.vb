@@ -24,7 +24,7 @@ Partial Class change_room
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(change_room))
         Label1 = New Label()
-        TextBox1 = New TextBox()
+        TextBox_IC = New TextBox()
         GroupBox1 = New GroupBox()
         Button2 = New Button()
         Button1 = New Button()
@@ -59,13 +59,13 @@ Partial Class change_room
         Label1.TabIndex = 0
         Label1.Text = "Enter IC :"
         ' 
-        ' TextBox1
+        ' TextBox_IC
         ' 
-        TextBox1.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
-        TextBox1.Location = New Point(350, 41)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(317, 41)
-        TextBox1.TabIndex = 1
+        TextBox_IC.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        TextBox_IC.Location = New Point(350, 41)
+        TextBox_IC.Name = "TextBox_IC"
+        TextBox_IC.Size = New Size(317, 41)
+        TextBox_IC.TabIndex = 1
         ' 
         ' GroupBox1
         ' 
@@ -75,7 +75,7 @@ Partial Class change_room
         GroupBox1.Controls.Add(AvailableRoomID)
         GroupBox1.Controls.Add(CurrentBookedRoom)
         GroupBox1.Controls.Add(Label1)
-        GroupBox1.Controls.Add(TextBox1)
+        GroupBox1.Controls.Add(TextBox_IC)
         GroupBox1.Font = New Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox1.Location = New Point(267, 79)
         GroupBox1.Name = "GroupBox1"
@@ -316,7 +316,7 @@ Partial Class change_room
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox_IC As TextBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents CurrentBookedRoom As ListBox
     Friend WithEvents AvailableRoomID As ListBox

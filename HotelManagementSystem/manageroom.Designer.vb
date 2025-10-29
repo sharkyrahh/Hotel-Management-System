@@ -29,7 +29,7 @@ Partial Class manageroom
         TextBox3 = New TextBox()
         TextBox2 = New TextBox()
         ListBox1 = New ListBox()
-        Button1 = New Button()
+        ButtonAdd = New Button()
         Label7 = New Label()
         Label6 = New Label()
         Label5 = New Label()
@@ -38,7 +38,7 @@ Partial Class manageroom
         Label2 = New Label()
         GroupBox2 = New GroupBox()
         TextBox1 = New TextBox()
-        Button2 = New Button()
+        ButtonDelete = New Button()
         Label8 = New Label()
         Label1 = New Label()
         Button4 = New Button()
@@ -55,7 +55,7 @@ Partial Class manageroom
         GroupBox1.Controls.Add(TextBox3)
         GroupBox1.Controls.Add(TextBox2)
         GroupBox1.Controls.Add(ListBox1)
-        GroupBox1.Controls.Add(Button1)
+        GroupBox1.Controls.Add(ButtonAdd)
         GroupBox1.Controls.Add(Label7)
         GroupBox1.Controls.Add(Label6)
         GroupBox1.Controls.Add(Label5)
@@ -109,14 +109,14 @@ Partial Class manageroom
         ListBox1.Size = New Size(249, 64)
         ListBox1.TabIndex = 7
         ' 
-        ' Button1
+        ' ButtonAdd
         ' 
-        Button1.Location = New Point(305, 405)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
-        Button1.TabIndex = 6
-        Button1.Text = "Add"
-        Button1.UseVisualStyleBackColor = True
+        ButtonAdd.Location = New Point(305, 405)
+        ButtonAdd.Name = "ButtonAdd"
+        ButtonAdd.Size = New Size(94, 29)
+        ButtonAdd.TabIndex = 6
+        ButtonAdd.Text = "Add"
+        ButtonAdd.UseVisualStyleBackColor = True
         ' 
         ' Label7
         ' 
@@ -181,7 +181,7 @@ Partial Class manageroom
         ' 
         GroupBox2.BackColor = Color.Transparent
         GroupBox2.Controls.Add(TextBox1)
-        GroupBox2.Controls.Add(Button2)
+        GroupBox2.Controls.Add(ButtonDelete)
         GroupBox2.Controls.Add(Label8)
         GroupBox2.Font = New Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox2.Location = New Point(546, 83)
@@ -198,14 +198,14 @@ Partial Class manageroom
         TextBox1.Size = New Size(238, 27)
         TextBox1.TabIndex = 8
         ' 
-        ' Button2
+        ' ButtonDelete
         ' 
-        Button2.Location = New Point(278, 405)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(94, 29)
-        Button2.TabIndex = 7
-        Button2.Text = "Delete"
-        Button2.UseVisualStyleBackColor = True
+        ButtonDelete.Location = New Point(278, 405)
+        ButtonDelete.Name = "ButtonDelete"
+        ButtonDelete.Size = New Size(94, 29)
+        ButtonDelete.TabIndex = 7
+        ButtonDelete.Text = "Delete"
+        ButtonDelete.UseVisualStyleBackColor = True
         ' 
         ' Label8
         ' 
@@ -275,14 +275,14 @@ Partial Class manageroom
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ButtonAdd As Button
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents ButtonDelete As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents ListBox1 As ListBox

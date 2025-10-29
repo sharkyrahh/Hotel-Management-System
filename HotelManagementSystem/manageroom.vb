@@ -5,7 +5,7 @@ Public Class manageroom
     Private conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
 
     ' Add room
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub ButtonAdd_Click(sender As Object, e As EventArgs) Handles ButtonAdd.Click
         Try
             conn.Open()
             Dim cmd As New MySqlCommand("INSERT INTO rooms (room_id, room_type, room_rules, price, roomstatus) VALUES (@id, @type, @rules, @price, @status)", conn)
@@ -24,7 +24,7 @@ Public Class manageroom
     End Sub
 
     ' Delete room (only room ID needed)
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub ButtonDelete_Click(sender As Object, e As EventArgs) Handles ButtonDelete.Click
         Try
             conn.Open()
             Dim cmd As New MySqlCommand("DELETE FROM rooms WHERE room_id=@id", conn)
