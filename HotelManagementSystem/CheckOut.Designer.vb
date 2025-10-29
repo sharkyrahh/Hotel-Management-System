@@ -28,12 +28,12 @@ Partial Class CheckOut
         Button4 = New Button()
         Button3 = New Button()
         Button2 = New Button()
-        ComboBox3 = New ComboBox()
         Label7 = New Label()
-        ComboBox2 = New ComboBox()
         Button1 = New Button()
         DateTimePicker2 = New DateTimePicker()
         GroupBox2 = New GroupBox()
+        ListBox2 = New ListBox()
+        ListBox1 = New ListBox()
         Label11 = New Label()
         TextBox1 = New TextBox()
         Label3 = New Label()
@@ -104,15 +104,6 @@ Partial Class CheckOut
         Button2.Text = "Check-Out"
         Button2.UseVisualStyleBackColor = True
         ' 
-        ' ComboBox3
-        ' 
-        ComboBox3.FormattingEnabled = True
-        ComboBox3.Items.AddRange(New Object() {"Reserved", "Unavailable", "Booked"})
-        ComboBox3.Location = New Point(230, 197)
-        ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(176, 30)
-        ComboBox3.TabIndex = 5
-        ' 
         ' Label7
         ' 
         Label7.AutoSize = True
@@ -121,15 +112,6 @@ Partial Class CheckOut
         Label7.Size = New Size(133, 22)
         Label7.TabIndex = 3
         Label7.Text = "Room Number"
-        ' 
-        ' ComboBox2
-        ' 
-        ComboBox2.FormattingEnabled = True
-        ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
-        ComboBox2.Location = New Point(157, 128)
-        ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(176, 30)
-        ComboBox2.TabIndex = 2
         ' 
         ' Button1
         ' 
@@ -151,13 +133,13 @@ Partial Class CheckOut
         ' GroupBox2
         ' 
         GroupBox2.BackColor = Color.Transparent
+        GroupBox2.Controls.Add(ListBox2)
+        GroupBox2.Controls.Add(ListBox1)
         GroupBox2.Controls.Add(Button5)
         GroupBox2.Controls.Add(DateTimePicker2)
-        GroupBox2.Controls.Add(ComboBox3)
         GroupBox2.Controls.Add(Label11)
         GroupBox2.Controls.Add(Label1)
         GroupBox2.Controls.Add(Label7)
-        GroupBox2.Controls.Add(ComboBox2)
         GroupBox2.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox2.Location = New Point(734, 208)
         GroupBox2.Name = "GroupBox2"
@@ -165,6 +147,26 @@ Partial Class CheckOut
         GroupBox2.TabIndex = 30
         GroupBox2.TabStop = False
         GroupBox2.Text = "Check-Out Information"
+        ' 
+        ' ListBox2
+        ' 
+        ListBox2.FormattingEnabled = True
+        ListBox2.ItemHeight = 22
+        ListBox2.Items.AddRange(New Object() {" "})
+        ListBox2.Location = New Point(211, 200)
+        ListBox2.Name = "ListBox2"
+        ListBox2.Size = New Size(232, 26)
+        ListBox2.TabIndex = 52
+        ' 
+        ' ListBox1
+        ' 
+        ListBox1.FormattingEnabled = True
+        ListBox1.ItemHeight = 22
+        ListBox1.Items.AddRange(New Object() {" "})
+        ListBox1.Location = New Point(174, 136)
+        ListBox1.Name = "ListBox1"
+        ListBox1.Size = New Size(232, 26)
+        ListBox1.TabIndex = 51
         ' 
         ' Label11
         ' 
@@ -388,9 +390,7 @@ Partial Class CheckOut
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Button1 As Button
     Friend WithEvents DateTimePicker2 As DateTimePicker
     Friend WithEvents GroupBox2 As GroupBox
@@ -412,4 +412,6 @@ Partial Class CheckOut
     Friend WithEvents Button_Check As Button
     Friend WithEvents Button_Book2 As Button
     Friend WithEvents Label12 As Label
+    Friend WithEvents ListBox2 As ListBox
+    Friend WithEvents ListBox1 As ListBox
 End Class

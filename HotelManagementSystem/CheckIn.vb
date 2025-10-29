@@ -1,4 +1,5 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports MySql.Data.MySqlClient
 Imports Org.BouncyCastle.Asn1.Cmp
 
 Public Class CheckIn
@@ -76,8 +77,8 @@ Public Class CheckIn
     ' Clear form
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         TextBox1.Clear()
-        ComboBox1.SelectedIndex = -1
-        ComboBox3.SelectedIndex = -1
+        ListBox2.SelectedIndex = -1
+        ListBox1.SelectedIndex = -1
     End Sub
 
     ' Go home
@@ -87,23 +88,6 @@ Public Class CheckIn
         Me.Hide()
     End Sub
 
-
-    ' Load room type from database
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-        Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
-            Try
-                conn.Open()
-                Dim cmd As New MySqlCommand("SELECT room_type FROM rooms", conn)
-                Dim reader As MySqlDataReader = cmd.ExecuteReader()
-                ComboBox1.Items.Clear()
-                While reader.Read()
-                    ComboBox1.Items.Add(reader("room_type").ToString())
-                End While
-            Catch ex As Exception
-                MessageBox.Show(ex.Message)
-            End Try
-        End Using
-    End Sub
 
 
     ' Load checkin_date from database
@@ -124,16 +108,18 @@ Public Class CheckIn
     End Sub
 
 
-    ' Load roomstatus from database
-    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+
+
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
+
         Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
             Try
                 conn.Open()
-                Dim cmd As New MySqlCommand("SELECT DISTINCT roomstatus FROM bookings", conn)
+                Dim cmd As New MySqlCommand("SELECT room_type FROM rooms", conn)
                 Dim reader As MySqlDataReader = cmd.ExecuteReader()
-                ComboBox3.Items.Clear()
+                ListBox1.Items.Clear()
                 While reader.Read()
-                    ComboBox3.Items.Add(reader("roomstatus").ToString())
+                    ListBox1.Items.Add(reader("room_type").ToString())
                 End While
             Catch ex As Exception
                 MessageBox.Show(ex.Message)
@@ -141,4 +127,19 @@ Public Class CheckIn
         End Using
     End Sub
 
+    Private Sub ListBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox2.SelectedIndexChanged
+        Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
+            Try
+                conn.Open()
+                Dim cmd As New MySqlCommand("SELECT DISTINCT roomstatus FROM bookings", conn)
+                Dim reader As MySqlDataReader = cmd.ExecuteReader()
+                ListBox2.Items.Clear()
+                While reader.Read()
+                    ListBox2.Items.Add(reader("roomstatus").ToString())
+                End While
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            End Try
+        End Using
+    End Sub
 End Class

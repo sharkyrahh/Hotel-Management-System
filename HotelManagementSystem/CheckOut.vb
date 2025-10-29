@@ -1,7 +1,11 @@
-﻿Imports MySql.Data.MySqlClient
+﻿Imports System.Security.AccessControl
+Imports MySql.Data.MySqlClient
+Imports Mysqlx.XDevAPI.Relational
 Imports Org.BouncyCastle.Asn1.Cmp
 
 Public Class CheckOut
+    Private conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
+
 
     ' Checkout user
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -69,23 +73,11 @@ Public Class CheckOut
     End Sub
 
 
-    ' Date/time pickers and combo boxes
-    Private Sub DateTimePicker2_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker2.ValueChanged
-        ' handle checkout date/time selection
-    End Sub
-
-    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
-        ' room number selection
-    End Sub
-
-    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
-        ' room condition selection
-    End Sub
 
 
     ' Store checkout data
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        ' Placeholder for storing checkout info
+
         MessageBox.Show("Checkout details saved.")
     End Sub
 
@@ -95,8 +87,8 @@ Public Class CheckOut
     ' Clear form
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         TextBox1.Clear()
-        ComboBox2.SelectedIndex = -1
-        ComboBox3.SelectedIndex = -1
+        ListBox1.SelectedIndex = -1
+        ListBox1.SelectedIndex = -1
         Label12.Text = ""
     End Sub
 
@@ -106,6 +98,56 @@ Public Class CheckOut
         Dim f As New Form1
         f.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub DateTimePicker2_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker2.ValueChanged
+        Try
+            conn.Open()
+            Dim cmd As New MySqlCommand("UPDATE bookings SET checkin_date=@date WHERE IC=@ic", conn)
+            cmd.Parameters.AddWithValue("@date", DateTimePicker2.Value)
+            cmd.Parameters.AddWithValue("@ic", TextBox1.Text)
+            cmd.ExecuteNonQuery()
+            MessageBox.Show("Booking date updated.")
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            conn.Close()
+        End Try
+    End Sub
+
+
+    ' Choose room by ID from `rooms`
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
+        Try
+            conn.Open()
+            Dim cmd As New MySqlCommand("SELECT room_type FROM rooms WHERE room_id=@id", conn)
+            cmd.Parameters.AddWithValue("@id", ListBox1.SelectedItem.ToString())
+            Dim reader As MySqlDataReader = cmd.ExecuteReader()
+            If reader.Read() Then
+                Label12.Text = "Room Type: " & reader("room_type").ToString()
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            conn.Close()
+        End Try
+    End Sub
+
+
+    ' Change room status
+    Private Sub ListBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox2.SelectedIndexChanged
+        Try
+            conn.Open()
+            Dim cmd As New MySqlCommand("UPDATE rooms SET roomstatus=@status WHERE room_id=@id", conn)
+            cmd.Parameters.AddWithValue("@status", ListBox2.SelectedItem.ToString())
+            cmd.Parameters.AddWithValue("@id", ListBox1.SelectedItem.ToString())
+            cmd.ExecuteNonQuery()
+            MessageBox.Show("Room status updated.")
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            conn.Close()
+        End Try
     End Sub
 
 End Class

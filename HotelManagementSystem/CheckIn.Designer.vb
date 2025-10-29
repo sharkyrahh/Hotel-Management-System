@@ -33,10 +33,9 @@ Partial Class CheckIn
         GroupBox2 = New GroupBox()
         DateTimePicker1 = New DateTimePicker()
         GroupBox3 = New GroupBox()
+        ListBox1 = New ListBox()
         Button5 = New Button()
-        ComboBox3 = New ComboBox()
         Label1 = New Label()
-        ComboBox1 = New ComboBox()
         Label6 = New Label()
         Button2 = New Button()
         Button3 = New Button()
@@ -53,6 +52,7 @@ Partial Class CheckIn
         Button_View = New Button()
         Button_Check = New Button()
         Button_Book2 = New Button()
+        ListBox2 = New ListBox()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         GroupBox3.SuspendLayout()
@@ -151,10 +151,10 @@ Partial Class CheckIn
         ' GroupBox3
         ' 
         GroupBox3.BackColor = Color.Transparent
+        GroupBox3.Controls.Add(ListBox2)
+        GroupBox3.Controls.Add(ListBox1)
         GroupBox3.Controls.Add(Button5)
-        GroupBox3.Controls.Add(ComboBox3)
         GroupBox3.Controls.Add(Label1)
-        GroupBox3.Controls.Add(ComboBox1)
         GroupBox3.Controls.Add(Label6)
         GroupBox3.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox3.Location = New Point(742, 209)
@@ -163,6 +163,16 @@ Partial Class CheckIn
         GroupBox3.TabIndex = 20
         GroupBox3.TabStop = False
         GroupBox3.Text = "Room Information"
+        ' 
+        ' ListBox1
+        ' 
+        ListBox1.FormattingEnabled = True
+        ListBox1.ItemHeight = 22
+        ListBox1.Items.AddRange(New Object() {" "})
+        ListBox1.Location = New Point(186, 52)
+        ListBox1.Name = "ListBox1"
+        ListBox1.Size = New Size(239, 26)
+        ListBox1.TabIndex = 7
         ' 
         ' Button5
         ' 
@@ -173,15 +183,6 @@ Partial Class CheckIn
         Button5.Text = "Update Status"
         Button5.UseVisualStyleBackColor = True
         ' 
-        ' ComboBox3
-        ' 
-        ComboBox3.FormattingEnabled = True
-        ComboBox3.Items.AddRange(New Object() {"Reserved", "Unavailable", "Booked"})
-        ComboBox3.Location = New Point(249, 117)
-        ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(176, 30)
-        ComboBox3.TabIndex = 5
-        ' 
         ' Label1
         ' 
         Label1.AutoSize = True
@@ -190,15 +191,6 @@ Partial Class CheckIn
         Label1.Size = New Size(183, 22)
         Label1.TabIndex = 4
         Label1.Text = "Change Room Status"
-        ' 
-        ' ComboBox1
-        ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"Deluxe", "Twin", "Single", "Standard"})
-        ComboBox1.Location = New Point(184, 44)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(177, 30)
-        ComboBox1.TabIndex = 1
         ' 
         ' Label6
         ' 
@@ -359,6 +351,16 @@ Partial Class CheckIn
         Button_Book2.TabIndex = 40
         Button_Book2.UseVisualStyleBackColor = True
         ' 
+        ' ListBox2
+        ' 
+        ListBox2.FormattingEnabled = True
+        ListBox2.ItemHeight = 22
+        ListBox2.Items.AddRange(New Object() {" "})
+        ListBox2.Location = New Point(226, 119)
+        ListBox2.Name = "ListBox2"
+        ListBox2.Size = New Size(199, 26)
+        ListBox2.TabIndex = 8
+        ' 
         ' CheckIn
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -405,12 +407,10 @@ Partial Class CheckIn
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Button5 As Button
     Friend WithEvents Label4 As Label
@@ -426,4 +426,6 @@ Partial Class CheckIn
     Friend WithEvents Button_Check As Button
     Friend WithEvents Button_Book2 As Button
     Friend WithEvents labelstatus As Label
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents ListBox2 As ListBox
 End Class

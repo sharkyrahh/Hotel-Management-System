@@ -242,4 +242,7 @@ Public Class BookForm
         Return 0
     End Function
 
-   
+    Private Sub BookForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+End Class
