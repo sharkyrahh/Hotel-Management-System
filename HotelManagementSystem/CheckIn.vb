@@ -3,7 +3,6 @@ Imports Org.BouncyCastle.Asn1.Cmp
 
 Public Class CheckIn
 
-    ' Sidebar navigation
     Private Sub Button_Home_Click(sender As Object, e As EventArgs) Handles Button_Home.Click
         Dim f As New Form1
         f.Show()
@@ -78,10 +77,7 @@ Public Class CheckIn
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         TextBox1.Clear()
         ComboBox1.SelectedIndex = -1
-        ComboBox2.SelectedIndex = -1
         ComboBox3.SelectedIndex = -1
-        NumericUpDown1.Value = 0
-        labelstatus.Text = ""
     End Sub
 
     ' Go home
@@ -90,3 +86,59 @@ Public Class CheckIn
         f.Show()
         Me.Hide()
     End Sub
+
+
+    ' Load room type from database
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
+            Try
+                conn.Open()
+                Dim cmd As New MySqlCommand("SELECT room_type FROM rooms", conn)
+                Dim reader As MySqlDataReader = cmd.ExecuteReader()
+                ComboBox1.Items.Clear()
+                While reader.Read()
+                    ComboBox1.Items.Add(reader("room_type").ToString())
+                End While
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            End Try
+        End Using
+    End Sub
+
+
+    ' Load checkin_date from database
+    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
+        Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
+            Try
+                conn.Open()
+                Dim cmd As New MySqlCommand("SELECT checkin_date FROM bookings WHERE IC=@ic", conn)
+                cmd.Parameters.AddWithValue("@ic", TextBox1.Text)
+                Dim reader As MySqlDataReader = cmd.ExecuteReader()
+                If reader.Read() Then
+                    DateTimePicker1.Value = reader.GetDateTime("checkin_date")
+                End If
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            End Try
+        End Using
+    End Sub
+
+
+    ' Load roomstatus from database
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+        Using conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
+            Try
+                conn.Open()
+                Dim cmd As New MySqlCommand("SELECT DISTINCT roomstatus FROM bookings", conn)
+                Dim reader As MySqlDataReader = cmd.ExecuteReader()
+                ComboBox3.Items.Clear()
+                While reader.Read()
+                    ComboBox3.Items.Add(reader("roomstatus").ToString())
+                End While
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
+            End Try
+        End Using
+    End Sub
+
+End Class

@@ -26,8 +26,6 @@ Partial Class Form2
         Label10 = New Label()
         Button2 = New Button()
         GroupBox2 = New GroupBox()
-        TextBox1 = New TextBox()
-        Label4 = New Label()
         ComboBox3 = New ComboBox()
         TextBox6 = New TextBox()
         Label7 = New Label()
@@ -80,8 +78,6 @@ Partial Class Form2
         ' GroupBox2
         ' 
         GroupBox2.BackColor = Color.Transparent
-        GroupBox2.Controls.Add(TextBox1)
-        GroupBox2.Controls.Add(Label4)
         GroupBox2.Controls.Add(ComboBox3)
         GroupBox2.Controls.Add(Label10)
         GroupBox2.Controls.Add(Button2)
@@ -93,22 +89,6 @@ Partial Class Form2
         GroupBox2.TabIndex = 33
         GroupBox2.TabStop = False
         GroupBox2.Text = "Remove Room"
-        ' 
-        ' TextBox1
-        ' 
-        TextBox1.Location = New Point(140, 105)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(176, 29)
-        TextBox1.TabIndex = 40
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(27, 108)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(70, 22)
-        Label4.TabIndex = 40
-        Label4.Text = "Reason"
         ' 
         ' ComboBox3
         ' 
@@ -131,9 +111,9 @@ Partial Class Form2
         Label7.AutoSize = True
         Label7.Location = New Point(21, 260)
         Label7.Name = "Label7"
-        Label7.Size = New Size(57, 22)
+        Label7.Size = New Size(61, 22)
         Label7.TabIndex = 29
-        Label7.Text = "Rules"
+        Label7.Text = "Status"
         ' 
         ' TextBox5
         ' 
@@ -147,9 +127,9 @@ Partial Class Form2
         Label6.AutoSize = True
         Label6.Location = New Point(21, 206)
         Label6.Name = "Label6"
-        Label6.Size = New Size(119, 22)
+        Label6.Size = New Size(57, 22)
         Label6.TabIndex = 27
-        Label6.Text = "Num of Beds"
+        Label6.Text = "Rules"
         ' 
         ' TextBox4
         ' 
@@ -438,7 +418,6 @@ Partial Class Form2
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Button3 As Button
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label19 As Label
     Friend WithEvents Button_Manage As Button
     Friend WithEvents Label8 As Label
@@ -451,7 +430,6 @@ Partial Class Form2
     Friend WithEvents Button_About As Button
     Friend WithEvents Button_Change As Button
     Friend WithEvents Button_View As Button
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents TextBox2 As TextBox
 End Class

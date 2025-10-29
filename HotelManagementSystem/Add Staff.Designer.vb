@@ -27,17 +27,13 @@ Partial Class Add_Staff
         GroupBox1 = New GroupBox()
         TextBox6 = New TextBox()
         Label7 = New Label()
-        TextBox5 = New TextBox()
-        Label6 = New Label()
         TextBox4 = New TextBox()
         Label5 = New Label()
-        TextBox3 = New TextBox()
-        Label4 = New Label()
         Button1 = New Button()
         TextBox1 = New TextBox()
         Label3 = New Label()
         GroupBox2 = New GroupBox()
-        TextBox9 = New TextBox()
+        ListBox1 = New ListBox()
         Label10 = New Label()
         Button2 = New Button()
         Button3 = New Button()
@@ -74,12 +70,8 @@ Partial Class Add_Staff
         GroupBox1.BackColor = Color.Transparent
         GroupBox1.Controls.Add(TextBox6)
         GroupBox1.Controls.Add(Label7)
-        GroupBox1.Controls.Add(TextBox5)
-        GroupBox1.Controls.Add(Label6)
         GroupBox1.Controls.Add(TextBox4)
         GroupBox1.Controls.Add(Label5)
-        GroupBox1.Controls.Add(TextBox3)
-        GroupBox1.Controls.Add(Label4)
         GroupBox1.Controls.Add(Button1)
         GroupBox1.Controls.Add(TextBox1)
         GroupBox1.Controls.Add(Label3)
@@ -87,14 +79,14 @@ Partial Class Add_Staff
         GroupBox1.ForeColor = SystemColors.ControlText
         GroupBox1.Location = New Point(259, 204)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(428, 379)
+        GroupBox1.Size = New Size(428, 289)
         GroupBox1.TabIndex = 4
         GroupBox1.TabStop = False
         GroupBox1.Text = "Add Staff"
         ' 
         ' TextBox6
         ' 
-        TextBox6.Location = New Point(131, 260)
+        TextBox6.Location = New Point(131, 157)
         TextBox6.Name = "TextBox6"
         TextBox6.Size = New Size(240, 29)
         TextBox6.TabIndex = 30
@@ -102,31 +94,15 @@ Partial Class Add_Staff
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(21, 260)
+        Label7.Location = New Point(21, 157)
         Label7.Name = "Label7"
         Label7.Size = New Size(89, 22)
         Label7.TabIndex = 29
         Label7.Text = "Password"
         ' 
-        ' TextBox5
-        ' 
-        TextBox5.Location = New Point(131, 206)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(240, 29)
-        TextBox5.TabIndex = 28
-        ' 
-        ' Label6
-        ' 
-        Label6.AutoSize = True
-        Label6.Location = New Point(21, 206)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(93, 22)
-        Label6.TabIndex = 27
-        Label6.Text = "Username"
-        ' 
         ' TextBox4
         ' 
-        TextBox4.Location = New Point(131, 157)
+        TextBox4.Location = New Point(131, 102)
         TextBox4.Name = "TextBox4"
         TextBox4.Size = New Size(240, 29)
         TextBox4.TabIndex = 26
@@ -134,31 +110,15 @@ Partial Class Add_Staff
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(21, 157)
+        Label5.Location = New Point(21, 102)
         Label5.Name = "Label5"
         Label5.Size = New Size(58, 22)
         Label5.TabIndex = 25
         Label5.Text = "Email"
         ' 
-        ' TextBox3
-        ' 
-        TextBox3.Location = New Point(131, 107)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(240, 29)
-        TextBox3.TabIndex = 24
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Location = New Point(21, 107)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(75, 22)
-        Label4.TabIndex = 23
-        Label4.Text = "Staff IC"
-        ' 
         ' Button1
         ' 
-        Button1.Location = New Point(181, 333)
+        Button1.Location = New Point(131, 221)
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 29)
         Button1.TabIndex = 22
@@ -184,7 +144,7 @@ Partial Class Add_Staff
         ' GroupBox2
         ' 
         GroupBox2.BackColor = Color.Transparent
-        GroupBox2.Controls.Add(TextBox9)
+        GroupBox2.Controls.Add(ListBox1)
         GroupBox2.Controls.Add(Label10)
         GroupBox2.Controls.Add(Button2)
         GroupBox2.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -196,12 +156,15 @@ Partial Class Add_Staff
         GroupBox2.TabStop = False
         GroupBox2.Text = "Remove Staff"
         ' 
-        ' TextBox9
+        ' ListBox1
         ' 
-        TextBox9.Location = New Point(140, 56)
-        TextBox9.Name = "TextBox9"
-        TextBox9.Size = New Size(240, 29)
-        TextBox9.TabIndex = 24
+        ListBox1.FormattingEnabled = True
+        ListBox1.ItemHeight = 22
+        ListBox1.Items.AddRange(New Object() {"   "})
+        ListBox1.Location = New Point(131, 56)
+        ListBox1.Name = "ListBox1"
+        ListBox1.Size = New Size(270, 26)
+        ListBox1.TabIndex = 95
         ' 
         ' Label10
         ' 
@@ -400,16 +363,11 @@ Partial Class Add_Staff
     Friend WithEvents Button1 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents Label6 As Label
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents Label4 As Label
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents TextBox9 As TextBox
     Friend WithEvents Label10 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
@@ -425,4 +383,5 @@ Partial Class Add_Staff
     Friend WithEvents Button_About As Button
     Friend WithEvents Button_Change As Button
     Friend WithEvents Button_View As Button
+    Friend WithEvents ListBox1 As ListBox
 End Class

@@ -36,14 +36,8 @@ Partial Class CheckIn
         Button5 = New Button()
         ComboBox3 = New ComboBox()
         Label1 = New Label()
-        Label7 = New Label()
-        ComboBox2 = New ComboBox()
         ComboBox1 = New ComboBox()
         Label6 = New Label()
-        Label9 = New Label()
-        Label13 = New Label()
-        Label14 = New Label()
-        Label15 = New Label()
         Button2 = New Button()
         Button3 = New Button()
         Button4 = New Button()
@@ -160,21 +154,19 @@ Partial Class CheckIn
         GroupBox3.Controls.Add(Button5)
         GroupBox3.Controls.Add(ComboBox3)
         GroupBox3.Controls.Add(Label1)
-        GroupBox3.Controls.Add(Label7)
-        GroupBox3.Controls.Add(ComboBox2)
         GroupBox3.Controls.Add(ComboBox1)
         GroupBox3.Controls.Add(Label6)
         GroupBox3.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox3.Location = New Point(742, 209)
         GroupBox3.Name = "GroupBox3"
-        GroupBox3.Size = New Size(457, 248)
+        GroupBox3.Size = New Size(457, 236)
         GroupBox3.TabIndex = 20
         GroupBox3.TabStop = False
         GroupBox3.Text = "Room Information"
         ' 
         ' Button5
         ' 
-        Button5.Location = New Point(315, 204)
+        Button5.Location = New Point(311, 189)
         Button5.Name = "Button5"
         Button5.Size = New Size(128, 29)
         Button5.TabIndex = 6
@@ -185,7 +177,7 @@ Partial Class CheckIn
         ' 
         ComboBox3.FormattingEnabled = True
         ComboBox3.Items.AddRange(New Object() {"Reserved", "Unavailable", "Booked"})
-        ComboBox3.Location = New Point(226, 153)
+        ComboBox3.Location = New Point(249, 117)
         ComboBox3.Name = "ComboBox3"
         ComboBox3.Size = New Size(176, 30)
         ComboBox3.TabIndex = 5
@@ -193,29 +185,11 @@ Partial Class CheckIn
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(37, 161)
+        Label1.Location = New Point(37, 117)
         Label1.Name = "Label1"
         Label1.Size = New Size(183, 22)
         Label1.TabIndex = 4
         Label1.Text = "Change Room Status"
-        ' 
-        ' Label7
-        ' 
-        Label7.AutoSize = True
-        Label7.Location = New Point(37, 113)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(133, 22)
-        Label7.TabIndex = 3
-        Label7.Text = "Room Number"
-        ' 
-        ' ComboBox2
-        ' 
-        ComboBox2.FormattingEnabled = True
-        ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
-        ComboBox2.Location = New Point(185, 105)
-        ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(176, 30)
-        ComboBox2.TabIndex = 2
         ' 
         ' ComboBox1
         ' 
@@ -234,54 +208,6 @@ Partial Class CheckIn
         Label6.Size = New Size(106, 22)
         Label6.TabIndex = 0
         Label6.Text = "Room Type"
-        ' 
-        ' Label9
-        ' 
-        Label9.AutoSize = True
-        Label9.BackColor = Color.Transparent
-        Label9.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Label9.ForeColor = SystemColors.ActiveCaptionText
-        Label9.Location = New Point(742, 530)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(159, 22)
-        Label9.TabIndex = 21
-        Label9.Text = "Amount of Room:"
-        ' 
-        ' Label13
-        ' 
-        Label13.AutoSize = True
-        Label13.BackColor = Color.Transparent
-        Label13.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Label13.ForeColor = SystemColors.ActiveCaptionText
-        Label13.Location = New Point(907, 530)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(28, 22)
-        Label13.TabIndex = 22
-        Label13.Text = "10"
-        ' 
-        ' Label14
-        ' 
-        Label14.AutoSize = True
-        Label14.BackColor = Color.Transparent
-        Label14.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Label14.ForeColor = SystemColors.ActiveCaptionText
-        Label14.Location = New Point(742, 574)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(58, 22)
-        Label14.TabIndex = 23
-        Label14.Text = "Total:"
-        ' 
-        ' Label15
-        ' 
-        Label15.AutoSize = True
-        Label15.BackColor = Color.Transparent
-        Label15.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Label15.ForeColor = SystemColors.ActiveCaptionText
-        Label15.Location = New Point(907, 574)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(28, 22)
-        Label15.TabIndex = 24
-        Label15.Text = "10"
         ' 
         ' Button2
         ' 
@@ -455,10 +381,6 @@ Partial Class CheckIn
         Controls.Add(Button4)
         Controls.Add(Button3)
         Controls.Add(Button2)
-        Controls.Add(Label15)
-        Controls.Add(Label14)
-        Controls.Add(Label13)
-        Controls.Add(Label9)
         Controls.Add(GroupBox3)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
@@ -483,14 +405,8 @@ Partial Class CheckIn
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Button1 As Button
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
