@@ -79,7 +79,7 @@ Public Class BookForm
             Dim sql As String = "SELECT room_id, room_type, price FROM rooms " &
                "WHERE room_id NOT IN (" &
                "    SELECT room_id FROM bookings " &
-               "    WHERE (checkin_date <= @ToDate AND checkout_date >= @FromDate)" &
+               "    WHERE (from_date <= @ToDate AND to_date >= @FromDate)" &
                ") " & roomTypeCondition & " AND roomstatus = 'Available'"
 
             conn.Open()

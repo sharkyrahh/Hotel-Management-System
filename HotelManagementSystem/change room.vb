@@ -36,7 +36,7 @@ Public Class change_room
 
     ' Find user based on IC (Button2)
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If String.IsNullOrWhiteSpace(TextBox1.Text) Then
+        If String.IsNullOrWhiteSpace(TextBox_IC.Text) Then
             MessageBox.Show("Enter user IC first")
             Return
         End If
@@ -44,7 +44,7 @@ Public Class change_room
         Try
             conn.Open()
             Dim cmd As New MySqlCommand("SELECT users_id FROM users WHERE IC=@ic", conn)
-            cmd.Parameters.AddWithValue("@ic", TextBox1.Text)
+            cmd.Parameters.AddWithValue("@ic", TextBox_IC.Text)
             Dim reader As MySqlDataReader = cmd.ExecuteReader()
             Dim userId As Integer = -1
             If reader.Read() Then
