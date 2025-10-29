@@ -1,18 +1,8 @@
 ﻿Imports System.Security.AccessControl
 Imports MySql.Data.MySqlClient
-Imports Mysqlx.XDevAPI.Relational
-Imports Org.BouncyCastle.Asn1.Cmp
 
 Public Class CheckOut
     Private conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
-
-
-    ' Checkout user
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        ' Placeholder for checkout logic
-        MessageBox.Show("User has been checked out successfully.")
-    End Sub
-
 
     ' Sidebar navigation
     Private Sub Button_Home_Click(sender As Object, e As EventArgs) Handles Button_Home.Click
@@ -49,65 +39,20 @@ Public Class CheckOut
         Me.Hide()
     End Sub
 
-
-    ' Search user IC
+    ' Search booking by booking_id
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=hotel_db")
-        Dim cmd As New MySqlCommand("SELECT * FROM users WHERE IC=@ic", conn)
-        cmd.Parameters.AddWithValue("@ic", TextBox1.Text)
-
         Try
             conn.Open()
+            Dim cmd As New MySqlCommand("SELECT * FROM bookings WHERE booking_id=@bookingId", conn)
+            cmd.Parameters.AddWithValue("@bookingId", TextBox1.Text)
             Dim reader As MySqlDataReader = cmd.ExecuteReader()
             If reader.HasRows Then
-                Label12.Text = "User found"
+                Label12.Text = "Booking found"
                 Label12.ForeColor = Color.Green
             Else
-                Label12.Text = "User not found"
+                Label12.Text = "Booking not found"
                 Label12.ForeColor = Color.Red
             End If
-            conn.Close()
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
-    End Sub
-
-
-
-
-    ' Store checkout data
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-
-        MessageBox.Show("Checkout details saved.")
-    End Sub
-
-
-
-
-    ' Clear form
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        TextBox1.Clear()
-        ListBox1.SelectedIndex = -1
-        ListBox1.SelectedIndex = -1
-        Label12.Text = ""
-    End Sub
-
-
-    ' Go home
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Dim f As New Form1
-        f.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub DateTimePicker2_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker2.ValueChanged
-        Try
-            conn.Open()
-            Dim cmd As New MySqlCommand("UPDATE bookings SET checkin_date=@date WHERE IC=@ic", conn)
-            cmd.Parameters.AddWithValue("@date", DateTimePicker2.Value)
-            cmd.Parameters.AddWithValue("@ic", TextBox1.Text)
-            cmd.ExecuteNonQuery()
-            MessageBox.Show("Booking date updated.")
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         Finally
@@ -115,8 +60,23 @@ Public Class CheckOut
         End Try
     End Sub
 
+    ' Update checkout date
+    Private Sub DateTimePicker2_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker2.ValueChanged
+        Try
+            conn.Open()
+            Dim cmd As New MySqlCommand("UPDATE bookings SET checkout_date=@date WHERE booking_id=@bookingId", conn)
+            cmd.Parameters.AddWithValue("@date", DateTimePicker2.Value)
+            cmd.Parameters.AddWithValue("@bookingId", TextBox1.Text)
+            cmd.ExecuteNonQuery()
+            MessageBox.Show("Checkout date updated.")
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            conn.Close()
+        End Try
+    End Sub
 
-    ' Choose room by ID from `rooms`
+    ' Display room type for selected room_id
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
         Try
             conn.Open()
@@ -133,8 +93,7 @@ Public Class CheckOut
         End Try
     End Sub
 
-
-    ' Change room status
+    ' Update room status
     Private Sub ListBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox2.SelectedIndexChanged
         Try
             conn.Open()
@@ -149,5 +108,4 @@ Public Class CheckOut
             conn.Close()
         End Try
     End Sub
-
 End Class

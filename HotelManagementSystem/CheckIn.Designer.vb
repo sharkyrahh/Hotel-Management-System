@@ -168,7 +168,7 @@ Partial Class CheckIn
         ' 
         ListBox2.FormattingEnabled = True
         ListBox2.ItemHeight = 22
-        ListBox2.Items.AddRange(New Object() {" "})
+        ListBox2.Items.AddRange(New Object() {"Unavailable", "Reserved"})
         ListBox2.Location = New Point(226, 152)
         ListBox2.Name = "ListBox2"
         ListBox2.Size = New Size(199, 70)
@@ -209,7 +209,7 @@ Partial Class CheckIn
         Label6.Name = "Label6"
         Label6.Size = New Size(106, 22)
         Label6.TabIndex = 0
-        Label6.Text = "Room Type"
+        Label6.Text = "Room Num"
         ' 
         ' Button2
         ' 
