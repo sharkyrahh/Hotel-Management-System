@@ -1,9 +1,4 @@
-﻿
-Imports MySql.Data.MySqlClient
-
-﻿Public Class Form2
 ﻿Imports MySql.Data.MySqlClient
-
 Public Class Form2
     Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
     Private Sub Button_Logout_Click(sender As Object, e As EventArgs) Handles Button_Logout.Click
