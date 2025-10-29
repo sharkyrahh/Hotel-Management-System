@@ -6,27 +6,7 @@ Public Class CheckIn
 
     ' Form Load
     Private Sub CheckIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadRoomIDs()
         LoadRoomStatusOptions()
-    End Sub
-
-    ' Load all room IDs from rooms table
-    Private Sub LoadRoomIDs()
-        Try
-            Using conn As New MySqlConnection(connString)
-                conn.Open()
-                Using cmd As New MySqlCommand("SELECT room_id FROM rooms", conn)
-                    Using reader As MySqlDataReader = cmd.ExecuteReader()
-                        ListBox1.Items.Clear()
-                        While reader.Read()
-                            ListBox1.Items.Add(reader("room_id").ToString())
-                        End While
-                    End Using
-                End Using
-            End Using
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
     End Sub
 
     ' Load room status options
@@ -36,6 +16,52 @@ Public Class CheckIn
         ListBox2.Items.Add("Reserved")
         ListBox1.SelectionMode = SelectionMode.One
         ListBox2.SelectionMode = SelectionMode.One
+    End Sub
+
+    ' When click Check IC
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim ic As String = TextBox1.Text.Trim()
+        If ic = "" Then
+            MessageBox.Show("Enter IC first")
+            Return
+        End If
+
+        Try
+            Using conn As New MySqlConnection(connString)
+                conn.Open()
+
+                ' Get user ID by IC
+                Dim cmd As New MySqlCommand("SELECT users_id FROM users WHERE IC=@ic", conn)
+                cmd.Parameters.AddWithValue("@ic", ic)
+                Dim userId As Object = cmd.ExecuteScalar()
+
+                If userId Is Nothing Then
+                    LabelUserID.Text = "User not found"
+                    ListBox1.Items.Clear()
+                    Return
+                End If
+
+                LabelUserID.Text = "User ID: " & userId.ToString()
+
+                ' Now show all room IDs booked by that user
+                Dim cmd2 As New MySqlCommand("SELECT room_id FROM bookings WHERE users_id=@uid", conn)
+                cmd2.Parameters.AddWithValue("@uid", userId)
+                Dim reader As MySqlDataReader = cmd2.ExecuteReader()
+
+                ListBox1.Items.Clear()
+                While reader.Read()
+                    ListBox1.Items.Add(reader("room_id").ToString())
+                End While
+
+                If ListBox1.Items.Count = 0 Then
+                    ListBox1.Items.Add("No room booked")
+                End If
+
+                reader.Close()
+            End Using
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
     End Sub
 
     ' Update room status
@@ -67,36 +93,12 @@ Public Class CheckIn
         End Try
     End Sub
 
-    ' Check user IC and show user ID
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Dim ic As String = TextBox1.Text.Trim()
-        If ic = "" Then
-            MessageBox.Show("Enter IC first")
-            Return
-        End If
-
-        Try
-            Using conn As New MySqlConnection(connString)
-                conn.Open()
-                Using cmd As New MySqlCommand("SELECT users_id FROM users WHERE IC=@ic", conn)
-                    cmd.Parameters.AddWithValue("@ic", ic)
-                    Dim result As Object = cmd.ExecuteScalar()
-                    If result IsNot Nothing Then
-                        LabelUserID.Text = "User ID: Found "
-                    Else
-                        LabelUserID.Text = "User not found"
-                    End If
-                End Using
-            End Using
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
-    End Sub
-
-    ' Save / Apply updates (example placeholder)
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        ' Implement update for every relevant table based on your logic
-        MessageBox.Show("Updates applied successfully.")
+    ' Clear everything
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        ListBox1.Items.Clear()
+        ListBox2.ClearSelected()
+        TextBox1.Clear()
+        LabelUserID.Text = ""
     End Sub
 
     ' Navigation: Home
@@ -104,16 +106,5 @@ Public Class CheckIn
         Dim f As New Form1
         f.Show()
         Me.Hide()
-    End Sub
-
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        Form1.Show()
-        Me.Hide()
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        ListBox2.ClearSelected()
-        TextBox1.Clear()
-        LabelUserID.Text = ""
     End Sub
 End Class
