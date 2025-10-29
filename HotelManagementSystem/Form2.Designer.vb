@@ -26,17 +26,23 @@ Partial Class Form2
         Label10 = New Label()
         Button_Delete = New Button()
         GroupBox2 = New GroupBox()
+<<<<<<< Updated upstream
         ComboBox2 = New ComboBox()
         TextBox6 = New TextBox()
+=======
+        ListBox2 = New ListBox()
+>>>>>>> Stashed changes
         Label7 = New Label()
-        TextBox5 = New TextBox()
         Label6 = New Label()
+<<<<<<< Updated upstream
         TextBox4 = New TextBox()
         Button_Add = New Button()
+=======
+        Button1 = New Button()
+>>>>>>> Stashed changes
         GroupBox1 = New GroupBox()
-        TextBox2 = New TextBox()
+        ListBox1 = New ListBox()
         Label1 = New Label()
-        ComboBox1 = New ComboBox()
         Label3 = New Label()
         Label5 = New Label()
         Label2 = New Label()
@@ -53,6 +59,10 @@ Partial Class Form2
         Button_About = New Button()
         Button_Change = New Button()
         Button_View = New Button()
+        ListBox3 = New ListBox()
+        ListBox4 = New ListBox()
+        ListBox5 = New ListBox()
+        ListBox6 = New ListBox()
         GroupBox2.SuspendLayout()
         GroupBox1.SuspendLayout()
         SuspendLayout()
@@ -68,28 +78,42 @@ Partial Class Form2
         ' 
         ' Button_Delete
         ' 
+<<<<<<< Updated upstream
         Button_Delete.Location = New Point(140, 150)
         Button_Delete.Name = "Button_Delete"
         Button_Delete.Size = New Size(94, 29)
         Button_Delete.TabIndex = 22
         Button_Delete.Text = "Delete"
         Button_Delete.UseVisualStyleBackColor = True
+=======
+        Button2.Location = New Point(160, 213)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(94, 29)
+        Button2.TabIndex = 22
+        Button2.Text = "Delete"
+        Button2.UseVisualStyleBackColor = True
+>>>>>>> Stashed changes
         ' 
         ' GroupBox2
         ' 
         GroupBox2.BackColor = Color.Transparent
+<<<<<<< Updated upstream
         GroupBox2.Controls.Add(ComboBox2)
+=======
+        GroupBox2.Controls.Add(ListBox2)
+>>>>>>> Stashed changes
         GroupBox2.Controls.Add(Label10)
         GroupBox2.Controls.Add(Button_Delete)
         GroupBox2.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox2.ForeColor = SystemColors.ControlText
         GroupBox2.Location = New Point(730, 201)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(428, 207)
+        GroupBox2.Size = New Size(428, 461)
         GroupBox2.TabIndex = 33
         GroupBox2.TabStop = False
         GroupBox2.Text = "Remove Room"
         ' 
+<<<<<<< Updated upstream
         ' ComboBox2
         ' 
         ComboBox2.FormattingEnabled = True
@@ -105,32 +129,37 @@ Partial Class Form2
         TextBox6.Name = "TextBox6"
         TextBox6.Size = New Size(176, 29)
         TextBox6.TabIndex = 30
+=======
+        ' ListBox2
+        ' 
+        ListBox2.FormattingEnabled = True
+        ListBox2.ItemHeight = 22
+        ListBox2.Items.AddRange(New Object() {" "})
+        ListBox2.Location = New Point(142, 56)
+        ListBox2.Name = "ListBox2"
+        ListBox2.Size = New Size(214, 70)
+        ListBox2.TabIndex = 42
+>>>>>>> Stashed changes
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Location = New Point(21, 260)
+        Label7.Location = New Point(22, 418)
         Label7.Name = "Label7"
         Label7.Size = New Size(61, 22)
         Label7.TabIndex = 29
         Label7.Text = "Status"
         ' 
-        ' TextBox5
-        ' 
-        TextBox5.Location = New Point(181, 203)
-        TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(176, 29)
-        TextBox5.TabIndex = 28
-        ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Location = New Point(21, 206)
+        Label6.Location = New Point(26, 331)
         Label6.Name = "Label6"
         Label6.Size = New Size(57, 22)
         Label6.TabIndex = 27
         Label6.Text = "Rules"
         ' 
+<<<<<<< Updated upstream
         ' TextBox4
         ' 
         TextBox4.Location = New Point(181, 157)
@@ -146,54 +175,58 @@ Partial Class Form2
         Button_Add.TabIndex = 22
         Button_Add.Text = "Add"
         Button_Add.UseVisualStyleBackColor = True
+=======
+        ' Button1
+        ' 
+        Button1.Location = New Point(309, 496)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(94, 29)
+        Button1.TabIndex = 22
+        Button1.Text = "Add"
+        Button1.UseVisualStyleBackColor = True
+>>>>>>> Stashed changes
         ' 
         ' GroupBox1
         ' 
         GroupBox1.BackColor = Color.Transparent
-        GroupBox1.Controls.Add(TextBox2)
+        GroupBox1.Controls.Add(ListBox6)
+        GroupBox1.Controls.Add(ListBox5)
+        GroupBox1.Controls.Add(ListBox4)
+        GroupBox1.Controls.Add(ListBox3)
+        GroupBox1.Controls.Add(ListBox1)
         GroupBox1.Controls.Add(Label1)
-        GroupBox1.Controls.Add(TextBox6)
         GroupBox1.Controls.Add(Label7)
-        GroupBox1.Controls.Add(ComboBox1)
         GroupBox1.Controls.Add(Label3)
-        GroupBox1.Controls.Add(TextBox5)
         GroupBox1.Controls.Add(Label6)
-        GroupBox1.Controls.Add(TextBox4)
         GroupBox1.Controls.Add(Label5)
         GroupBox1.Controls.Add(Button_Add)
         GroupBox1.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox1.ForeColor = SystemColors.ControlText
         GroupBox1.Location = New Point(251, 201)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(428, 379)
+        GroupBox1.Size = New Size(428, 572)
         GroupBox1.TabIndex = 32
         GroupBox1.TabStop = False
         GroupBox1.Text = "Add Rooms"
         ' 
-        ' TextBox2
+        ' ListBox1
         ' 
-        TextBox2.Location = New Point(181, 101)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(177, 29)
-        TextBox2.TabIndex = 40
+        ListBox1.FormattingEnabled = True
+        ListBox1.ItemHeight = 22
+        ListBox1.Items.AddRange(New Object() {" "})
+        ListBox1.Location = New Point(167, 66)
+        ListBox1.Name = "ListBox1"
+        ListBox1.Size = New Size(214, 70)
+        ListBox1.TabIndex = 41
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(21, 108)
+        Label1.Location = New Point(21, 164)
         Label1.Name = "Label1"
         Label1.Size = New Size(86, 22)
         Label1.TabIndex = 39
         Label1.Text = "Room ID"
-        ' 
-        ' ComboBox1
-        ' 
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"Deluxe", "Twin", "Single", "Standard"})
-        ComboBox1.Location = New Point(181, 55)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(177, 30)
-        ComboBox1.TabIndex = 37
         ' 
         ' Label3
         ' 
@@ -207,7 +240,7 @@ Partial Class Form2
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Location = New Point(21, 157)
+        Label5.Location = New Point(22, 270)
         Label5.Name = "Label5"
         Label5.Size = New Size(105, 22)
         Label5.TabIndex = 25
@@ -366,6 +399,46 @@ Partial Class Form2
         Button_View.TabIndex = 73
         Button_View.UseVisualStyleBackColor = True
         ' 
+        ' ListBox3
+        ' 
+        ListBox3.FormattingEnabled = True
+        ListBox3.ItemHeight = 22
+        ListBox3.Items.AddRange(New Object() {" "})
+        ListBox3.Location = New Point(167, 164)
+        ListBox3.Name = "ListBox3"
+        ListBox3.Size = New Size(214, 70)
+        ListBox3.TabIndex = 42
+        ' 
+        ' ListBox4
+        ' 
+        ListBox4.FormattingEnabled = True
+        ListBox4.ItemHeight = 22
+        ListBox4.Items.AddRange(New Object() {" "})
+        ListBox4.Location = New Point(167, 251)
+        ListBox4.Name = "ListBox4"
+        ListBox4.Size = New Size(214, 70)
+        ListBox4.TabIndex = 43
+        ' 
+        ' ListBox5
+        ' 
+        ListBox5.FormattingEnabled = True
+        ListBox5.ItemHeight = 22
+        ListBox5.Items.AddRange(New Object() {" "})
+        ListBox5.Location = New Point(167, 331)
+        ListBox5.Name = "ListBox5"
+        ListBox5.Size = New Size(214, 70)
+        ListBox5.TabIndex = 44
+        ' 
+        ' ListBox6
+        ' 
+        ListBox6.FormattingEnabled = True
+        ListBox6.ItemHeight = 22
+        ListBox6.Items.AddRange(New Object() {" "})
+        ListBox6.Location = New Point(167, 418)
+        ListBox6.Name = "ListBox6"
+        ListBox6.Size = New Size(214, 70)
+        ListBox6.TabIndex = 45
+        ' 
         ' Form2
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -405,17 +478,18 @@ Partial Class Form2
     Friend WithEvents Label10 As Label
     Friend WithEvents Button_Delete As Button
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label6 As Label
+<<<<<<< Updated upstream
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Button_Add As Button
+=======
+    Friend WithEvents Button1 As Button
+>>>>>>> Stashed changes
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Button_Reset As Button
     Friend WithEvents Label19 As Label
@@ -430,6 +504,15 @@ Partial Class Form2
     Friend WithEvents Button_About As Button
     Friend WithEvents Button_Change As Button
     Friend WithEvents Button_View As Button
+<<<<<<< Updated upstream
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents TextBox2 As TextBox
+=======
+    Friend WithEvents ListBox2 As ListBox
+    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents ListBox6 As ListBox
+    Friend WithEvents ListBox5 As ListBox
+    Friend WithEvents ListBox4 As ListBox
+    Friend WithEvents ListBox3 As ListBox
+>>>>>>> Stashed changes
 End Class
