@@ -1,166 +1,130 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class change_room
-    Dim con As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
-    Dim selectedUserId As Integer = -1
+    Private conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
 
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        CurrentBookedRoom.Items.Clear()
-        AvailableRoomID.Items.Clear()
-        selectedUserId = -1
-
-        Dim ic As String = TextBox_IC.Text.Trim()
-        If ic = "" Then
-            MessageBox.Show("Please enter IC number.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
+    ' Logout
+    Private Sub Button_Logout_Click(sender As Object, e As EventArgs) Handles Button_Logout.Click
+        If MessageBox.Show("Are you sure you want to log out?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            Me.Hide()
+            StaffLoginForm.Show()
         End If
-
-        Try
-            con.Open()
-
-            ' 1️⃣ Find user_id based on IC
-            Dim getUserQuery As String = "SELECT users_id FROM users WHERE IC = @ic;"
-            Dim cmdUser As New MySqlCommand(getUserQuery, con)
-            cmdUser.Parameters.AddWithValue("@ic", ic)
-            Dim userResult = cmdUser.ExecuteScalar()
-
-            If userResult Is Nothing Then
-                MessageBox.Show("User not found. Please check the IC number.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                con.Close()
-                Return
-            End If
-
-            selectedUserId = Convert.ToInt32(userResult)
-
-            ' 2️⃣ Display current booked room(s)
-            Dim bookedQuery As String = "
-                SELECT r.room_id 
-                FROM bookings b 
-                INNER JOIN rooms r ON b.room_id = r.room_id
-                WHERE b.users_id = @uid;"
-            Dim cmdBooked As New MySqlCommand(bookedQuery, con)
-            cmdBooked.Parameters.AddWithValue("@uid", selectedUserId)
-            Dim reader1 As MySqlDataReader = cmdBooked.ExecuteReader()
-
-            While reader1.Read()
-                CurrentBookedRoom.Items.Add(reader1("room_id").ToString())
-            End While
-            reader1.Close()
-
-            ' 3️⃣ Display available rooms
-            Dim availQuery As String = "SELECT room_id FROM rooms WHERE roomstatus = 'Available';"
-            Dim cmdAvail As New MySqlCommand(availQuery, con)
-            Dim reader2 As MySqlDataReader = cmdAvail.ExecuteReader()
-
-            While reader2.Read()
-                AvailableRoomID.Items.Add(reader2("room_id").ToString())
-            End While
-            reader2.Close()
-
-        Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
-        Finally
-            con.Close()
-        End Try
     End Sub
 
+    ' View manage room
     Private Sub Button_View_Click(sender As Object, e As EventArgs) Handles Button_View.Click
         manageroom.Show()
         Me.Hide()
     End Sub
 
+    ' Add staff
     Private Sub Button_Manage_Click(sender As Object, e As EventArgs) Handles Button_Manage.Click
         Add_Staff.Show()
         Me.Hide()
     End Sub
 
+    ' About
     Private Sub Button_About_Click(sender As Object, e As EventArgs) Handles Button_About.Click
         AboutBox1.Show()
     End Sub
 
+    ' Home
     Private Sub Button_Home_Click(sender As Object, e As EventArgs) Handles Button_Home.Click
         Staff_Dashboard.Show()
         Me.Hide()
     End Sub
 
+    ' Find user based on IC (Button2)
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If selectedUserId = -1 Then
-            MessageBox.Show("Please find a user first.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+        If String.IsNullOrWhiteSpace(TextBox1.Text) Then
+            MessageBox.Show("Enter user IC first")
             Return
         End If
-
-        If CurrentBookedRoom.SelectedItem Is Nothing Or AvailableRoomID.SelectedItem Is Nothing Then
-            MessageBox.Show("Please select a current booked room and a new available room.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-            Return
-        End If
-
-        Dim oldRoomId As Integer = Convert.ToInt32(CurrentBookedRoom.SelectedItem)
-        Dim newRoomId As Integer = Convert.ToInt32(AvailableRoomID.SelectedItem)
 
         Try
-            con.Open()
-
-            ' 1️⃣ Get existing booking details for the selected old room
-            Dim getBookingQuery As String = "SELECT * FROM bookings WHERE users_id=@uid AND room_id=@old;"
-            Dim cmdGetBooking As New MySqlCommand(getBookingQuery, con)
-            cmdGetBooking.Parameters.AddWithValue("@uid", selectedUserId)
-            cmdGetBooking.Parameters.AddWithValue("@old", oldRoomId)
-            Dim reader As MySqlDataReader = cmdGetBooking.ExecuteReader()
-
-            Dim fromDate As Date = Date.Now
-            Dim toDate As Date = Date.Now
-            Dim checkinDate As Date = Date.Now
-            Dim checkoutDate As Date = Date.Now
-            Dim roomStatus As String = "Booked"
-
+            conn.Open()
+            Dim cmd As New MySqlCommand("SELECT users_id FROM users WHERE IC=@ic", conn)
+            cmd.Parameters.AddWithValue("@ic", TextBox1.Text)
+            Dim reader As MySqlDataReader = cmd.ExecuteReader()
+            Dim userId As Integer = -1
             If reader.Read() Then
-                If Not IsDBNull(reader("from_date")) Then fromDate = reader("from_date")
-                If Not IsDBNull(reader("to_date")) Then toDate = reader("to_date")
-                If Not IsDBNull(reader("checkin_date")) Then checkinDate = reader("checkin_date")
-                If Not IsDBNull(reader("checkout_date")) Then checkoutDate = reader("checkout_date")
+                userId = Convert.ToInt32(reader("users_id"))
+            Else
+                MessageBox.Show("User not found")
             End If
             reader.Close()
 
-            ' 2️⃣ Delete old booking
-            Dim deleteQuery As String = "DELETE FROM bookings WHERE users_id=@uid AND room_id=@old;"
-            Dim cmdDelete As New MySqlCommand(deleteQuery, con)
-            cmdDelete.Parameters.AddWithValue("@uid", selectedUserId)
-            cmdDelete.Parameters.AddWithValue("@old", oldRoomId)
-            cmdDelete.ExecuteNonQuery()
+            ' Display current booked rooms for user
+            If userId <> -1 Then
+                Dim cmdRooms As New MySqlCommand("SELECT room_id FROM bookings WHERE users_id=@uid AND roomstatus='Booked'", conn)
+                cmdRooms.Parameters.AddWithValue("@uid", userId)
+                Dim roomReader As MySqlDataReader = cmdRooms.ExecuteReader()
+                CurrentBookedRoom.Items.Clear()
+                While roomReader.Read()
+                    CurrentBookedRoom.Items.Add(roomReader("room_id").ToString())
+                End While
+                roomReader.Close()
 
-            ' 3️⃣ Change old room to Available
-            Dim updateOldRoom As String = "UPDATE rooms SET roomstatus='Available' WHERE room_id=@old;"
-            Dim cmdUpdateOld As New MySqlCommand(updateOldRoom, con)
-            cmdUpdateOld.Parameters.AddWithValue("@old", oldRoomId)
-            cmdUpdateOld.ExecuteNonQuery()
-
-            ' 4️⃣ Insert new booking (with same details)
-            Dim insertQuery As String = "
-                INSERT INTO bookings (room_id, users_id, checkin_date, checkout_date, roomstatus, from_date, to_date)
-                VALUES (@newRoom, @uid, @checkin, @checkout, 'Booked', @from, @to);"
-            Dim cmdInsert As New MySqlCommand(insertQuery, con)
-            cmdInsert.Parameters.AddWithValue("@newRoom", newRoomId)
-            cmdInsert.Parameters.AddWithValue("@uid", selectedUserId)
-            cmdInsert.Parameters.AddWithValue("@checkin", checkinDate)
-            cmdInsert.Parameters.AddWithValue("@checkout", checkoutDate)
-            cmdInsert.Parameters.AddWithValue("@from", fromDate)
-            cmdInsert.Parameters.AddWithValue("@to", toDate)
-            cmdInsert.ExecuteNonQuery()
-
-            ' 5️⃣ Update new room status to Booked
-            Dim updateNewRoom As String = "UPDATE rooms SET roomstatus='Booked' WHERE room_id=@new;"
-            Dim cmdUpdateNew As New MySqlCommand(updateNewRoom, con)
-            cmdUpdateNew.Parameters.AddWithValue("@new", newRoomId)
-            cmdUpdateNew.ExecuteNonQuery()
-
-            MessageBox.Show("Room successfully changed!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                If CurrentBookedRoom.Items.Count = 0 Then
+                    CurrentBookedRoom.Items.Add("No bookings made")
+                End If
+            End If
 
         Catch ex As Exception
-            MessageBox.Show("Error: " & ex.Message)
+            MessageBox.Show(ex.Message)
         Finally
-            con.Close()
+            conn.Close()
+        End Try
+    End Sub
+
+    ' Show available rooms
+    Private Sub AvailableRoomID_SelectedIndexChanged(sender As Object, e As EventArgs) Handles AvailableRoomID.SelectedIndexChanged
+        Try
+            conn.Open()
+            Dim cmd As New MySqlCommand("SELECT room_id FROM rooms WHERE roomstatus='Available'", conn)
+            Dim reader As MySqlDataReader = cmd.ExecuteReader()
+            AvailableRoomID.Items.Clear()
+            While reader.Read()
+                AvailableRoomID.Items.Add(reader("room_id").ToString())
+            End While
+            reader.Close()
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            conn.Close()
+        End Try
+    End Sub
+
+    ' Change booking to selected available room
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If CurrentBookedRoom.SelectedIndex = -1 Or AvailableRoomID.SelectedIndex = -1 Then
+            MessageBox.Show("Select current booked room and available room first")
+            Return
+        End If
+
+        Try
+            conn.Open()
+
+            ' Update booking
+            Dim cmd As New MySqlCommand("UPDATE bookings SET room_id=@newRoom WHERE room_id=@oldRoom", conn)
+            cmd.Parameters.AddWithValue("@newRoom", AvailableRoomID.SelectedItem.ToString())
+            cmd.Parameters.AddWithValue("@oldRoom", CurrentBookedRoom.SelectedItem.ToString())
+            cmd.ExecuteNonQuery()
+
+            ' Update room statuses
+            Dim cmd1 As New MySqlCommand("UPDATE rooms SET roomstatus='Available' WHERE room_id=@oldRoom", conn)
+            cmd1.Parameters.AddWithValue("@oldRoom", CurrentBookedRoom.SelectedItem.ToString())
+            cmd1.ExecuteNonQuery()
+
+            Dim cmd2 As New MySqlCommand("UPDATE rooms SET roomstatus='Booked' WHERE room_id=@newRoom", conn)
+            cmd2.Parameters.AddWithValue("@newRoom", AvailableRoomID.SelectedItem.ToString())
+            cmd2.ExecuteNonQuery()
+
+            MessageBox.Show("Room changed successfully")
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        Finally
+            conn.Close()
         End Try
     End Sub
 End Class
-

@@ -100,7 +100,7 @@ Partial Class CheckIn
         Button1.Name = "Button1"
         Button1.Size = New Size(94, 29)
         Button1.TabIndex = 22
-        Button1.Text = "Check"
+        Button1.Text = "Enter"
         Button1.UseVisualStyleBackColor = True
         ' 
         ' TextBox1
