@@ -505,6 +505,7 @@ Partial Class CheckIn
         Controls.Add(GroupBox1)
         Controls.Add(Label2)
         Name = "CheckIn"
+        StartPosition = FormStartPosition.CenterScreen
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
         GroupBox2.ResumeLayout(False)

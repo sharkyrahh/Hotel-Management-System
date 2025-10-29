@@ -412,6 +412,7 @@ Partial Class CheckOut
         Controls.Add(GroupBox1)
         Controls.Add(Label2)
         Name = "CheckOut"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "CheckOut"
         GroupBox2.ResumeLayout(False)
         GroupBox2.PerformLayout()

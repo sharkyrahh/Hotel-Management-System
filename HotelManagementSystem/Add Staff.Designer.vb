@@ -385,6 +385,7 @@ Partial Class Add_Staff
         Controls.Add(GroupBox1)
         Controls.Add(Label2)
         Name = "Add_Staff"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Add_Staff"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()

@@ -410,8 +410,10 @@ Partial Class Form2
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
         Controls.Add(Label2)
+        Enabled = False
         ForeColor = SystemColors.ButtonHighlight
         Name = "Form2"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Add Room"
         GroupBox2.ResumeLayout(False)
         GroupBox2.PerformLayout()

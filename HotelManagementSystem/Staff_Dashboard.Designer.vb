@@ -495,6 +495,7 @@ Partial Class Staff_Dashboard
         Controls.Add(Button_View)
         Controls.Add(Label2)
         Name = "Staff_Dashboard"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Staff_Dashboard"
         ResumeLayout(False)
         PerformLayout()

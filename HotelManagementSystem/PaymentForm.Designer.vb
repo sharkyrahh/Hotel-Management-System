@@ -24,61 +24,61 @@ Partial Class PaymentForm
     Private Sub InitializeComponent()
         Label1 = New Label()
         MySqlCommand1 = New MySql.Data.MySqlClient.MySqlCommand()
-        GroupBox1 = New GroupBox()
-        Button1 = New Button()
-        TextBox1 = New TextBox()
+        GroupBoxpayment = New GroupBox()
+        Buttonpay = New Button()
+        TextBoxpay = New TextBox()
         Label22 = New Label()
         Label21 = New Label()
         GroupBox2 = New GroupBox()
-        Panel6 = New Panel()
-        Label38 = New Label()
+        Panelsubtotal = New Panel()
+        Label_subtotal = New Label()
         Label39 = New Label()
-        Panel4 = New Panel()
-        Label33 = New Label()
+        Panelnumber = New Panel()
+        Label_numberofnights = New Label()
         Label37 = New Label()
         Label18 = New Label()
         Label13 = New Label()
         Label12 = New Label()
         Label11 = New Label()
-        Panel3 = New Panel()
+        Panelsingle = New Panel()
         Label31 = New Label()
-        Label17 = New Label()
-        Label6 = New Label()
+        LabelQtySingle = New Label()
+        Label_singletotal = New Label()
         Label7 = New Label()
-        Panel2 = New Panel()
+        Paneltwin = New Panel()
         Label30 = New Label()
-        Label16 = New Label()
-        Label4 = New Label()
+        LabelQtyTwin = New Label()
+        Label_twintotal = New Label()
         Label5 = New Label()
-        Panel1 = New Panel()
+        Paneldeluxe = New Panel()
         Label20 = New Label()
-        Label15 = New Label()
-        Label2 = New Label()
+        LabelQtyDeluxe = New Label()
+        Label_deluxetotal = New Label()
         Label3 = New Label()
-        Panel5 = New Panel()
+        Panelstandard = New Panel()
         Label19 = New Label()
-        Label14 = New Label()
-        Label35 = New Label()
+        LabelQtyStandard = New Label()
+        Label_standardtotal = New Label()
         Label36 = New Label()
         Button_Receipt = New Button()
-        Panel9 = New Panel()
-        Label25 = New Label()
+        Paneltotal = New Panel()
+        Label_total = New Label()
         Label28 = New Label()
-        Panel8 = New Panel()
-        Label27 = New Label()
+        Panelbalance = New Panel()
+        Label_balance = New Label()
         Label26 = New Label()
-        Panel7 = New Panel()
-        Label23 = New Label()
+        Paneltotalpaid = New Panel()
+        Label_totalpaid = New Label()
         Label24 = New Label()
         Label29 = New Label()
         GroupBox3 = New GroupBox()
-        TextBox4 = New TextBox()
+        TextBoxphone = New TextBox()
         Label10 = New Label()
-        TextBox3 = New TextBox()
-        TextBox2 = New TextBox()
+        TextBox_ic = New TextBox()
+        TextBoxName = New TextBox()
         Label8 = New Label()
         Label9 = New Label()
-        Button2 = New Button()
+        Button_confirm = New Button()
         Label32 = New Label()
         Label34 = New Label()
         Label40 = New Label()
@@ -94,17 +94,17 @@ Partial Class PaymentForm
         Button_Back = New Button()
         Button_Check = New Button()
         Button_Book2 = New Button()
-        GroupBox1.SuspendLayout()
+        GroupBoxpayment.SuspendLayout()
         GroupBox2.SuspendLayout()
-        Panel6.SuspendLayout()
-        Panel4.SuspendLayout()
-        Panel3.SuspendLayout()
-        Panel2.SuspendLayout()
-        Panel1.SuspendLayout()
-        Panel5.SuspendLayout()
-        Panel9.SuspendLayout()
-        Panel8.SuspendLayout()
-        Panel7.SuspendLayout()
+        Panelsubtotal.SuspendLayout()
+        Panelnumber.SuspendLayout()
+        Panelsingle.SuspendLayout()
+        Paneltwin.SuspendLayout()
+        Paneldeluxe.SuspendLayout()
+        Panelstandard.SuspendLayout()
+        Paneltotal.SuspendLayout()
+        Panelbalance.SuspendLayout()
+        Paneltotalpaid.SuspendLayout()
         GroupBox3.SuspendLayout()
         SuspendLayout()
         ' 
@@ -127,35 +127,36 @@ Partial Class PaymentForm
         MySqlCommand1.EnableCaching = False
         MySqlCommand1.Transaction = Nothing
         ' 
-        ' GroupBox1
+        ' GroupBoxpayment
         ' 
-        GroupBox1.BackColor = Color.Transparent
-        GroupBox1.Controls.Add(Button1)
-        GroupBox1.Controls.Add(TextBox1)
-        GroupBox1.Controls.Add(Label22)
-        GroupBox1.Controls.Add(Label21)
-        GroupBox1.Location = New Point(686, 327)
-        GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(523, 358)
-        GroupBox1.TabIndex = 9
-        GroupBox1.TabStop = False
-        GroupBox1.Text = "Payment"
+        GroupBoxpayment.BackColor = Color.Transparent
+        GroupBoxpayment.Controls.Add(Buttonpay)
+        GroupBoxpayment.Controls.Add(TextBoxpay)
+        GroupBoxpayment.Controls.Add(Label22)
+        GroupBoxpayment.Controls.Add(Label21)
+        GroupBoxpayment.Location = New Point(686, 327)
+        GroupBoxpayment.Name = "GroupBoxpayment"
+        GroupBoxpayment.Size = New Size(523, 358)
+        GroupBoxpayment.TabIndex = 9
+        GroupBoxpayment.TabStop = False
+        GroupBoxpayment.Text = "Payment"
+        GroupBoxpayment.Visible = False
         ' 
-        ' Button1
+        ' Buttonpay
         ' 
-        Button1.Location = New Point(201, 207)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 44)
-        Button1.TabIndex = 10
-        Button1.Text = "PAY"
-        Button1.UseVisualStyleBackColor = True
+        Buttonpay.Location = New Point(201, 207)
+        Buttonpay.Name = "Buttonpay"
+        Buttonpay.Size = New Size(94, 44)
+        Buttonpay.TabIndex = 10
+        Buttonpay.Text = "PAY"
+        Buttonpay.UseVisualStyleBackColor = True
         ' 
-        ' TextBox1
+        ' TextBoxpay
         ' 
-        TextBox1.Location = New Point(142, 168)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(260, 27)
-        TextBox1.TabIndex = 8
+        TextBoxpay.Location = New Point(142, 168)
+        TextBoxpay.Name = "TextBoxpay"
+        TextBoxpay.Size = New Size(260, 27)
+        TextBoxpay.TabIndex = 8
         ' 
         ' Label22
         ' 
@@ -179,20 +180,20 @@ Partial Class PaymentForm
         ' 
         ' GroupBox2
         ' 
-        GroupBox2.Controls.Add(Panel6)
-        GroupBox2.Controls.Add(Panel4)
+        GroupBox2.Controls.Add(Panelsubtotal)
+        GroupBox2.Controls.Add(Panelnumber)
         GroupBox2.Controls.Add(Label18)
         GroupBox2.Controls.Add(Label13)
         GroupBox2.Controls.Add(Label12)
         GroupBox2.Controls.Add(Label11)
-        GroupBox2.Controls.Add(Panel3)
-        GroupBox2.Controls.Add(Panel2)
-        GroupBox2.Controls.Add(Panel1)
-        GroupBox2.Controls.Add(Panel5)
+        GroupBox2.Controls.Add(Panelsingle)
+        GroupBox2.Controls.Add(Paneltwin)
+        GroupBox2.Controls.Add(Paneldeluxe)
+        GroupBox2.Controls.Add(Panelstandard)
         GroupBox2.Controls.Add(Button_Receipt)
-        GroupBox2.Controls.Add(Panel9)
-        GroupBox2.Controls.Add(Panel8)
-        GroupBox2.Controls.Add(Panel7)
+        GroupBox2.Controls.Add(Paneltotal)
+        GroupBox2.Controls.Add(Panelbalance)
+        GroupBox2.Controls.Add(Paneltotalpaid)
         GroupBox2.Location = New Point(209, 135)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(457, 550)
@@ -200,24 +201,25 @@ Partial Class PaymentForm
         GroupBox2.TabStop = False
         GroupBox2.Text = "Booking Details"
         ' 
-        ' Panel6
+        ' Panelsubtotal
         ' 
-        Panel6.Controls.Add(Label38)
-        Panel6.Controls.Add(Label39)
-        Panel6.Location = New Point(18, 198)
-        Panel6.Name = "Panel6"
-        Panel6.Size = New Size(413, 32)
-        Panel6.TabIndex = 13
+        Panelsubtotal.Controls.Add(Label_subtotal)
+        Panelsubtotal.Controls.Add(Label39)
+        Panelsubtotal.Location = New Point(18, 198)
+        Panelsubtotal.Name = "Panelsubtotal"
+        Panelsubtotal.Size = New Size(413, 32)
+        Panelsubtotal.TabIndex = 13
+        Panelsubtotal.Visible = False
         ' 
-        ' Label38
+        ' Label_subtotal
         ' 
-        Label38.AutoSize = True
-        Label38.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label38.Location = New Point(337, 2)
-        Label38.Name = "Label38"
-        Label38.Size = New Size(56, 28)
-        Label38.TabIndex = 5
-        Label38.Text = "RM0"
+        Label_subtotal.AutoSize = True
+        Label_subtotal.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label_subtotal.Location = New Point(337, 2)
+        Label_subtotal.Name = "Label_subtotal"
+        Label_subtotal.Size = New Size(56, 28)
+        Label_subtotal.TabIndex = 5
+        Label_subtotal.Text = "RM0"
         ' 
         ' Label39
         ' 
@@ -229,24 +231,25 @@ Partial Class PaymentForm
         Label39.TabIndex = 5
         Label39.Text = "Subtotal"
         ' 
-        ' Panel4
+        ' Panelnumber
         ' 
-        Panel4.Controls.Add(Label33)
-        Panel4.Controls.Add(Label37)
-        Panel4.Location = New Point(18, 232)
-        Panel4.Name = "Panel4"
-        Panel4.Size = New Size(413, 32)
-        Panel4.TabIndex = 13
+        Panelnumber.Controls.Add(Label_numberofnights)
+        Panelnumber.Controls.Add(Label37)
+        Panelnumber.Location = New Point(18, 232)
+        Panelnumber.Name = "Panelnumber"
+        Panelnumber.Size = New Size(413, 32)
+        Panelnumber.TabIndex = 13
+        Panelnumber.Visible = False
         ' 
-        ' Label33
+        ' Label_numberofnights
         ' 
-        Label33.AutoSize = True
-        Label33.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label33.Location = New Point(294, 2)
-        Label33.Name = "Label33"
-        Label33.Size = New Size(24, 28)
-        Label33.TabIndex = 9
-        Label33.Text = "0"
+        Label_numberofnights.AutoSize = True
+        Label_numberofnights.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label_numberofnights.Location = New Point(294, 2)
+        Label_numberofnights.Name = "Label_numberofnights"
+        Label_numberofnights.Size = New Size(24, 28)
+        Label_numberofnights.TabIndex = 9
+        Label_numberofnights.Text = "0"
         ' 
         ' Label37
         ' 
@@ -298,16 +301,17 @@ Partial Class PaymentForm
         Label11.TabIndex = 11
         Label11.Text = "Item"
         ' 
-        ' Panel3
+        ' Panelsingle
         ' 
-        Panel3.Controls.Add(Label31)
-        Panel3.Controls.Add(Label17)
-        Panel3.Controls.Add(Label6)
-        Panel3.Controls.Add(Label7)
-        Panel3.Location = New Point(18, 163)
-        Panel3.Name = "Panel3"
-        Panel3.Size = New Size(413, 32)
-        Panel3.TabIndex = 12
+        Panelsingle.Controls.Add(Label31)
+        Panelsingle.Controls.Add(LabelQtySingle)
+        Panelsingle.Controls.Add(Label_singletotal)
+        Panelsingle.Controls.Add(Label7)
+        Panelsingle.Location = New Point(18, 163)
+        Panelsingle.Name = "Panelsingle"
+        Panelsingle.Size = New Size(413, 32)
+        Panelsingle.TabIndex = 12
+        Panelsingle.Visible = False
         ' 
         ' Label31
         ' 
@@ -315,29 +319,29 @@ Partial Class PaymentForm
         Label31.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label31.Location = New Point(211, 2)
         Label31.Name = "Label31"
-        Label31.Size = New Size(56, 28)
+        Label31.Size = New Size(80, 28)
         Label31.TabIndex = 10
-        Label31.Text = "RM0"
+        Label31.Text = "RM250"
         ' 
-        ' Label17
+        ' LabelQtySingle
         ' 
-        Label17.AutoSize = True
-        Label17.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label17.Location = New Point(294, 2)
-        Label17.Name = "Label17"
-        Label17.Size = New Size(24, 28)
-        Label17.TabIndex = 9
-        Label17.Text = "0"
+        LabelQtySingle.AutoSize = True
+        LabelQtySingle.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelQtySingle.Location = New Point(294, 2)
+        LabelQtySingle.Name = "LabelQtySingle"
+        LabelQtySingle.Size = New Size(24, 28)
+        LabelQtySingle.TabIndex = 9
+        LabelQtySingle.Text = "0"
         ' 
-        ' Label6
+        ' Label_singletotal
         ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(337, 2)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(56, 28)
-        Label6.TabIndex = 5
-        Label6.Text = "RM0"
+        Label_singletotal.AutoSize = True
+        Label_singletotal.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label_singletotal.Location = New Point(337, 2)
+        Label_singletotal.Name = "Label_singletotal"
+        Label_singletotal.Size = New Size(56, 28)
+        Label_singletotal.TabIndex = 5
+        Label_singletotal.Text = "RM0"
         ' 
         ' Label7
         ' 
@@ -349,16 +353,17 @@ Partial Class PaymentForm
         Label7.TabIndex = 5
         Label7.Text = "Single"
         ' 
-        ' Panel2
+        ' Paneltwin
         ' 
-        Panel2.Controls.Add(Label30)
-        Panel2.Controls.Add(Label16)
-        Panel2.Controls.Add(Label4)
-        Panel2.Controls.Add(Label5)
-        Panel2.Location = New Point(18, 128)
-        Panel2.Name = "Panel2"
-        Panel2.Size = New Size(413, 32)
-        Panel2.TabIndex = 12
+        Paneltwin.Controls.Add(Label30)
+        Paneltwin.Controls.Add(LabelQtyTwin)
+        Paneltwin.Controls.Add(Label_twintotal)
+        Paneltwin.Controls.Add(Label5)
+        Paneltwin.Location = New Point(18, 128)
+        Paneltwin.Name = "Paneltwin"
+        Paneltwin.Size = New Size(413, 32)
+        Paneltwin.TabIndex = 12
+        Paneltwin.Visible = False
         ' 
         ' Label30
         ' 
@@ -366,29 +371,29 @@ Partial Class PaymentForm
         Label30.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label30.Location = New Point(211, 1)
         Label30.Name = "Label30"
-        Label30.Size = New Size(56, 28)
+        Label30.Size = New Size(80, 28)
         Label30.TabIndex = 9
-        Label30.Text = "RM0"
+        Label30.Text = "RM200"
         ' 
-        ' Label16
+        ' LabelQtyTwin
         ' 
-        Label16.AutoSize = True
-        Label16.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label16.Location = New Point(294, 1)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(24, 28)
-        Label16.TabIndex = 8
-        Label16.Text = "0"
+        LabelQtyTwin.AutoSize = True
+        LabelQtyTwin.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelQtyTwin.Location = New Point(294, 1)
+        LabelQtyTwin.Name = "LabelQtyTwin"
+        LabelQtyTwin.Size = New Size(24, 28)
+        LabelQtyTwin.TabIndex = 8
+        LabelQtyTwin.Text = "0"
         ' 
-        ' Label4
+        ' Label_twintotal
         ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label4.Location = New Point(337, 2)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(56, 28)
-        Label4.TabIndex = 5
-        Label4.Text = "RM0"
+        Label_twintotal.AutoSize = True
+        Label_twintotal.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label_twintotal.Location = New Point(337, 2)
+        Label_twintotal.Name = "Label_twintotal"
+        Label_twintotal.Size = New Size(56, 28)
+        Label_twintotal.TabIndex = 5
+        Label_twintotal.Text = "RM0"
         ' 
         ' Label5
         ' 
@@ -400,16 +405,17 @@ Partial Class PaymentForm
         Label5.TabIndex = 5
         Label5.Text = "Twin"
         ' 
-        ' Panel1
+        ' Paneldeluxe
         ' 
-        Panel1.Controls.Add(Label20)
-        Panel1.Controls.Add(Label15)
-        Panel1.Controls.Add(Label2)
-        Panel1.Controls.Add(Label3)
-        Panel1.Location = New Point(18, 92)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(413, 32)
-        Panel1.TabIndex = 12
+        Paneldeluxe.Controls.Add(Label20)
+        Paneldeluxe.Controls.Add(LabelQtyDeluxe)
+        Paneldeluxe.Controls.Add(Label_deluxetotal)
+        Paneldeluxe.Controls.Add(Label3)
+        Paneldeluxe.Location = New Point(18, 92)
+        Paneldeluxe.Name = "Paneldeluxe"
+        Paneldeluxe.Size = New Size(413, 32)
+        Paneldeluxe.TabIndex = 12
+        Paneldeluxe.Visible = False
         ' 
         ' Label20
         ' 
@@ -417,29 +423,29 @@ Partial Class PaymentForm
         Label20.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label20.Location = New Point(211, 2)
         Label20.Name = "Label20"
-        Label20.Size = New Size(56, 28)
+        Label20.Size = New Size(80, 28)
         Label20.TabIndex = 8
-        Label20.Text = "RM0"
+        Label20.Text = "RM150"
         ' 
-        ' Label15
+        ' LabelQtyDeluxe
         ' 
-        Label15.AutoSize = True
-        Label15.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label15.Location = New Point(294, 2)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(24, 28)
-        Label15.TabIndex = 7
-        Label15.Text = "0"
+        LabelQtyDeluxe.AutoSize = True
+        LabelQtyDeluxe.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelQtyDeluxe.Location = New Point(294, 2)
+        LabelQtyDeluxe.Name = "LabelQtyDeluxe"
+        LabelQtyDeluxe.Size = New Size(24, 28)
+        LabelQtyDeluxe.TabIndex = 7
+        LabelQtyDeluxe.Text = "0"
         ' 
-        ' Label2
+        ' Label_deluxetotal
         ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(337, 2)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(56, 28)
-        Label2.TabIndex = 5
-        Label2.Text = "RM0"
+        Label_deluxetotal.AutoSize = True
+        Label_deluxetotal.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label_deluxetotal.Location = New Point(337, 2)
+        Label_deluxetotal.Name = "Label_deluxetotal"
+        Label_deluxetotal.Size = New Size(56, 28)
+        Label_deluxetotal.TabIndex = 5
+        Label_deluxetotal.Text = "RM0"
         ' 
         ' Label3
         ' 
@@ -451,16 +457,17 @@ Partial Class PaymentForm
         Label3.TabIndex = 5
         Label3.Text = "Deluxe"
         ' 
-        ' Panel5
+        ' Panelstandard
         ' 
-        Panel5.Controls.Add(Label19)
-        Panel5.Controls.Add(Label14)
-        Panel5.Controls.Add(Label35)
-        Panel5.Controls.Add(Label36)
-        Panel5.Location = New Point(18, 54)
-        Panel5.Name = "Panel5"
-        Panel5.Size = New Size(413, 32)
-        Panel5.TabIndex = 11
+        Panelstandard.Controls.Add(Label19)
+        Panelstandard.Controls.Add(LabelQtyStandard)
+        Panelstandard.Controls.Add(Label_standardtotal)
+        Panelstandard.Controls.Add(Label36)
+        Panelstandard.Location = New Point(18, 54)
+        Panelstandard.Name = "Panelstandard"
+        Panelstandard.Size = New Size(413, 32)
+        Panelstandard.TabIndex = 11
+        Panelstandard.Visible = False
         ' 
         ' Label19
         ' 
@@ -468,29 +475,29 @@ Partial Class PaymentForm
         Label19.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label19.Location = New Point(211, 2)
         Label19.Name = "Label19"
-        Label19.Size = New Size(56, 28)
+        Label19.Size = New Size(80, 28)
         Label19.TabIndex = 7
-        Label19.Text = "RM0"
+        Label19.Text = "RM100"
         ' 
-        ' Label14
+        ' LabelQtyStandard
         ' 
-        Label14.AutoSize = True
-        Label14.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label14.Location = New Point(294, 2)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(24, 28)
-        Label14.TabIndex = 6
-        Label14.Text = "0"
+        LabelQtyStandard.AutoSize = True
+        LabelQtyStandard.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelQtyStandard.Location = New Point(294, 2)
+        LabelQtyStandard.Name = "LabelQtyStandard"
+        LabelQtyStandard.Size = New Size(24, 28)
+        LabelQtyStandard.TabIndex = 6
+        LabelQtyStandard.Text = "0"
         ' 
-        ' Label35
+        ' Label_standardtotal
         ' 
-        Label35.AutoSize = True
-        Label35.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label35.Location = New Point(337, 2)
-        Label35.Name = "Label35"
-        Label35.Size = New Size(56, 28)
-        Label35.TabIndex = 5
-        Label35.Text = "RM0"
+        Label_standardtotal.AutoSize = True
+        Label_standardtotal.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label_standardtotal.Location = New Point(337, 2)
+        Label_standardtotal.Name = "Label_standardtotal"
+        Label_standardtotal.Size = New Size(56, 28)
+        Label_standardtotal.TabIndex = 5
+        Label_standardtotal.Text = "RM0"
         ' 
         ' Label36
         ' 
@@ -510,25 +517,27 @@ Partial Class PaymentForm
         Button_Receipt.TabIndex = 12
         Button_Receipt.Text = "GENERATE RECEIPT"
         Button_Receipt.UseVisualStyleBackColor = True
+        Button_Receipt.Visible = False
         ' 
-        ' Panel9
+        ' Paneltotal
         ' 
-        Panel9.Controls.Add(Label25)
-        Panel9.Controls.Add(Label28)
-        Panel9.Location = New Point(18, 311)
-        Panel9.Name = "Panel9"
-        Panel9.Size = New Size(413, 54)
-        Panel9.TabIndex = 10
+        Paneltotal.Controls.Add(Label_total)
+        Paneltotal.Controls.Add(Label28)
+        Paneltotal.Location = New Point(18, 311)
+        Paneltotal.Name = "Paneltotal"
+        Paneltotal.Size = New Size(413, 54)
+        Paneltotal.TabIndex = 10
+        Paneltotal.Visible = False
         ' 
-        ' Label25
+        ' Label_total
         ' 
-        Label25.AutoSize = True
-        Label25.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label25.Location = New Point(337, 12)
-        Label25.Name = "Label25"
-        Label25.Size = New Size(56, 28)
-        Label25.TabIndex = 5
-        Label25.Text = "RM0"
+        Label_total.AutoSize = True
+        Label_total.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label_total.Location = New Point(337, 12)
+        Label_total.Name = "Label_total"
+        Label_total.Size = New Size(56, 28)
+        Label_total.TabIndex = 5
+        Label_total.Text = "RM0"
         ' 
         ' Label28
         ' 
@@ -540,24 +549,25 @@ Partial Class PaymentForm
         Label28.TabIndex = 5
         Label28.Text = "TOTAL"
         ' 
-        ' Panel8
+        ' Panelbalance
         ' 
-        Panel8.Controls.Add(Label27)
-        Panel8.Controls.Add(Label26)
-        Panel8.Location = New Point(18, 431)
-        Panel8.Name = "Panel8"
-        Panel8.Size = New Size(413, 54)
-        Panel8.TabIndex = 10
+        Panelbalance.Controls.Add(Label_balance)
+        Panelbalance.Controls.Add(Label26)
+        Panelbalance.Location = New Point(18, 431)
+        Panelbalance.Name = "Panelbalance"
+        Panelbalance.Size = New Size(413, 54)
+        Panelbalance.TabIndex = 10
+        Panelbalance.Visible = False
         ' 
-        ' Label27
+        ' Label_balance
         ' 
-        Label27.AutoSize = True
-        Label27.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label27.Location = New Point(337, 12)
-        Label27.Name = "Label27"
-        Label27.Size = New Size(56, 28)
-        Label27.TabIndex = 6
-        Label27.Text = "RM0"
+        Label_balance.AutoSize = True
+        Label_balance.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label_balance.Location = New Point(337, 12)
+        Label_balance.Name = "Label_balance"
+        Label_balance.Size = New Size(56, 28)
+        Label_balance.TabIndex = 6
+        Label_balance.Text = "RM0"
         ' 
         ' Label26
         ' 
@@ -569,24 +579,25 @@ Partial Class PaymentForm
         Label26.TabIndex = 5
         Label26.Text = "BALANCE"
         ' 
-        ' Panel7
+        ' Paneltotalpaid
         ' 
-        Panel7.Controls.Add(Label23)
-        Panel7.Controls.Add(Label24)
-        Panel7.Location = New Point(18, 371)
-        Panel7.Name = "Panel7"
-        Panel7.Size = New Size(413, 54)
-        Panel7.TabIndex = 9
+        Paneltotalpaid.Controls.Add(Label_totalpaid)
+        Paneltotalpaid.Controls.Add(Label24)
+        Paneltotalpaid.Location = New Point(18, 371)
+        Paneltotalpaid.Name = "Paneltotalpaid"
+        Paneltotalpaid.Size = New Size(413, 54)
+        Paneltotalpaid.TabIndex = 9
+        Paneltotalpaid.Visible = False
         ' 
-        ' Label23
+        ' Label_totalpaid
         ' 
-        Label23.AutoSize = True
-        Label23.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label23.Location = New Point(337, 12)
-        Label23.Name = "Label23"
-        Label23.Size = New Size(56, 28)
-        Label23.TabIndex = 5
-        Label23.Text = "RM0"
+        Label_totalpaid.AutoSize = True
+        Label_totalpaid.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label_totalpaid.Location = New Point(337, 12)
+        Label_totalpaid.Name = "Label_totalpaid"
+        Label_totalpaid.Size = New Size(56, 28)
+        Label_totalpaid.TabIndex = 5
+        Label_totalpaid.Text = "RM0"
         ' 
         ' Label24
         ' 
@@ -610,10 +621,10 @@ Partial Class PaymentForm
         ' 
         ' GroupBox3
         ' 
-        GroupBox3.Controls.Add(TextBox4)
+        GroupBox3.Controls.Add(TextBoxphone)
         GroupBox3.Controls.Add(Label10)
-        GroupBox3.Controls.Add(TextBox3)
-        GroupBox3.Controls.Add(TextBox2)
+        GroupBox3.Controls.Add(TextBox_ic)
+        GroupBox3.Controls.Add(TextBoxName)
         GroupBox3.Controls.Add(Label8)
         GroupBox3.Controls.Add(Label9)
         GroupBox3.Location = New Point(686, 135)
@@ -623,12 +634,12 @@ Partial Class PaymentForm
         GroupBox3.TabStop = False
         GroupBox3.Text = "Customer Details"
         ' 
-        ' TextBox4
+        ' TextBoxphone
         ' 
-        TextBox4.Location = New Point(183, 122)
-        TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(260, 27)
-        TextBox4.TabIndex = 13
+        TextBoxphone.Location = New Point(183, 122)
+        TextBoxphone.Name = "TextBoxphone"
+        TextBoxphone.Size = New Size(260, 27)
+        TextBoxphone.TabIndex = 13
         ' 
         ' Label10
         ' 
@@ -640,19 +651,19 @@ Partial Class PaymentForm
         Label10.TabIndex = 12
         Label10.Text = "Phone Number"
         ' 
-        ' TextBox3
+        ' TextBox_ic
         ' 
-        TextBox3.Location = New Point(183, 79)
-        TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(260, 27)
-        TextBox3.TabIndex = 11
+        TextBox_ic.Location = New Point(183, 79)
+        TextBox_ic.Name = "TextBox_ic"
+        TextBox_ic.Size = New Size(260, 27)
+        TextBox_ic.TabIndex = 11
         ' 
-        ' TextBox2
+        ' TextBoxName
         ' 
-        TextBox2.Location = New Point(183, 39)
-        TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(260, 27)
-        TextBox2.TabIndex = 8
+        TextBoxName.Location = New Point(183, 39)
+        TextBoxName.Name = "TextBoxName"
+        TextBoxName.Size = New Size(260, 27)
+        TextBoxName.TabIndex = 8
         ' 
         ' Label8
         ' 
@@ -674,14 +685,14 @@ Partial Class PaymentForm
         Label9.TabIndex = 6
         Label9.Text = "Name"
         ' 
-        ' Button2
+        ' Button_confirm
         ' 
-        Button2.Location = New Point(1152, 286)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(94, 44)
-        Button2.TabIndex = 10
-        Button2.Text = "CONFIRM"
-        Button2.UseVisualStyleBackColor = True
+        Button_confirm.Location = New Point(1152, 286)
+        Button_confirm.Name = "Button_confirm"
+        Button_confirm.Size = New Size(94, 44)
+        Button_confirm.TabIndex = 10
+        Button_confirm.Text = "CONFIRM"
+        Button_confirm.UseVisualStyleBackColor = True
         ' 
         ' Label32
         ' 
@@ -844,39 +855,39 @@ Partial Class PaymentForm
         Controls.Add(Button_CheckIn)
         Controls.Add(Button_Book)
         Controls.Add(Button_View)
-        Controls.Add(Button2)
+        Controls.Add(Button_confirm)
         Controls.Add(GroupBox3)
         Controls.Add(Label1)
         Controls.Add(Label29)
         Controls.Add(GroupBox2)
-        Controls.Add(GroupBox1)
+        Controls.Add(GroupBoxpayment)
         Controls.Add(Button_Book2)
         Controls.Add(Button_Check)
         Name = "PaymentForm"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Payment"
-        GroupBox1.ResumeLayout(False)
-        GroupBox1.PerformLayout()
+        GroupBoxpayment.ResumeLayout(False)
+        GroupBoxpayment.PerformLayout()
         GroupBox2.ResumeLayout(False)
         GroupBox2.PerformLayout()
-        Panel6.ResumeLayout(False)
-        Panel6.PerformLayout()
-        Panel4.ResumeLayout(False)
-        Panel4.PerformLayout()
-        Panel3.ResumeLayout(False)
-        Panel3.PerformLayout()
-        Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
-        Panel1.ResumeLayout(False)
-        Panel1.PerformLayout()
-        Panel5.ResumeLayout(False)
-        Panel5.PerformLayout()
-        Panel9.ResumeLayout(False)
-        Panel9.PerformLayout()
-        Panel8.ResumeLayout(False)
-        Panel8.PerformLayout()
-        Panel7.ResumeLayout(False)
-        Panel7.PerformLayout()
+        Panelsubtotal.ResumeLayout(False)
+        Panelsubtotal.PerformLayout()
+        Panelnumber.ResumeLayout(False)
+        Panelnumber.PerformLayout()
+        Panelsingle.ResumeLayout(False)
+        Panelsingle.PerformLayout()
+        Paneltwin.ResumeLayout(False)
+        Paneltwin.PerformLayout()
+        Paneldeluxe.ResumeLayout(False)
+        Paneldeluxe.PerformLayout()
+        Panelstandard.ResumeLayout(False)
+        Panelstandard.PerformLayout()
+        Paneltotal.ResumeLayout(False)
+        Paneltotal.PerformLayout()
+        Panelbalance.ResumeLayout(False)
+        Panelbalance.PerformLayout()
+        Paneltotalpaid.ResumeLayout(False)
+        Paneltotalpaid.PerformLayout()
         GroupBox3.ResumeLayout(False)
         GroupBox3.PerformLayout()
         ResumeLayout(False)
@@ -885,60 +896,60 @@ Partial Class PaymentForm
 
     Friend WithEvents Label1 As Label
     Friend WithEvents MySqlCommand1 As MySql.Data.MySqlClient.MySqlCommand
-    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents GroupBoxpayment As GroupBox
     Friend WithEvents Label21 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Buttonpay As Button
+    Friend WithEvents TextBoxpay As TextBox
     Friend WithEvents Label22 As Label
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents Panel7 As Panel
-    Friend WithEvents Label23 As Label
+    Friend WithEvents Paneltotalpaid As Panel
+    Friend WithEvents Label_totalpaid As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents Button_Receipt As Button
-    Friend WithEvents Panel9 As Panel
-    Friend WithEvents Label25 As Label
+    Friend WithEvents Paneltotal As Panel
+    Friend WithEvents Label_total As Label
     Friend WithEvents Label28 As Label
-    Friend WithEvents Panel8 As Panel
-    Friend WithEvents Label27 As Label
+    Friend WithEvents Panelbalance As Panel
+    Friend WithEvents Label_balance As Label
     Friend WithEvents Label26 As Label
     Friend WithEvents Label29 As Label
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Paneltwin As Panel
+    Friend WithEvents Label_twintotal As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label2 As Label
+    Friend WithEvents Paneldeluxe As Panel
+    Friend WithEvents Label_deluxetotal As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Panel5 As Panel
-    Friend WithEvents Label35 As Label
+    Friend WithEvents Panelstandard As Panel
+    Friend WithEvents Label_standardtotal As Label
     Friend WithEvents Label36 As Label
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label6 As Label
+    Friend WithEvents Panelsingle As Panel
+    Friend WithEvents Label_singletotal As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents GroupBox3 As GroupBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBoxphone As TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBox_ic As TextBox
+    Friend WithEvents TextBoxName As TextBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Button_confirm As Button
     Friend WithEvents Label13 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label17 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label33 As Label
+    Friend WithEvents LabelQtySingle As Label
+    Friend WithEvents LabelQtyTwin As Label
+    Friend WithEvents LabelQtyDeluxe As Label
+    Friend WithEvents LabelQtyStandard As Label
+    Friend WithEvents Panelnumber As Panel
+    Friend WithEvents Label_numberofnights As Label
     Friend WithEvents Label37 As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Label31 As Label
     Friend WithEvents Label30 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents Label19 As Label
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents Label38 As Label
+    Friend WithEvents Panelsubtotal As Panel
+    Friend WithEvents Label_subtotal As Label
     Friend WithEvents Label39 As Label
     Friend WithEvents Label32 As Label
     Friend WithEvents Label34 As Label

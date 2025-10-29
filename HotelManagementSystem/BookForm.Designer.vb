@@ -23,11 +23,11 @@ Partial Class BookForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Label1 = New Label()
-        Button1 = New Button()
-        CheckBox4 = New CheckBox()
-        CheckBox3 = New CheckBox()
-        CheckBox2 = New CheckBox()
-        CheckBox1 = New CheckBox()
+        Button_Proceed = New Button()
+        CheckBox_Single = New CheckBox()
+        CheckBox_Twin = New CheckBox()
+        CheckBox_Deluxe = New CheckBox()
+        CheckBox_Standard = New CheckBox()
         Button_Find = New Button()
         Label17 = New Label()
         Label18 = New Label()
@@ -51,20 +51,20 @@ Partial Class BookForm
         Label7 = New Label()
         Label10 = New Label()
         Label11 = New Label()
-        Button2 = New Button()
-        Button3 = New Button()
+        Button_Select = New Button()
+        Button_Clear = New Button()
         GroupBox6 = New GroupBox()
-        ComboBox6 = New ComboBox()
-        ComboBox4 = New ComboBox()
-        ComboBox2 = New ComboBox()
-        ComboBox5 = New ComboBox()
-        ComboBox3 = New ComboBox()
-        ComboBox1 = New ComboBox()
+        ComboBoxYearTo = New ComboBox()
+        ComboBoxMonthTo = New ComboBox()
+        ComboBoxDayTo = New ComboBox()
+        ComboBoxYearFrom = New ComboBox()
+        ComboBoxMonthFrom = New ComboBox()
+        ComboBoxDayFrom = New ComboBox()
         Label9 = New Label()
         Label20 = New Label()
         GroupBox4 = New GroupBox()
-        ListBox1 = New ListBox()
-        ListBox2 = New ListBox()
+        ListBoxAvailable = New ListBox()
+        ListBoxSelected = New ListBox()
         Panel1 = New Panel()
         Panel2 = New Panel()
         Panel3 = New Panel()
@@ -87,53 +87,53 @@ Partial Class BookForm
         Label1.TabIndex = 0
         Label1.Text = "Book a Room"
         ' 
-        ' Button1
+        ' Button_Proceed
         ' 
-        Button1.BackColor = SystemColors.Highlight
-        Button1.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
-        Button1.ForeColor = SystemColors.ControlLightLight
-        Button1.Location = New Point(1165, 735)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(126, 55)
-        Button1.TabIndex = 5
-        Button1.Text = "Proceed"
-        Button1.UseVisualStyleBackColor = False
+        Button_Proceed.BackColor = SystemColors.Highlight
+        Button_Proceed.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Button_Proceed.ForeColor = SystemColors.ControlLightLight
+        Button_Proceed.Location = New Point(1165, 735)
+        Button_Proceed.Name = "Button_Proceed"
+        Button_Proceed.Size = New Size(126, 55)
+        Button_Proceed.TabIndex = 5
+        Button_Proceed.Text = "Proceed"
+        Button_Proceed.UseVisualStyleBackColor = False
         ' 
-        ' CheckBox4
+        ' CheckBox_Single
         ' 
-        CheckBox4.AutoSize = True
-        CheckBox4.Location = New Point(591, 23)
-        CheckBox4.Name = "CheckBox4"
-        CheckBox4.Size = New Size(18, 17)
-        CheckBox4.TabIndex = 3
-        CheckBox4.UseVisualStyleBackColor = True
+        CheckBox_Single.AutoSize = True
+        CheckBox_Single.Location = New Point(591, 23)
+        CheckBox_Single.Name = "CheckBox_Single"
+        CheckBox_Single.Size = New Size(18, 17)
+        CheckBox_Single.TabIndex = 3
+        CheckBox_Single.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox3
+        ' CheckBox_Twin
         ' 
-        CheckBox3.AutoSize = True
-        CheckBox3.Location = New Point(436, 23)
-        CheckBox3.Name = "CheckBox3"
-        CheckBox3.Size = New Size(18, 17)
-        CheckBox3.TabIndex = 2
-        CheckBox3.UseVisualStyleBackColor = True
+        CheckBox_Twin.AutoSize = True
+        CheckBox_Twin.Location = New Point(436, 23)
+        CheckBox_Twin.Name = "CheckBox_Twin"
+        CheckBox_Twin.Size = New Size(18, 17)
+        CheckBox_Twin.TabIndex = 2
+        CheckBox_Twin.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox2
+        ' CheckBox_Deluxe
         ' 
-        CheckBox2.AutoSize = True
-        CheckBox2.Location = New Point(299, 23)
-        CheckBox2.Name = "CheckBox2"
-        CheckBox2.Size = New Size(18, 17)
-        CheckBox2.TabIndex = 1
-        CheckBox2.UseVisualStyleBackColor = True
+        CheckBox_Deluxe.AutoSize = True
+        CheckBox_Deluxe.Location = New Point(299, 23)
+        CheckBox_Deluxe.Name = "CheckBox_Deluxe"
+        CheckBox_Deluxe.Size = New Size(18, 17)
+        CheckBox_Deluxe.TabIndex = 1
+        CheckBox_Deluxe.UseVisualStyleBackColor = True
         ' 
-        ' CheckBox1
+        ' CheckBox_Standard
         ' 
-        CheckBox1.AutoSize = True
-        CheckBox1.Location = New Point(132, 22)
-        CheckBox1.Name = "CheckBox1"
-        CheckBox1.Size = New Size(18, 17)
-        CheckBox1.TabIndex = 0
-        CheckBox1.UseVisualStyleBackColor = True
+        CheckBox_Standard.AutoSize = True
+        CheckBox_Standard.Location = New Point(132, 22)
+        CheckBox_Standard.Name = "CheckBox_Standard"
+        CheckBox_Standard.Size = New Size(18, 17)
+        CheckBox_Standard.TabIndex = 0
+        CheckBox_Standard.UseVisualStyleBackColor = True
         ' 
         ' Button_Find
         ' 
@@ -283,10 +283,10 @@ Partial Class BookForm
         ' 
         GroupBox1.BackColor = SystemColors.GradientInactiveCaption
         GroupBox1.Controls.Add(Label8)
-        GroupBox1.Controls.Add(CheckBox4)
-        GroupBox1.Controls.Add(CheckBox3)
-        GroupBox1.Controls.Add(CheckBox2)
-        GroupBox1.Controls.Add(CheckBox1)
+        GroupBox1.Controls.Add(CheckBox_Single)
+        GroupBox1.Controls.Add(CheckBox_Twin)
+        GroupBox1.Controls.Add(CheckBox_Deluxe)
+        GroupBox1.Controls.Add(CheckBox_Standard)
         GroupBox1.Controls.Add(Label6)
         GroupBox1.Controls.Add(Label5)
         GroupBox1.Controls.Add(Label3)
@@ -390,39 +390,39 @@ Partial Class BookForm
         Label11.TabIndex = 31
         Label11.Text = "________________________________________________________________________________________________________"
         ' 
-        ' Button2
+        ' Button_Select
         ' 
-        Button2.BackColor = SystemColors.Highlight
-        Button2.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
-        Button2.ForeColor = SystemColors.Window
-        Button2.Location = New Point(260, 737)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(126, 55)
-        Button2.TabIndex = 32
-        Button2.Text = "Select"
-        Button2.UseVisualStyleBackColor = False
+        Button_Select.BackColor = SystemColors.Highlight
+        Button_Select.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Button_Select.ForeColor = SystemColors.Window
+        Button_Select.Location = New Point(260, 737)
+        Button_Select.Name = "Button_Select"
+        Button_Select.Size = New Size(126, 55)
+        Button_Select.TabIndex = 32
+        Button_Select.Text = "Select"
+        Button_Select.UseVisualStyleBackColor = False
         ' 
-        ' Button3
+        ' Button_Clear
         ' 
-        Button3.BackColor = SystemColors.Highlight
-        Button3.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
-        Button3.ForeColor = SystemColors.Control
-        Button3.Location = New Point(763, 735)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(126, 55)
-        Button3.TabIndex = 33
-        Button3.Text = "Clear"
-        Button3.UseVisualStyleBackColor = False
+        Button_Clear.BackColor = SystemColors.Highlight
+        Button_Clear.Font = New Font("Segoe UI", 15F, FontStyle.Bold)
+        Button_Clear.ForeColor = SystemColors.Control
+        Button_Clear.Location = New Point(763, 735)
+        Button_Clear.Name = "Button_Clear"
+        Button_Clear.Size = New Size(126, 55)
+        Button_Clear.TabIndex = 33
+        Button_Clear.Text = "Clear"
+        Button_Clear.UseVisualStyleBackColor = False
         ' 
         ' GroupBox6
         ' 
         GroupBox6.BackColor = SystemColors.GradientInactiveCaption
-        GroupBox6.Controls.Add(ComboBox6)
-        GroupBox6.Controls.Add(ComboBox4)
-        GroupBox6.Controls.Add(ComboBox2)
-        GroupBox6.Controls.Add(ComboBox5)
-        GroupBox6.Controls.Add(ComboBox3)
-        GroupBox6.Controls.Add(ComboBox1)
+        GroupBox6.Controls.Add(ComboBoxYearTo)
+        GroupBox6.Controls.Add(ComboBoxMonthTo)
+        GroupBox6.Controls.Add(ComboBoxDayTo)
+        GroupBox6.Controls.Add(ComboBoxYearFrom)
+        GroupBox6.Controls.Add(ComboBoxMonthFrom)
+        GroupBox6.Controls.Add(ComboBoxDayFrom)
         GroupBox6.Controls.Add(Label9)
         GroupBox6.Controls.Add(Label20)
         GroupBox6.Font = New Font("Segoe UI", 9F, FontStyle.Bold)
@@ -433,65 +433,65 @@ Partial Class BookForm
         GroupBox6.TabIndex = 8
         GroupBox6.TabStop = False
         ' 
-        ' ComboBox6
+        ' ComboBoxYearTo
         ' 
-        ComboBox6.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        ComboBox6.FormattingEnabled = True
-        ComboBox6.Items.AddRange(New Object() {"2025", "2026"})
-        ComboBox6.Location = New Point(508, 73)
-        ComboBox6.Name = "ComboBox6"
-        ComboBox6.Size = New Size(165, 36)
-        ComboBox6.TabIndex = 12
+        ComboBoxYearTo.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        ComboBoxYearTo.FormattingEnabled = True
+        ComboBoxYearTo.Items.AddRange(New Object() {"2025", "2026"})
+        ComboBoxYearTo.Location = New Point(508, 73)
+        ComboBoxYearTo.Name = "ComboBoxYearTo"
+        ComboBoxYearTo.Size = New Size(165, 36)
+        ComboBoxYearTo.TabIndex = 12
         ' 
-        ' ComboBox4
+        ' ComboBoxMonthTo
         ' 
-        ComboBox4.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        ComboBox4.FormattingEnabled = True
-        ComboBox4.Items.AddRange(New Object() {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"})
-        ComboBox4.Location = New Point(249, 73)
-        ComboBox4.Name = "ComboBox4"
-        ComboBox4.Size = New Size(240, 36)
-        ComboBox4.TabIndex = 11
+        ComboBoxMonthTo.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        ComboBoxMonthTo.FormattingEnabled = True
+        ComboBoxMonthTo.Items.AddRange(New Object() {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"})
+        ComboBoxMonthTo.Location = New Point(249, 73)
+        ComboBoxMonthTo.Name = "ComboBoxMonthTo"
+        ComboBoxMonthTo.Size = New Size(240, 36)
+        ComboBoxMonthTo.TabIndex = 11
         ' 
-        ' ComboBox2
+        ' ComboBoxDayTo
         ' 
-        ComboBox2.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        ComboBox2.FormattingEnabled = True
-        ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"})
-        ComboBox2.Location = New Point(98, 73)
-        ComboBox2.Name = "ComboBox2"
-        ComboBox2.Size = New Size(126, 36)
-        ComboBox2.TabIndex = 10
+        ComboBoxDayTo.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        ComboBoxDayTo.FormattingEnabled = True
+        ComboBoxDayTo.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"})
+        ComboBoxDayTo.Location = New Point(98, 73)
+        ComboBoxDayTo.Name = "ComboBoxDayTo"
+        ComboBoxDayTo.Size = New Size(126, 36)
+        ComboBoxDayTo.TabIndex = 10
         ' 
-        ' ComboBox5
+        ' ComboBoxYearFrom
         ' 
-        ComboBox5.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        ComboBox5.FormattingEnabled = True
-        ComboBox5.Items.AddRange(New Object() {"2025", "2026"})
-        ComboBox5.Location = New Point(509, 14)
-        ComboBox5.Name = "ComboBox5"
-        ComboBox5.Size = New Size(165, 36)
-        ComboBox5.TabIndex = 6
+        ComboBoxYearFrom.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        ComboBoxYearFrom.FormattingEnabled = True
+        ComboBoxYearFrom.Items.AddRange(New Object() {"2025", "2026"})
+        ComboBoxYearFrom.Location = New Point(509, 14)
+        ComboBoxYearFrom.Name = "ComboBoxYearFrom"
+        ComboBoxYearFrom.Size = New Size(165, 36)
+        ComboBoxYearFrom.TabIndex = 6
         ' 
-        ' ComboBox3
+        ' ComboBoxMonthFrom
         ' 
-        ComboBox3.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        ComboBox3.FormattingEnabled = True
-        ComboBox3.Items.AddRange(New Object() {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"})
-        ComboBox3.Location = New Point(249, 14)
-        ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(240, 36)
-        ComboBox3.TabIndex = 4
+        ComboBoxMonthFrom.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        ComboBoxMonthFrom.FormattingEnabled = True
+        ComboBoxMonthFrom.Items.AddRange(New Object() {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"})
+        ComboBoxMonthFrom.Location = New Point(249, 14)
+        ComboBoxMonthFrom.Name = "ComboBoxMonthFrom"
+        ComboBoxMonthFrom.Size = New Size(240, 36)
+        ComboBoxMonthFrom.TabIndex = 4
         ' 
-        ' ComboBox1
+        ' ComboBoxDayFrom
         ' 
-        ComboBox1.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
-        ComboBox1.FormattingEnabled = True
-        ComboBox1.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"})
-        ComboBox1.Location = New Point(98, 14)
-        ComboBox1.Name = "ComboBox1"
-        ComboBox1.Size = New Size(126, 36)
-        ComboBox1.TabIndex = 2
+        ComboBoxDayFrom.Font = New Font("Segoe UI", 12F, FontStyle.Bold)
+        ComboBoxDayFrom.FormattingEnabled = True
+        ComboBoxDayFrom.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"})
+        ComboBoxDayFrom.Location = New Point(98, 14)
+        ComboBoxDayFrom.Name = "ComboBoxDayFrom"
+        ComboBoxDayFrom.Size = New Size(126, 36)
+        ComboBoxDayFrom.TabIndex = 2
         ' 
         ' Label9
         ' 
@@ -526,25 +526,25 @@ Partial Class BookForm
         GroupBox4.TabIndex = 28
         GroupBox4.TabStop = False
         ' 
-        ' ListBox1
+        ' ListBoxAvailable
         ' 
-        ListBox1.Font = New Font("Segoe UI", 12F)
-        ListBox1.FormattingEnabled = True
-        ListBox1.ItemHeight = 28
-        ListBox1.Location = New Point(272, 406)
-        ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(360, 312)
-        ListBox1.TabIndex = 0
+        ListBoxAvailable.Font = New Font("Segoe UI", 12F)
+        ListBoxAvailable.FormattingEnabled = True
+        ListBoxAvailable.ItemHeight = 28
+        ListBoxAvailable.Location = New Point(272, 406)
+        ListBoxAvailable.Name = "ListBoxAvailable"
+        ListBoxAvailable.Size = New Size(360, 312)
+        ListBoxAvailable.TabIndex = 0
         ' 
-        ' ListBox2
+        ' ListBoxSelected
         ' 
-        ListBox2.Font = New Font("Segoe UI", 12F)
-        ListBox2.FormattingEnabled = True
-        ListBox2.ItemHeight = 28
-        ListBox2.Location = New Point(774, 406)
-        ListBox2.Name = "ListBox2"
-        ListBox2.Size = New Size(360, 312)
-        ListBox2.TabIndex = 1
+        ListBoxSelected.Font = New Font("Segoe UI", 12F)
+        ListBoxSelected.FormattingEnabled = True
+        ListBoxSelected.ItemHeight = 28
+        ListBoxSelected.Location = New Point(774, 406)
+        ListBoxSelected.Name = "ListBoxSelected"
+        ListBoxSelected.Size = New Size(360, 312)
+        ListBoxSelected.TabIndex = 1
         ' 
         ' Panel1
         ' 
@@ -589,10 +589,10 @@ Partial Class BookForm
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.Control
         ClientSize = New Size(1303, 806)
-        Controls.Add(ListBox2)
-        Controls.Add(ListBox1)
-        Controls.Add(Button3)
-        Controls.Add(Button2)
+        Controls.Add(ListBoxSelected)
+        Controls.Add(ListBoxAvailable)
+        Controls.Add(Button_Clear)
+        Controls.Add(Button_Select)
         Controls.Add(Label10)
         Controls.Add(Label7)
         Controls.Add(Button_Find)
@@ -611,7 +611,7 @@ Partial Class BookForm
         Controls.Add(Button_CheckIn)
         Controls.Add(Button_Book)
         Controls.Add(Button_View)
-        Controls.Add(Button1)
+        Controls.Add(Button_Proceed)
         Controls.Add(Label11)
         Controls.Add(GroupBox4)
         Controls.Add(Panel1)
@@ -633,11 +633,11 @@ Partial Class BookForm
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Button_Proceed As Button
+    Friend WithEvents CheckBox_Single As CheckBox
+    Friend WithEvents CheckBox_Twin As CheckBox
+    Friend WithEvents CheckBox_Deluxe As CheckBox
+    Friend WithEvents CheckBox_Standard As CheckBox
     Friend WithEvents Button_Find As Button
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
@@ -661,20 +661,20 @@ Partial Class BookForm
     Friend WithEvents Label7 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Button_Select As Button
+    Friend WithEvents Button_Clear As Button
     Friend WithEvents GroupBox6 As GroupBox
-    Friend WithEvents ComboBox6 As ComboBox
-    Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ComboBox5 As ComboBox
-    Friend WithEvents ComboBox3 As ComboBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents ComboBoxYearTo As ComboBox
+    Friend WithEvents ComboBoxMonthTo As ComboBox
+    Friend WithEvents ComboBoxDayTo As ComboBox
+    Friend WithEvents ComboBoxYearFrom As ComboBox
+    Friend WithEvents ComboBoxMonthFrom As ComboBox
+    Friend WithEvents ComboBoxDayFrom As ComboBox
     Friend WithEvents Label9 As Label
     Friend WithEvents Label20 As Label
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents ListBox1 As ListBox
-    Friend WithEvents ListBox2 As ListBox
+    Friend WithEvents ListBoxAvailable As ListBox
+    Friend WithEvents ListBoxSelected As ListBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel

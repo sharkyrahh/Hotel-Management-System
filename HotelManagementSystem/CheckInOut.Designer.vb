@@ -35,8 +35,8 @@ Partial Class CheckInOut
         Button_Check = New Button()
         Button_Book2 = New Button()
         Label2 = New Label()
-        Button1 = New Button()
-        Button2 = New Button()
+        Button_in = New Button()
+        Button_out = New Button()
         SuspendLayout()
         ' 
         ' Label7
@@ -171,25 +171,25 @@ Partial Class CheckInOut
         Label2.TabIndex = 42
         Label2.Text = "Check in and Out"
         ' 
-        ' Button1
+        ' Button_in
         ' 
-        Button1.Font = New Font("Times New Roman", 36F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Button1.Location = New Point(426, 152)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(561, 200)
-        Button1.TabIndex = 43
-        Button1.Text = "Check-In"
-        Button1.UseVisualStyleBackColor = True
+        Button_in.Font = New Font("Times New Roman", 36F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Button_in.Location = New Point(426, 152)
+        Button_in.Name = "Button_in"
+        Button_in.Size = New Size(561, 200)
+        Button_in.TabIndex = 43
+        Button_in.Text = "Check-In"
+        Button_in.UseVisualStyleBackColor = True
         ' 
-        ' Button2
+        ' Button_out
         ' 
-        Button2.Font = New Font("Times New Roman", 36F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        Button2.Location = New Point(426, 403)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(561, 200)
-        Button2.TabIndex = 44
-        Button2.Text = "Check-Out"
-        Button2.UseVisualStyleBackColor = True
+        Button_out.Font = New Font("Times New Roman", 36F, FontStyle.Bold Or FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        Button_out.Location = New Point(426, 403)
+        Button_out.Name = "Button_out"
+        Button_out.Size = New Size(561, 200)
+        Button_out.TabIndex = 44
+        Button_out.Text = "Check-Out"
+        Button_out.UseVisualStyleBackColor = True
         ' 
         ' CheckInOut
         ' 
@@ -197,8 +197,8 @@ Partial Class CheckInOut
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources.atas
         ClientSize = New Size(1303, 806)
-        Controls.Add(Button2)
-        Controls.Add(Button1)
+        Controls.Add(Button_out)
+        Controls.Add(Button_in)
         Controls.Add(Label2)
         Controls.Add(Label7)
         Controls.Add(Label6)
@@ -213,6 +213,7 @@ Partial Class CheckInOut
         Controls.Add(Button_Check)
         Controls.Add(Button_Book2)
         Name = "CheckInOut"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "CheckInOut"
         ResumeLayout(False)
         PerformLayout()
@@ -231,6 +232,6 @@ Partial Class CheckInOut
     Friend WithEvents Button_Check As Button
     Friend WithEvents Button_Book2 As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Button_in As Button
+    Friend WithEvents Button_out As Button
 End Class

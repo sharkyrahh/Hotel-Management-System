@@ -20,7 +20,7 @@ Public Class Form1
         Hide
     End Sub
 
-    Private Sub Button_sql_Click(sender As Object, e As EventArgs) Handles Button_sql.Click
+    Private Sub Button_sql_Click(sender As Object, e As EventArgs)
         conn = New MySqlConnection
         conn.ConnectionString = "server=localhost;userid=root;password='';database=hoteldb"
 
@@ -44,4 +44,5 @@ Public Class Form1
         CheckIn.Show()
         Me.Hide()
     End Sub
+
 End Class

@@ -138,7 +138,6 @@ Partial Class DeleteRoom
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = SystemColors.ActiveCaption
-        BackgroundImage = My.Resources.Resources.download__8_
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(995, 653)
         Controls.Add(GroupBox1)

@@ -41,7 +41,6 @@ Partial Class Form1
         PictureBox1 = New PictureBox()
         Panel2 = New Panel()
         Label8 = New Label()
-        Button_sql = New Button()
         Label9 = New Label()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
@@ -244,15 +243,6 @@ Partial Class Form1
         Label8.TabIndex = 5
         Label8.Text = "Explore hotels and book your dream vacation."
         ' 
-        ' Button_sql
-        ' 
-        Button_sql.Location = New Point(1211, 778)
-        Button_sql.Name = "Button_sql"
-        Button_sql.Size = New Size(94, 29)
-        Button_sql.TabIndex = 6
-        Button_sql.Text = "lets test sql connection"
-        Button_sql.UseVisualStyleBackColor = True
-        ' 
         ' Label9
         ' 
         Label9.AutoSize = True
@@ -269,7 +259,6 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.AliceBlue
         ClientSize = New Size(1303, 806)
-        Controls.Add(Button_sql)
         Controls.Add(Label9)
         Controls.Add(Label1)
         Controls.Add(Panel2)
@@ -305,7 +294,6 @@ Partial Class Form1
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
-    Friend WithEvents Button_sql As Button
     Friend WithEvents Button_Check As Button
     Friend WithEvents Button_Book2 As Button
 

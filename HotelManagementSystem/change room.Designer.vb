@@ -26,6 +26,7 @@ Partial Class change_room
         Label1 = New Label()
         TextBox1 = New TextBox()
         GroupBox1 = New GroupBox()
+        Button2 = New Button()
         Button1 = New Button()
         AvailableRoomID = New ListBox()
         CurrentBookedRoom = New ListBox()
@@ -44,7 +45,6 @@ Partial Class change_room
         Label2 = New Label()
         Label3 = New Label()
         Label7 = New Label()
-        Button2 = New Button()
         GroupBox1.SuspendLayout()
         SuspendLayout()
         ' 
@@ -83,6 +83,17 @@ Partial Class change_room
         GroupBox1.TabIndex = 6
         GroupBox1.TabStop = False
         GroupBox1.Text = "Change Room"
+        ' 
+        ' Button2
+        ' 
+        Button2.BackColor = Color.Lavender
+        Button2.Font = New Font("Segoe UI", 10.8000011F, FontStyle.Bold)
+        Button2.Location = New Point(673, 43)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(75, 41)
+        Button2.TabIndex = 5
+        Button2.Text = "Find"
+        Button2.UseVisualStyleBackColor = False
         ' 
         ' Button1
         ' 
@@ -271,17 +282,6 @@ Partial Class change_room
         Label7.TabIndex = 85
         Label7.Text = "Manage Rooms"
         ' 
-        ' Button2
-        ' 
-        Button2.BackColor = Color.Lavender
-        Button2.Font = New Font("Segoe UI", 10.8000011F, FontStyle.Bold)
-        Button2.Location = New Point(673, 43)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(75, 41)
-        Button2.TabIndex = 5
-        Button2.Text = "Find"
-        Button2.UseVisualStyleBackColor = False
-        ' 
         ' change_room
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -307,6 +307,7 @@ Partial Class change_room
         Controls.Add(Button_Home)
         DoubleBuffered = True
         Name = "change_room"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "change_room"
         GroupBox1.ResumeLayout(False)
         GroupBox1.PerformLayout()
