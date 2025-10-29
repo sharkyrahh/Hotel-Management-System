@@ -30,17 +30,8 @@ Public Class CheckOut
     End Sub
 
     Private Sub Button_Check_Click(sender As Object, e As EventArgs) Handles Button_Check.Click
-        Dim result As DialogResult = MessageBox.Show("Choose an option", "Check Option", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1)
-        ' Yes = Check In, No = Check Out
-        If result = DialogResult.Yes Then
-            Dim f As New CheckIn
-            f.Show()
-            Me.Hide()
-        ElseIf result = DialogResult.No Then
-            Dim f As New CheckOut
-            f.Show()
-            Me.Hide()
-        End If
+        CheckInOut.Show()
+        Me.Hide()
     End Sub
 
     Private Sub Button_About_Click(sender As Object, e As EventArgs) Handles Button_About.Click

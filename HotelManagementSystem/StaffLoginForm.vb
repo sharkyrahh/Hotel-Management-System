@@ -19,7 +19,7 @@ Public Class StaffLoginForm
     End Sub
 
     Private Sub Button_Check_Click(sender As Object, e As EventArgs) Handles Button_Check.Click
-        CheckIn.Show()
+        CheckInOut.Show()
         Me.Hide()
     End Sub
 

@@ -25,7 +25,7 @@ Public Class BookForm
     End Sub
 
     Private Sub Button_CheckIn_Click(sender As Object, e As EventArgs) Handles Button_CheckIn.Click
-        CheckIn.Show()
+        CheckInOut.Show()
         Me.Hide()
     End Sub
 

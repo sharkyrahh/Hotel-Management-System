@@ -32,4 +32,5 @@
     Private Sub Button_About_Click(sender As Object, e As EventArgs) Handles Button_About.Click
         AboutBox1.Show()
     End Sub
+
 End Class
