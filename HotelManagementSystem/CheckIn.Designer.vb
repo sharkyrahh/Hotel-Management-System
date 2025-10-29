@@ -33,6 +33,7 @@ Partial Class CheckIn
         GroupBox2 = New GroupBox()
         DateTimePicker1 = New DateTimePicker()
         GroupBox3 = New GroupBox()
+        ListBox2 = New ListBox()
         ListBox1 = New ListBox()
         Button5 = New Button()
         Label1 = New Label()
@@ -52,7 +53,6 @@ Partial Class CheckIn
         Button_View = New Button()
         Button_Check = New Button()
         Button_Book2 = New Button()
-        ListBox2 = New ListBox()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         GroupBox3.SuspendLayout()
@@ -159,10 +159,20 @@ Partial Class CheckIn
         GroupBox3.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox3.Location = New Point(742, 209)
         GroupBox3.Name = "GroupBox3"
-        GroupBox3.Size = New Size(457, 236)
+        GroupBox3.Size = New Size(457, 375)
         GroupBox3.TabIndex = 20
         GroupBox3.TabStop = False
         GroupBox3.Text = "Room Information"
+        ' 
+        ' ListBox2
+        ' 
+        ListBox2.FormattingEnabled = True
+        ListBox2.ItemHeight = 22
+        ListBox2.Items.AddRange(New Object() {" "})
+        ListBox2.Location = New Point(226, 152)
+        ListBox2.Name = "ListBox2"
+        ListBox2.Size = New Size(199, 70)
+        ListBox2.TabIndex = 8
         ' 
         ' ListBox1
         ' 
@@ -171,12 +181,12 @@ Partial Class CheckIn
         ListBox1.Items.AddRange(New Object() {" "})
         ListBox1.Location = New Point(186, 52)
         ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(239, 26)
+        ListBox1.Size = New Size(239, 70)
         ListBox1.TabIndex = 7
         ' 
         ' Button5
         ' 
-        Button5.Location = New Point(311, 189)
+        Button5.Location = New Point(314, 329)
         Button5.Name = "Button5"
         Button5.Size = New Size(128, 29)
         Button5.TabIndex = 6
@@ -186,7 +196,7 @@ Partial Class CheckIn
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(37, 117)
+        Label1.Location = New Point(37, 150)
         Label1.Name = "Label1"
         Label1.Size = New Size(183, 22)
         Label1.TabIndex = 4
@@ -350,16 +360,6 @@ Partial Class CheckIn
         Button_Book2.Size = New Size(159, 137)
         Button_Book2.TabIndex = 40
         Button_Book2.UseVisualStyleBackColor = True
-        ' 
-        ' ListBox2
-        ' 
-        ListBox2.FormattingEnabled = True
-        ListBox2.ItemHeight = 22
-        ListBox2.Items.AddRange(New Object() {" "})
-        ListBox2.Location = New Point(226, 119)
-        ListBox2.Name = "ListBox2"
-        ListBox2.Size = New Size(199, 26)
-        ListBox2.TabIndex = 8
         ' 
         ' CheckIn
         ' 
