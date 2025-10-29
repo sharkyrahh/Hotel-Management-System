@@ -8,9 +8,20 @@ Public Class manageroom
     Private Sub ButtonAdd_Click(sender As Object, e As EventArgs) Handles ButtonAdd.Click
         Try
             conn.Open()
-            Dim cmd As New MySqlCommand("INSERT INTO rooms (room_id, room_type, room_rules, price, roomstatus) VALUES (@id, @type, @rules, @price, @status)", conn)
+            Dim cmd As New MySqlCommand("INSERT INTO rooms (room_type, room_rules, price, roomstatus) VALUES (@type, @rules, @price, @status)", conn)
 
             cmd.Parameters.AddWithValue("@type", ListBox1.SelectedItem.ToString())
+            Dim price As Integer
+            If ListBox1.SelectedItem.ToString() = "Single" Then
+                price = 100
+            ElseIf ListBox1.SelectedItem.ToString() = "Twin" Then
+                price = 150
+            ElseIf ListBox1.SelectedItem.ToString() = "Standard" Then
+                price = 200
+            ElseIf ListBox1.SelectedItem.ToString() = "Deluxe" Then
+                price = 250
+            End If
+            cmd.Parameters.AddWithValue("@price", price)
             cmd.Parameters.AddWithValue("@rules", TextBox4.Text)
             cmd.Parameters.AddWithValue("@status", ListBox2.SelectedItem.ToString())
             cmd.ExecuteNonQuery()
