@@ -53,12 +53,12 @@ Public Class Add_Staff
     End Sub
 
     ' Check staff email existence
-    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
         Try
             conn.Open()
             Dim cmd As New MySqlCommand("SELECT COUNT(*) FROM staff WHERE email=@mail", conn)
             cmd.Parameters.AddWithValue("@mail", TextBox4.Text)
-            Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+            Dim count = Convert.ToInt32(cmd.ExecuteScalar)
             If count > 0 Then
                 MessageBox.Show("Email exists in database.")
             Else
@@ -76,7 +76,7 @@ Public Class Add_Staff
         Try
             conn.Open()
             Dim cmd As New MySqlCommand("DELETE FROM staff WHERE email=@mail", conn)
-            cmd.Parameters.AddWithValue("@mail", TextBox4.Text)
+            cmd.Parameters.AddWithValue("@mail", TextBox2.Text)
             Dim rows As Integer = cmd.ExecuteNonQuery()
             If rows > 0 Then
                 MessageBox.Show("Staff deleted successfully.")
@@ -90,4 +90,7 @@ Public Class Add_Staff
         End Try
     End Sub
 
+    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
+
+    End Sub
 End Class

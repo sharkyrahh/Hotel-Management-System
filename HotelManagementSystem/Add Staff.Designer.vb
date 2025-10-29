@@ -33,7 +33,6 @@ Partial Class Add_Staff
         TextBox1 = New TextBox()
         Label3 = New Label()
         GroupBox2 = New GroupBox()
-        ListBox1 = New ListBox()
         Label10 = New Label()
         Button2 = New Button()
         Button3 = New Button()
@@ -49,6 +48,7 @@ Partial Class Add_Staff
         Button_About = New Button()
         Button_Change = New Button()
         Button_View = New Button()
+        TextBox2 = New TextBox()
         GroupBox1.SuspendLayout()
         GroupBox2.SuspendLayout()
         SuspendLayout()
@@ -144,7 +144,7 @@ Partial Class Add_Staff
         ' GroupBox2
         ' 
         GroupBox2.BackColor = Color.Transparent
-        GroupBox2.Controls.Add(ListBox1)
+        GroupBox2.Controls.Add(TextBox2)
         GroupBox2.Controls.Add(Label10)
         GroupBox2.Controls.Add(Button2)
         GroupBox2.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
@@ -155,16 +155,6 @@ Partial Class Add_Staff
         GroupBox2.TabIndex = 5
         GroupBox2.TabStop = False
         GroupBox2.Text = "Remove Staff"
-        ' 
-        ' ListBox1
-        ' 
-        ListBox1.FormattingEnabled = True
-        ListBox1.ItemHeight = 22
-        ListBox1.Items.AddRange(New Object() {"   "})
-        ListBox1.Location = New Point(131, 56)
-        ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(270, 26)
-        ListBox1.TabIndex = 95
         ' 
         ' Label10
         ' 
@@ -324,6 +314,13 @@ Partial Class Add_Staff
         Button_View.TabIndex = 85
         Button_View.UseVisualStyleBackColor = True
         ' 
+        ' TextBox2
+        ' 
+        TextBox2.Location = New Point(136, 49)
+        TextBox2.Name = "TextBox2"
+        TextBox2.Size = New Size(214, 29)
+        TextBox2.TabIndex = 24
+        ' 
         ' Add_Staff
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -383,5 +380,5 @@ Partial Class Add_Staff
     Friend WithEvents Button_About As Button
     Friend WithEvents Button_Change As Button
     Friend WithEvents Button_View As Button
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents TextBox2 As TextBox
 End Class

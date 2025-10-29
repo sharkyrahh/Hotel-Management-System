@@ -1,23 +1,12 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.Windows.Forms
 
 Public Class CheckIn
     Private connString As String = "server=localhost;userid=root;password=;database=hoteldb"
 
     Private Sub CheckIn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ' Load all room IDs once
-        Try
-            Using conn As New MySqlConnection(connString)
-                conn.Open()
-                Dim cmd As New MySqlCommand("SELECT room_id FROM rooms", conn)
-                Dim reader As MySqlDataReader = cmd.ExecuteReader()
-                ListBox1.Items.Clear()
-                While reader.Read()
-                    ListBox1.Items.Add(reader("room_id").ToString())
-                End While
-            End Using
-        Catch ex As Exception
-            MessageBox.Show(ex.Message)
-        End Try
+        ' Load all room IDs
+        LoadRoomIDs()
 
         ' Load room status options
         ListBox2.Items.Clear()
@@ -29,10 +18,34 @@ Public Class CheckIn
         ListBox2.SelectionMode = SelectionMode.One
     End Sub
 
+    Private Sub LoadRoomIDs()
+        Try
+            Using conn As New MySqlConnection(connString)
+                conn.Open()
+                Dim cmd As New MySqlCommand("SELECT room_id FROM rooms", conn)
+                Using reader As MySqlDataReader = cmd.ExecuteReader()
+                    ListBox1.Items.Clear()
+                    While reader.Read()
+                        ListBox1.Items.Add(reader("room_id").ToString())
+                    End While
+                End Using
+            End Using
+        Catch ex As Exception
+            MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+
+    ' Clear form
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        ListBox1.ClearSelected()
+        ListBox2.ClearSelected()
+        TextBox1.Clear()
+    End Sub
+
     ' Update room status
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If ListBox1.SelectedIndex = -1 Or ListBox2.SelectedIndex = -1 Then
-            MessageBox.Show("Please select a room ID and status.")
+            MessageBox.Show("Select room and status first")
             Return
         End If
 
@@ -57,13 +70,12 @@ Public Class CheckIn
         End Try
     End Sub
 
-    ' Clear form
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        ListBox1.ClearSelected()
-        ListBox2.ClearSelected()
+    ' DateTimePicker for check-in date
+    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
+        ' Optional: save date to bookings table if needed
     End Sub
 
-    ' Sidebar navigation examples
+    ' Sidebar navigation
     Private Sub Button_Home_Click(sender As Object, e As EventArgs) Handles Button_Home.Click
         Dim f As New Form1
         f.Show()
@@ -95,6 +107,11 @@ Public Class CheckIn
     Private Sub Button_Login_Click(sender As Object, e As EventArgs) Handles Button_Login.Click
         Dim f As New StaffLoginForm
         f.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Form1.Show()
         Me.Hide()
     End Sub
 End Class

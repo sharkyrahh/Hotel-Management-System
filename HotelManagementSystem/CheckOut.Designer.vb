@@ -58,7 +58,7 @@ Partial Class CheckOut
         ' 
         ' Button5
         ' 
-        Button5.Location = New Point(303, 249)
+        Button5.Location = New Point(305, 302)
         Button5.Name = "Button5"
         Button5.Size = New Size(128, 29)
         Button5.TabIndex = 6
@@ -143,7 +143,7 @@ Partial Class CheckOut
         GroupBox2.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox2.Location = New Point(734, 208)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(449, 294)
+        GroupBox2.Size = New Size(449, 401)
         GroupBox2.TabIndex = 30
         GroupBox2.TabStop = False
         GroupBox2.Text = "Check-Out Information"
@@ -155,7 +155,7 @@ Partial Class CheckOut
         ListBox2.Items.AddRange(New Object() {" Available"})
         ListBox2.Location = New Point(211, 200)
         ListBox2.Name = "ListBox2"
-        ListBox2.Size = New Size(232, 26)
+        ListBox2.Size = New Size(232, 48)
         ListBox2.TabIndex = 52
         ' 
         ' ListBox1
@@ -165,7 +165,7 @@ Partial Class CheckOut
         ListBox1.Items.AddRange(New Object() {" "})
         ListBox1.Location = New Point(174, 136)
         ListBox1.Name = "ListBox1"
-        ListBox1.Size = New Size(232, 26)
+        ListBox1.Size = New Size(232, 48)
         ListBox1.TabIndex = 51
         ' 
         ' Label11
