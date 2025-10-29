@@ -87,7 +87,7 @@ Public Class change_room
     Private Sub LoadCurrentBookedRooms(userId As String)
         Try
             conn.Open()
-            Dim cmd As New MySqlCommand("SELECT r.room_id FROM bookings b JOIN rooms r ON b.room_id=r.room_id WHERE b.users_id=@uid", conn)
+            Dim cmd As New MySqlCommand("SELECT r.room_id FROM bookings b JOIN rooms r ON b.room_id = r.room_id WHERE b.users_id = @uid AND r.roomstatus='Booked'", conn)
             cmd.Parameters.AddWithValue("@uid", userId)
             Dim reader As MySqlDataReader = cmd.ExecuteReader()
             CurrentBookedRoom.Items.Clear()
