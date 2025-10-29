@@ -24,63 +24,68 @@ Partial Class ReceiptForm
     Private Sub InitializeComponent()
         Label30 = New Label()
         Panel1 = New Panel()
-        Label22 = New Label()
-        Label31 = New Label()
-        Label7 = New Label()
-        Label6 = New Label()
-        Label5 = New Label()
+        LabelNo1 = New Label()
+        LabelTotal1 = New Label()
+        LabelQty1 = New Label()
+        LabelPrice1 = New Label()
+        LabelItem1 = New Label()
         Label4 = New Label()
         Label3 = New Label()
         Label2 = New Label()
-        Label32 = New Label()
-        Panel10 = New Panel()
-        Label19 = New Label()
+        LabelItem2 = New Label()
+        PanelSub = New Panel()
+        LabelSubtotal = New Label()
         Label38 = New Label()
         Panel4 = New Panel()
         Label25 = New Label()
-        Label14 = New Label()
-        Label15 = New Label()
-        Label16 = New Label()
-        Label34 = New Label()
+        LabelTotal4 = New Label()
+        LabelQty4 = New Label()
+        LabelPrice4 = New Label()
+        LabelItem4 = New Label()
         Panel3 = New Panel()
         Label24 = New Label()
-        Label11 = New Label()
-        Label12 = New Label()
-        Label13 = New Label()
-        Label33 = New Label()
+        LabelTotal3 = New Label()
+        LabelQty3 = New Label()
+        LabelPrice3 = New Label()
+        LabelItem3 = New Label()
         Panel2 = New Panel()
         Label23 = New Label()
-        Label8 = New Label()
-        Label9 = New Label()
-        Label10 = New Label()
+        LabelTotal2 = New Label()
+        LabelQty2 = New Label()
+        LabelPrice2 = New Label()
         Label17 = New Label()
         Label40 = New Label()
-        Panel11 = New Panel()
-        Label39 = New Label()
-        Panel6 = New Panel()
-        Label18 = New Label()
+        PanelNights = New Panel()
+        LabelNights = New Label()
+        PanelTotal = New Panel()
+        LabelTotal = New Label()
         Label20 = New Label()
         Label1 = New Label()
         Label21 = New Label()
         Label26 = New Label()
-        Label27 = New Label()
-        Label28 = New Label()
-        Label29 = New Label()
-        Label35 = New Label()
-        Label36 = New Label()
+        LabelId = New Label()
+        LabelDate = New Label()
         Label37 = New Label()
         Label41 = New Label()
-        Label42 = New Label()
+        LabelName = New Label()
         Label43 = New Label()
-        Label44 = New Label()
+        LabelPhone = New Label()
         Button_Close = New Button()
         Button1 = New Button()
+        Panel5 = New Panel()
+        LabelPaid = New Label()
+        Label6 = New Label()
+        Panel6 = New Panel()
+        LabelBalance = New Label()
+        Label8 = New Label()
         Panel1.SuspendLayout()
-        Panel10.SuspendLayout()
+        PanelSub.SuspendLayout()
         Panel4.SuspendLayout()
         Panel3.SuspendLayout()
         Panel2.SuspendLayout()
-        Panel11.SuspendLayout()
+        PanelNights.SuspendLayout()
+        PanelTotal.SuspendLayout()
+        Panel5.SuspendLayout()
         Panel6.SuspendLayout()
         SuspendLayout()
         ' 
@@ -96,65 +101,66 @@ Partial Class ReceiptForm
         ' 
         ' Panel1
         ' 
-        Panel1.Controls.Add(Label22)
-        Panel1.Controls.Add(Label31)
-        Panel1.Controls.Add(Label7)
-        Panel1.Controls.Add(Label6)
-        Panel1.Controls.Add(Label5)
+        Panel1.BorderStyle = BorderStyle.FixedSingle
+        Panel1.Controls.Add(LabelNo1)
+        Panel1.Controls.Add(LabelTotal1)
+        Panel1.Controls.Add(LabelQty1)
+        Panel1.Controls.Add(LabelPrice1)
+        Panel1.Controls.Add(LabelItem1)
         Panel1.Location = New Point(29, 261)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(1064, 54)
         Panel1.TabIndex = 19
         ' 
-        ' Label22
+        ' LabelNo1
         ' 
-        Label22.AutoSize = True
-        Label22.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label22.Location = New Point(11, 12)
-        Label22.Name = "Label22"
-        Label22.Size = New Size(29, 28)
-        Label22.TabIndex = 30
-        Label22.Text = "1."
+        LabelNo1.AutoSize = True
+        LabelNo1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelNo1.Location = New Point(11, 12)
+        LabelNo1.Name = "LabelNo1"
+        LabelNo1.Size = New Size(29, 28)
+        LabelNo1.TabIndex = 30
+        LabelNo1.Text = "1."
         ' 
-        ' Label31
+        ' LabelTotal1
         ' 
-        Label31.AutoSize = True
-        Label31.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label31.Location = New Point(974, 12)
-        Label31.Name = "Label31"
-        Label31.Size = New Size(80, 28)
-        Label31.TabIndex = 6
-        Label31.Text = "RM100"
+        LabelTotal1.AutoSize = True
+        LabelTotal1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelTotal1.Location = New Point(967, 12)
+        LabelTotal1.Name = "LabelTotal1"
+        LabelTotal1.Size = New Size(92, 28)
+        LabelTotal1.TabIndex = 6
+        LabelTotal1.Text = "RM1000"
         ' 
-        ' Label7
+        ' LabelQty1
         ' 
-        Label7.AutoSize = True
-        Label7.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(921, 12)
-        Label7.Name = "Label7"
-        Label7.Size = New Size(24, 28)
-        Label7.TabIndex = 5
-        Label7.Text = "0"
+        LabelQty1.AutoSize = True
+        LabelQty1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelQty1.Location = New Point(921, 12)
+        LabelQty1.Name = "LabelQty1"
+        LabelQty1.Size = New Size(24, 28)
+        LabelQty1.TabIndex = 5
+        LabelQty1.Text = "0"
         ' 
-        ' Label6
+        ' LabelPrice1
         ' 
-        Label6.AutoSize = True
-        Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(814, 12)
-        Label6.Name = "Label6"
-        Label6.Size = New Size(80, 28)
-        Label6.TabIndex = 5
-        Label6.Text = "RM100"
+        LabelPrice1.AutoSize = True
+        LabelPrice1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelPrice1.Location = New Point(814, 12)
+        LabelPrice1.Name = "LabelPrice1"
+        LabelPrice1.Size = New Size(80, 28)
+        LabelPrice1.TabIndex = 5
+        LabelPrice1.Text = "RM100"
         ' 
-        ' Label5
+        ' LabelItem1
         ' 
-        Label5.AutoSize = True
-        Label5.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(81, 12)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(121, 28)
-        Label5.TabIndex = 5
-        Label5.Text = "STANDARD"
+        LabelItem1.AutoSize = True
+        LabelItem1.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelItem1.Location = New Point(81, 12)
+        LabelItem1.Name = "LabelItem1"
+        LabelItem1.Size = New Size(121, 28)
+        LabelItem1.TabIndex = 5
+        LabelItem1.Text = "STANDARD"
         ' 
         ' Label4
         ' 
@@ -186,34 +192,35 @@ Partial Class ReceiptForm
         Label2.TabIndex = 16
         Label2.Text = "ITEM"
         ' 
-        ' Label32
+        ' LabelItem2
         ' 
-        Label32.AutoSize = True
-        Label32.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label32.Location = New Point(81, 12)
-        Label32.Name = "Label32"
-        Label32.Size = New Size(86, 28)
-        Label32.TabIndex = 5
-        Label32.Text = "DELUXE"
+        LabelItem2.AutoSize = True
+        LabelItem2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelItem2.Location = New Point(81, 12)
+        LabelItem2.Name = "LabelItem2"
+        LabelItem2.Size = New Size(86, 28)
+        LabelItem2.TabIndex = 5
+        LabelItem2.Text = "DELUXE"
         ' 
-        ' Panel10
+        ' PanelSub
         ' 
-        Panel10.Controls.Add(Label19)
-        Panel10.Controls.Add(Label38)
-        Panel10.Location = New Point(29, 523)
-        Panel10.Name = "Panel10"
-        Panel10.Size = New Size(1064, 54)
-        Panel10.TabIndex = 24
+        PanelSub.BorderStyle = BorderStyle.FixedSingle
+        PanelSub.Controls.Add(LabelSubtotal)
+        PanelSub.Controls.Add(Label38)
+        PanelSub.Location = New Point(30, 581)
+        PanelSub.Name = "PanelSub"
+        PanelSub.Size = New Size(1064, 54)
+        PanelSub.TabIndex = 24
         ' 
-        ' Label19
+        ' LabelSubtotal
         ' 
-        Label19.AutoSize = True
-        Label19.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label19.Location = New Point(962, 12)
-        Label19.Name = "Label19"
-        Label19.Size = New Size(92, 28)
-        Label19.TabIndex = 6
-        Label19.Text = "RM1000"
+        LabelSubtotal.AutoSize = True
+        LabelSubtotal.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelSubtotal.Location = New Point(962, 12)
+        LabelSubtotal.Name = "LabelSubtotal"
+        LabelSubtotal.Size = New Size(92, 28)
+        LabelSubtotal.TabIndex = 6
+        LabelSubtotal.Text = "RM1000"
         ' 
         ' Label38
         ' 
@@ -227,11 +234,12 @@ Partial Class ReceiptForm
         ' 
         ' Panel4
         ' 
+        Panel4.BorderStyle = BorderStyle.FixedSingle
         Panel4.Controls.Add(Label25)
-        Panel4.Controls.Add(Label14)
-        Panel4.Controls.Add(Label15)
-        Panel4.Controls.Add(Label16)
-        Panel4.Controls.Add(Label34)
+        Panel4.Controls.Add(LabelTotal4)
+        Panel4.Controls.Add(LabelQty4)
+        Panel4.Controls.Add(LabelPrice4)
+        Panel4.Controls.Add(LabelItem4)
         Panel4.Location = New Point(29, 441)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(1064, 54)
@@ -247,53 +255,54 @@ Partial Class ReceiptForm
         Label25.TabIndex = 33
         Label25.Text = "4."
         ' 
-        ' Label14
+        ' LabelTotal4
         ' 
-        Label14.AutoSize = True
-        Label14.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label14.Location = New Point(974, 12)
-        Label14.Name = "Label14"
-        Label14.Size = New Size(80, 28)
-        Label14.TabIndex = 6
-        Label14.Text = "RM100"
+        LabelTotal4.AutoSize = True
+        LabelTotal4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelTotal4.Location = New Point(967, 12)
+        LabelTotal4.Name = "LabelTotal4"
+        LabelTotal4.Size = New Size(92, 28)
+        LabelTotal4.TabIndex = 6
+        LabelTotal4.Text = "RM1000"
         ' 
-        ' Label15
+        ' LabelQty4
         ' 
-        Label15.AutoSize = True
-        Label15.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label15.Location = New Point(921, 12)
-        Label15.Name = "Label15"
-        Label15.Size = New Size(24, 28)
-        Label15.TabIndex = 5
-        Label15.Text = "0"
+        LabelQty4.AutoSize = True
+        LabelQty4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelQty4.Location = New Point(921, 12)
+        LabelQty4.Name = "LabelQty4"
+        LabelQty4.Size = New Size(24, 28)
+        LabelQty4.TabIndex = 5
+        LabelQty4.Text = "0"
         ' 
-        ' Label16
+        ' LabelPrice4
         ' 
-        Label16.AutoSize = True
-        Label16.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label16.Location = New Point(814, 12)
-        Label16.Name = "Label16"
-        Label16.Size = New Size(80, 28)
-        Label16.TabIndex = 5
-        Label16.Text = "RM100"
+        LabelPrice4.AutoSize = True
+        LabelPrice4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelPrice4.Location = New Point(814, 12)
+        LabelPrice4.Name = "LabelPrice4"
+        LabelPrice4.Size = New Size(80, 28)
+        LabelPrice4.TabIndex = 5
+        LabelPrice4.Text = "RM100"
         ' 
-        ' Label34
+        ' LabelItem4
         ' 
-        Label34.AutoSize = True
-        Label34.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label34.Location = New Point(81, 13)
-        Label34.Name = "Label34"
-        Label34.Size = New Size(80, 28)
-        Label34.TabIndex = 5
-        Label34.Text = "SINGLE"
+        LabelItem4.AutoSize = True
+        LabelItem4.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelItem4.Location = New Point(81, 13)
+        LabelItem4.Name = "LabelItem4"
+        LabelItem4.Size = New Size(80, 28)
+        LabelItem4.TabIndex = 5
+        LabelItem4.Text = "SINGLE"
         ' 
         ' Panel3
         ' 
+        Panel3.BorderStyle = BorderStyle.FixedSingle
         Panel3.Controls.Add(Label24)
-        Panel3.Controls.Add(Label11)
-        Panel3.Controls.Add(Label12)
-        Panel3.Controls.Add(Label13)
-        Panel3.Controls.Add(Label33)
+        Panel3.Controls.Add(LabelTotal3)
+        Panel3.Controls.Add(LabelQty3)
+        Panel3.Controls.Add(LabelPrice3)
+        Panel3.Controls.Add(LabelItem3)
         Panel3.Location = New Point(29, 381)
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(1064, 54)
@@ -309,53 +318,54 @@ Partial Class ReceiptForm
         Label24.TabIndex = 32
         Label24.Text = "3."
         ' 
-        ' Label11
+        ' LabelTotal3
         ' 
-        Label11.AutoSize = True
-        Label11.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.Location = New Point(974, 12)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(80, 28)
-        Label11.TabIndex = 6
-        Label11.Text = "RM100"
+        LabelTotal3.AutoSize = True
+        LabelTotal3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelTotal3.Location = New Point(967, 12)
+        LabelTotal3.Name = "LabelTotal3"
+        LabelTotal3.Size = New Size(92, 28)
+        LabelTotal3.TabIndex = 6
+        LabelTotal3.Text = "RM1000"
         ' 
-        ' Label12
+        ' LabelQty3
         ' 
-        Label12.AutoSize = True
-        Label12.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label12.Location = New Point(921, 12)
-        Label12.Name = "Label12"
-        Label12.Size = New Size(24, 28)
-        Label12.TabIndex = 5
-        Label12.Text = "0"
+        LabelQty3.AutoSize = True
+        LabelQty3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelQty3.Location = New Point(921, 12)
+        LabelQty3.Name = "LabelQty3"
+        LabelQty3.Size = New Size(24, 28)
+        LabelQty3.TabIndex = 5
+        LabelQty3.Text = "0"
         ' 
-        ' Label13
+        ' LabelPrice3
         ' 
-        Label13.AutoSize = True
-        Label13.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label13.Location = New Point(814, 12)
-        Label13.Name = "Label13"
-        Label13.Size = New Size(80, 28)
-        Label13.TabIndex = 5
-        Label13.Text = "RM100"
+        LabelPrice3.AutoSize = True
+        LabelPrice3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelPrice3.Location = New Point(814, 12)
+        LabelPrice3.Name = "LabelPrice3"
+        LabelPrice3.Size = New Size(80, 28)
+        LabelPrice3.TabIndex = 5
+        LabelPrice3.Text = "RM100"
         ' 
-        ' Label33
+        ' LabelItem3
         ' 
-        Label33.AutoSize = True
-        Label33.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label33.Location = New Point(81, 12)
-        Label33.Name = "Label33"
-        Label33.Size = New Size(66, 28)
-        Label33.TabIndex = 5
-        Label33.Text = "TWIN"
+        LabelItem3.AutoSize = True
+        LabelItem3.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelItem3.Location = New Point(81, 12)
+        LabelItem3.Name = "LabelItem3"
+        LabelItem3.Size = New Size(66, 28)
+        LabelItem3.TabIndex = 5
+        LabelItem3.Text = "TWIN"
         ' 
         ' Panel2
         ' 
+        Panel2.BorderStyle = BorderStyle.FixedSingle
         Panel2.Controls.Add(Label23)
-        Panel2.Controls.Add(Label8)
-        Panel2.Controls.Add(Label9)
-        Panel2.Controls.Add(Label10)
-        Panel2.Controls.Add(Label32)
+        Panel2.Controls.Add(LabelTotal2)
+        Panel2.Controls.Add(LabelQty2)
+        Panel2.Controls.Add(LabelPrice2)
+        Panel2.Controls.Add(LabelItem2)
         Panel2.Location = New Point(29, 321)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(1064, 54)
@@ -371,35 +381,35 @@ Partial Class ReceiptForm
         Label23.TabIndex = 31
         Label23.Text = "2."
         ' 
-        ' Label8
+        ' LabelTotal2
         ' 
-        Label8.AutoSize = True
-        Label8.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label8.Location = New Point(974, 12)
-        Label8.Name = "Label8"
-        Label8.Size = New Size(80, 28)
-        Label8.TabIndex = 6
-        Label8.Text = "RM100"
+        LabelTotal2.AutoSize = True
+        LabelTotal2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelTotal2.Location = New Point(967, 12)
+        LabelTotal2.Name = "LabelTotal2"
+        LabelTotal2.Size = New Size(92, 28)
+        LabelTotal2.TabIndex = 6
+        LabelTotal2.Text = "RM1000"
         ' 
-        ' Label9
+        ' LabelQty2
         ' 
-        Label9.AutoSize = True
-        Label9.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label9.Location = New Point(921, 12)
-        Label9.Name = "Label9"
-        Label9.Size = New Size(24, 28)
-        Label9.TabIndex = 5
-        Label9.Text = "0"
+        LabelQty2.AutoSize = True
+        LabelQty2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelQty2.Location = New Point(921, 12)
+        LabelQty2.Name = "LabelQty2"
+        LabelQty2.Size = New Size(24, 28)
+        LabelQty2.TabIndex = 5
+        LabelQty2.Text = "0"
         ' 
-        ' Label10
+        ' LabelPrice2
         ' 
-        Label10.AutoSize = True
-        Label10.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.Location = New Point(814, 12)
-        Label10.Name = "Label10"
-        Label10.Size = New Size(80, 28)
-        Label10.TabIndex = 5
-        Label10.Text = "RM100"
+        LabelPrice2.AutoSize = True
+        LabelPrice2.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelPrice2.Location = New Point(814, 12)
+        LabelPrice2.Name = "LabelPrice2"
+        LabelPrice2.Size = New Size(80, 28)
+        LabelPrice2.TabIndex = 5
+        LabelPrice2.Text = "RM100"
         ' 
         ' Label17
         ' 
@@ -421,43 +431,45 @@ Partial Class ReceiptForm
         Label40.TabIndex = 5
         Label40.Text = "TOTAL NIGHTS"
         ' 
-        ' Panel11
+        ' PanelNights
         ' 
-        Panel11.Controls.Add(Label39)
-        Panel11.Controls.Add(Label40)
-        Panel11.Location = New Point(29, 582)
-        Panel11.Name = "Panel11"
-        Panel11.Size = New Size(1064, 54)
-        Panel11.TabIndex = 25
+        PanelNights.BorderStyle = BorderStyle.FixedSingle
+        PanelNights.Controls.Add(LabelNights)
+        PanelNights.Controls.Add(Label40)
+        PanelNights.Location = New Point(30, 521)
+        PanelNights.Name = "PanelNights"
+        PanelNights.Size = New Size(1064, 54)
+        PanelNights.TabIndex = 25
         ' 
-        ' Label39
+        ' LabelNights
         ' 
-        Label39.AutoSize = True
-        Label39.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label39.Location = New Point(921, 12)
-        Label39.Name = "Label39"
-        Label39.Size = New Size(24, 28)
-        Label39.TabIndex = 5
-        Label39.Text = "0"
+        LabelNights.AutoSize = True
+        LabelNights.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelNights.Location = New Point(1028, 12)
+        LabelNights.Name = "LabelNights"
+        LabelNights.Size = New Size(24, 28)
+        LabelNights.TabIndex = 5
+        LabelNights.Text = "0"
         ' 
-        ' Panel6
+        ' PanelTotal
         ' 
-        Panel6.Controls.Add(Label18)
-        Panel6.Controls.Add(Label20)
-        Panel6.Location = New Point(29, 642)
-        Panel6.Name = "Panel6"
-        Panel6.Size = New Size(1064, 78)
-        Panel6.TabIndex = 23
+        PanelTotal.BorderStyle = BorderStyle.FixedSingle
+        PanelTotal.Controls.Add(LabelTotal)
+        PanelTotal.Controls.Add(Label20)
+        PanelTotal.Location = New Point(30, 642)
+        PanelTotal.Name = "PanelTotal"
+        PanelTotal.Size = New Size(1064, 50)
+        PanelTotal.TabIndex = 23
         ' 
-        ' Label18
+        ' LabelTotal
         ' 
-        Label18.AutoSize = True
-        Label18.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label18.Location = New Point(962, 12)
-        Label18.Name = "Label18"
-        Label18.Size = New Size(92, 28)
-        Label18.TabIndex = 5
-        Label18.Text = "RM1000"
+        LabelTotal.AutoSize = True
+        LabelTotal.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelTotal.Location = New Point(962, 12)
+        LabelTotal.Name = "LabelTotal"
+        LabelTotal.Size = New Size(92, 28)
+        LabelTotal.TabIndex = 5
+        LabelTotal.Text = "RM1000"
         ' 
         ' Label20
         ' 
@@ -499,56 +511,26 @@ Partial Class ReceiptForm
         Label26.TabIndex = 30
         Label26.Text = "RECEIPT NUMBER"
         ' 
-        ' Label27
+        ' LabelId
         ' 
-        Label27.AutoSize = True
-        Label27.BackColor = Color.Transparent
-        Label27.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label27.Location = New Point(207, 34)
-        Label27.Name = "Label27"
-        Label27.Size = New Size(84, 28)
-        Label27.TabIndex = 31
-        Label27.Text = "#12345"
+        LabelId.AutoSize = True
+        LabelId.BackColor = Color.Transparent
+        LabelId.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelId.Location = New Point(207, 34)
+        LabelId.Name = "LabelId"
+        LabelId.Size = New Size(84, 28)
+        LabelId.TabIndex = 31
+        LabelId.Text = "#12345"
         ' 
-        ' Label28
+        ' LabelDate
         ' 
-        Label28.AutoSize = True
-        Label28.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label28.Location = New Point(826, 34)
-        Label28.Name = "Label28"
-        Label28.Size = New Size(95, 28)
-        Label28.TabIndex = 32
-        Label28.Text = "SUNDAY,"
-        ' 
-        ' Label29
-        ' 
-        Label29.AutoSize = True
-        Label29.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label29.Location = New Point(950, 34)
-        Label29.Name = "Label29"
-        Label29.Size = New Size(102, 28)
-        Label29.TabIndex = 33
-        Label29.Text = "OCTOBER"
-        ' 
-        ' Label35
-        ' 
-        Label35.AutoSize = True
-        Label35.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label35.Location = New Point(919, 34)
-        Label35.Name = "Label35"
-        Label35.Size = New Size(36, 28)
-        Label35.TabIndex = 34
-        Label35.Text = "22"
-        ' 
-        ' Label36
-        ' 
-        Label36.AutoSize = True
-        Label36.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label36.Location = New Point(1046, 34)
-        Label36.Name = "Label36"
-        Label36.Size = New Size(60, 28)
-        Label36.TabIndex = 35
-        Label36.Text = "2025"
+        LabelDate.AutoSize = True
+        LabelDate.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelDate.Location = New Point(811, 34)
+        LabelDate.Name = "LabelDate"
+        LabelDate.Size = New Size(302, 28)
+        LabelDate.TabIndex = 32
+        LabelDate.Text = "Dayday, 10 Monthmonth 1234"
         ' 
         ' Label37
         ' 
@@ -570,15 +552,15 @@ Partial Class ReceiptForm
         Label41.TabIndex = 37
         Label41.Text = "CUSTOMER:"
         ' 
-        ' Label42
+        ' LabelName
         ' 
-        Label42.AutoSize = True
-        Label42.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label42.Location = New Point(153, 141)
-        Label42.Name = "Label42"
-        Label42.Size = New Size(72, 28)
-        Label42.TabIndex = 38
-        Label42.Text = "NAME"
+        LabelName.AutoSize = True
+        LabelName.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelName.Location = New Point(153, 141)
+        LabelName.Name = "LabelName"
+        LabelName.Size = New Size(72, 28)
+        LabelName.TabIndex = 38
+        LabelName.Text = "NAME"
         ' 
         ' Label43
         ' 
@@ -590,19 +572,19 @@ Partial Class ReceiptForm
         Label43.TabIndex = 39
         Label43.Text = "PHONE NUMBER:"
         ' 
-        ' Label44
+        ' LabelPhone
         ' 
-        Label44.AutoSize = True
-        Label44.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label44.Location = New Point(208, 169)
-        Label44.Name = "Label44"
-        Label44.Size = New Size(144, 28)
-        Label44.TabIndex = 40
-        Label44.Text = "01234567890"
+        LabelPhone.AutoSize = True
+        LabelPhone.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelPhone.Location = New Point(208, 169)
+        LabelPhone.Name = "LabelPhone"
+        LabelPhone.Size = New Size(144, 28)
+        LabelPhone.TabIndex = 40
+        LabelPhone.Text = "01234567890"
         ' 
         ' Button_Close
         ' 
-        Button_Close.Location = New Point(827, 738)
+        Button_Close.Location = New Point(826, 816)
         Button_Close.Name = "Button_Close"
         Button_Close.Size = New Size(130, 55)
         Button_Close.TabIndex = 41
@@ -611,31 +593,90 @@ Partial Class ReceiptForm
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(963, 738)
+        Button1.Location = New Point(962, 816)
         Button1.Name = "Button1"
         Button1.Size = New Size(130, 55)
         Button1.TabIndex = 42
         Button1.Text = "SAVE"
         Button1.UseVisualStyleBackColor = True
         ' 
+        ' Panel5
+        ' 
+        Panel5.BorderStyle = BorderStyle.FixedSingle
+        Panel5.Controls.Add(LabelPaid)
+        Panel5.Controls.Add(Label6)
+        Panel5.Location = New Point(29, 698)
+        Panel5.Name = "Panel5"
+        Panel5.Size = New Size(1064, 50)
+        Panel5.TabIndex = 24
+        ' 
+        ' LabelPaid
+        ' 
+        LabelPaid.AutoSize = True
+        LabelPaid.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelPaid.Location = New Point(962, 12)
+        LabelPaid.Name = "LabelPaid"
+        LabelPaid.Size = New Size(92, 28)
+        LabelPaid.TabIndex = 5
+        LabelPaid.Text = "RM1000"
+        ' 
+        ' Label6
+        ' 
+        Label6.AutoSize = True
+        Label6.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label6.Location = New Point(11, 12)
+        Label6.Name = "Label6"
+        Label6.Size = New Size(58, 28)
+        Label6.TabIndex = 5
+        Label6.Text = "PAID"
+        ' 
+        ' Panel6
+        ' 
+        Panel6.BorderStyle = BorderStyle.FixedSingle
+        Panel6.Controls.Add(LabelBalance)
+        Panel6.Controls.Add(Label8)
+        Panel6.Location = New Point(29, 754)
+        Panel6.Name = "Panel6"
+        Panel6.Size = New Size(1064, 50)
+        Panel6.TabIndex = 25
+        ' 
+        ' LabelBalance
+        ' 
+        LabelBalance.AutoSize = True
+        LabelBalance.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LabelBalance.Location = New Point(962, 12)
+        LabelBalance.Name = "LabelBalance"
+        LabelBalance.Size = New Size(92, 28)
+        LabelBalance.TabIndex = 5
+        LabelBalance.Text = "RM1000"
+        ' 
+        ' Label8
+        ' 
+        Label8.AutoSize = True
+        Label8.Font = New Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label8.Location = New Point(11, 12)
+        Label8.Name = "Label8"
+        Label8.Size = New Size(102, 28)
+        Label8.TabIndex = 5
+        Label8.Text = "BALANCE"
+        ' 
         ' ReceiptForm
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImageLayout = ImageLayout.Stretch
-        ClientSize = New Size(1132, 805)
+        ClientSize = New Size(1132, 871)
+        Controls.Add(Panel6)
+        Controls.Add(Panel5)
         Controls.Add(Button1)
         Controls.Add(Button_Close)
-        Controls.Add(Label44)
+        Controls.Add(LabelPhone)
         Controls.Add(Label43)
-        Controls.Add(Label42)
-        Controls.Add(Label27)
+        Controls.Add(LabelName)
+        Controls.Add(LabelId)
         Controls.Add(Label41)
         Controls.Add(Label37)
-        Controls.Add(Label36)
-        Controls.Add(Label35)
-        Controls.Add(Label29)
-        Controls.Add(Label28)
+        Controls.Add(LabelDate)
         Controls.Add(Label26)
         Controls.Add(Label21)
         Controls.Add(Label1)
@@ -644,28 +685,32 @@ Partial Class ReceiptForm
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(Label2)
-        Controls.Add(Panel10)
+        Controls.Add(PanelSub)
         Controls.Add(Panel4)
         Controls.Add(Panel3)
         Controls.Add(Panel2)
         Controls.Add(Label17)
-        Controls.Add(Panel11)
-        Controls.Add(Panel6)
+        Controls.Add(PanelNights)
+        Controls.Add(PanelTotal)
         Name = "ReceiptForm"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Booking Receipt"
+        Text = "RM1000"
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
-        Panel10.ResumeLayout(False)
-        Panel10.PerformLayout()
+        PanelSub.ResumeLayout(False)
+        PanelSub.PerformLayout()
         Panel4.ResumeLayout(False)
         Panel4.PerformLayout()
         Panel3.ResumeLayout(False)
         Panel3.PerformLayout()
         Panel2.ResumeLayout(False)
         Panel2.PerformLayout()
-        Panel11.ResumeLayout(False)
-        Panel11.PerformLayout()
+        PanelNights.ResumeLayout(False)
+        PanelNights.PerformLayout()
+        PanelTotal.ResumeLayout(False)
+        PanelTotal.PerformLayout()
+        Panel5.ResumeLayout(False)
+        Panel5.PerformLayout()
         Panel6.ResumeLayout(False)
         Panel6.PerformLayout()
         ResumeLayout(False)
@@ -674,55 +719,58 @@ Partial Class ReceiptForm
 
     Friend WithEvents Label30 As Label
     Friend WithEvents Panel1 As Panel
-    Friend WithEvents Label31 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents LabelTotal1 As Label
+    Friend WithEvents LabelQty1 As Label
+    Friend WithEvents LabelPrice1 As Label
+    Friend WithEvents LabelItem1 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label32 As Label
-    Friend WithEvents Panel10 As Panel
-    Friend WithEvents Label19 As Label
+    Friend WithEvents LabelItem2 As Label
+    Friend WithEvents PanelSub As Panel
+    Friend WithEvents LabelSubtotal As Label
     Friend WithEvents Label38 As Label
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label16 As Label
-    Friend WithEvents Label34 As Label
+    Friend WithEvents LabelTotal4 As Label
+    Friend WithEvents LabelQty4 As Label
+    Friend WithEvents LabelPrice4 As Label
+    Friend WithEvents LabelItem4 As Label
     Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label33 As Label
+    Friend WithEvents LabelTotal3 As Label
+    Friend WithEvents LabelQty3 As Label
+    Friend WithEvents LabelPrice3 As Label
+    Friend WithEvents LabelItem3 As Label
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label10 As Label
+    Friend WithEvents LabelTotal2 As Label
+    Friend WithEvents LabelQty2 As Label
+    Friend WithEvents LabelPrice2 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label40 As Label
-    Friend WithEvents Panel11 As Panel
-    Friend WithEvents Label39 As Label
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents Label18 As Label
+    Friend WithEvents PanelNights As Panel
+    Friend WithEvents LabelNights As Label
+    Friend WithEvents PanelTotal As Panel
+    Friend WithEvents LabelTotal As Label
     Friend WithEvents Label20 As Label
-    Friend WithEvents Label22 As Label
+    Friend WithEvents LabelNo1 As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents Label23 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Label21 As Label
     Friend WithEvents Label26 As Label
-    Friend WithEvents Label27 As Label
-    Friend WithEvents Label28 As Label
-    Friend WithEvents Label29 As Label
-    Friend WithEvents Label35 As Label
-    Friend WithEvents Label36 As Label
+    Friend WithEvents LabelId As Label
+    Friend WithEvents LabelDate As Label
     Friend WithEvents Label37 As Label
     Friend WithEvents Label41 As Label
-    Friend WithEvents Label42 As Label
+    Friend WithEvents LabelName As Label
     Friend WithEvents Label43 As Label
-    Friend WithEvents Label44 As Label
+    Friend WithEvents LabelPhone As Label
     Friend WithEvents Button_Close As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents LabelPaid As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Panel6 As Panel
+    Friend WithEvents LabelBalance As Label
+    Friend WithEvents Label8 As Label
 End Class
