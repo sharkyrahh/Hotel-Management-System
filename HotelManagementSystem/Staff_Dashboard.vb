@@ -25,7 +25,7 @@ Public Class Staff_Dashboard
             Label16.Text = cmdBooking.ExecuteScalar().ToString()
 
             ' Total Users
-            Dim cmdUsers As New MySqlCommand("SELECT COUNT(user_id) FROM users", conn)
+            Dim cmdUsers As New MySqlCommand("SELECT COUNT(users_id) FROM users", conn)
             Label15.Text = cmdUsers.ExecuteScalar().ToString()
 
             ' Total Payments
@@ -74,5 +74,7 @@ Public Class Staff_Dashboard
         AboutBox1.Show()
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
 
+    End Sub
 End Class

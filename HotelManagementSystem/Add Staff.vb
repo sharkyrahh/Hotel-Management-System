@@ -4,7 +4,7 @@ Imports MySql.Data.MySqlClient
 
 
 Public Class Add_Staff
-    Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=hotel_db")
+    Dim conn As New MySqlConnection("server=localhost;userid=root;password=;database=hoteldb")
 
     Private Sub Button_Logout_Click(sender As Object, e As EventArgs) Handles Button_Logout.Click
         Dim result As DialogResult = MessageBox.Show("Are you sure you want to log out?", "Logout", MessageBoxButtons.YesNo, MessageBoxIcon.Question)

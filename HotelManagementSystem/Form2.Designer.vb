@@ -24,15 +24,15 @@ Partial Class Form2
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form2))
         Label10 = New Label()
-        Button2 = New Button()
+        Button_Delete = New Button()
         GroupBox2 = New GroupBox()
-        ComboBox3 = New ComboBox()
+        ComboBox2 = New ComboBox()
         TextBox6 = New TextBox()
         Label7 = New Label()
         TextBox5 = New TextBox()
         Label6 = New Label()
         TextBox4 = New TextBox()
-        Button1 = New Button()
+        Button_Add = New Button()
         GroupBox1 = New GroupBox()
         TextBox2 = New TextBox()
         Label1 = New Label()
@@ -40,7 +40,7 @@ Partial Class Form2
         Label3 = New Label()
         Label5 = New Label()
         Label2 = New Label()
-        Button3 = New Button()
+        Button_Reset = New Button()
         Label19 = New Label()
         Button_Manage = New Button()
         Label8 = New Label()
@@ -66,21 +66,21 @@ Partial Class Form2
         Label10.TabIndex = 23
         Label10.Text = "Room ID"
         ' 
-        ' Button2
+        ' Button_Delete
         ' 
-        Button2.Location = New Point(140, 150)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(94, 29)
-        Button2.TabIndex = 22
-        Button2.Text = "Delete"
-        Button2.UseVisualStyleBackColor = True
+        Button_Delete.Location = New Point(140, 150)
+        Button_Delete.Name = "Button_Delete"
+        Button_Delete.Size = New Size(94, 29)
+        Button_Delete.TabIndex = 22
+        Button_Delete.Text = "Delete"
+        Button_Delete.UseVisualStyleBackColor = True
         ' 
         ' GroupBox2
         ' 
         GroupBox2.BackColor = Color.Transparent
-        GroupBox2.Controls.Add(ComboBox3)
+        GroupBox2.Controls.Add(ComboBox2)
         GroupBox2.Controls.Add(Label10)
-        GroupBox2.Controls.Add(Button2)
+        GroupBox2.Controls.Add(Button_Delete)
         GroupBox2.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox2.ForeColor = SystemColors.ControlText
         GroupBox2.Location = New Point(730, 201)
@@ -90,14 +90,14 @@ Partial Class Form2
         GroupBox2.TabStop = False
         GroupBox2.Text = "Remove Room"
         ' 
-        ' ComboBox3
+        ' ComboBox2
         ' 
-        ComboBox3.FormattingEnabled = True
-        ComboBox3.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
-        ComboBox3.Location = New Point(140, 53)
-        ComboBox3.Name = "ComboBox3"
-        ComboBox3.Size = New Size(176, 30)
-        ComboBox3.TabIndex = 39
+        ComboBox2.FormattingEnabled = True
+        ComboBox2.Items.AddRange(New Object() {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10"})
+        ComboBox2.Location = New Point(140, 53)
+        ComboBox2.Name = "ComboBox2"
+        ComboBox2.Size = New Size(176, 30)
+        ComboBox2.TabIndex = 39
         ' 
         ' TextBox6
         ' 
@@ -138,14 +138,14 @@ Partial Class Form2
         TextBox4.Size = New Size(177, 29)
         TextBox4.TabIndex = 26
         ' 
-        ' Button1
+        ' Button_Add
         ' 
-        Button1.Location = New Point(181, 333)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
-        Button1.TabIndex = 22
-        Button1.Text = "Add"
-        Button1.UseVisualStyleBackColor = True
+        Button_Add.Location = New Point(181, 333)
+        Button_Add.Name = "Button_Add"
+        Button_Add.Size = New Size(94, 29)
+        Button_Add.TabIndex = 22
+        Button_Add.Text = "Add"
+        Button_Add.UseVisualStyleBackColor = True
         ' 
         ' GroupBox1
         ' 
@@ -160,7 +160,7 @@ Partial Class Form2
         GroupBox1.Controls.Add(Label6)
         GroupBox1.Controls.Add(TextBox4)
         GroupBox1.Controls.Add(Label5)
-        GroupBox1.Controls.Add(Button1)
+        GroupBox1.Controls.Add(Button_Add)
         GroupBox1.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         GroupBox1.ForeColor = SystemColors.ControlText
         GroupBox1.Location = New Point(251, 201)
@@ -225,16 +225,16 @@ Partial Class Form2
         Label2.TabIndex = 31
         Label2.Text = "Manage Rooms"
         ' 
-        ' Button3
+        ' Button_Reset
         ' 
-        Button3.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
-        Button3.ForeColor = SystemColors.ActiveCaptionText
-        Button3.Location = New Point(1109, 697)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(94, 29)
-        Button3.TabIndex = 35
-        Button3.Text = "Reset"
-        Button3.UseVisualStyleBackColor = True
+        Button_Reset.Font = New Font("Book Antiqua", 10.8F, FontStyle.Bold)
+        Button_Reset.ForeColor = SystemColors.ActiveCaptionText
+        Button_Reset.Location = New Point(1109, 697)
+        Button_Reset.Name = "Button_Reset"
+        Button_Reset.Size = New Size(94, 29)
+        Button_Reset.TabIndex = 35
+        Button_Reset.Text = "Reset"
+        Button_Reset.UseVisualStyleBackColor = True
         ' 
         ' Label19
         ' 
@@ -386,7 +386,7 @@ Partial Class Form2
         Controls.Add(Button_About)
         Controls.Add(Button_Change)
         Controls.Add(Button_View)
-        Controls.Add(Button3)
+        Controls.Add(Button_Reset)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
         Controls.Add(Label2)
@@ -403,21 +403,21 @@ Partial Class Form2
         PerformLayout()
     End Sub
     Friend WithEvents Label10 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents Button_Delete As Button
     Friend WithEvents GroupBox2 As GroupBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents Button_Add As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label5 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button3 As Button
+    Friend WithEvents Button_Reset As Button
     Friend WithEvents Label19 As Label
     Friend WithEvents Button_Manage As Button
     Friend WithEvents Label8 As Label
@@ -430,6 +430,6 @@ Partial Class Form2
     Friend WithEvents Button_About As Button
     Friend WithEvents Button_Change As Button
     Friend WithEvents Button_View As Button
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents TextBox2 As TextBox
 End Class

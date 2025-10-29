@@ -33,7 +33,7 @@ Public Class Form2
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button_Add_Click(sender As Object, e As EventArgs) Handles Button_Add.Click
         ' Add new room
         Try
             conn.Open()
@@ -54,7 +54,7 @@ Public Class Form2
         End Try
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button_Delete_Click(sender As Object, e As EventArgs) Handles Button_Delete.Click
         ' Delete room by room_id
         Try
             conn.Open()
