@@ -24,6 +24,10 @@
     End Sub
 
     Private Sub TextBoxDescription_TextChanged(sender As Object, e As EventArgs) Handles TextBoxDescription.TextChanged
+        TextBoxDescription.Text = "Hotel Management System is a desktop application developed to simplify hotel operations. It helps manage room bookings, guest check-ins and check-outs, billing, and staff records efficiently. Designed using Visual Basic .NET, the system provides an easy-to-use interface for both administrators and receptionists. This project was created for academic purposes to demonstrate practical database integration and user interface design."
+    End Sub
 
+    Private Sub LabelCopyright_Click(sender As Object, e As EventArgs) Handles LabelCopyright.Click
+        LabelCopyright.Text = "© 2025 Kabilan. Academic use only"
     End Sub
 End Class
